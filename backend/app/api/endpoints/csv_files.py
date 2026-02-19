@@ -16,3 +16,7 @@ def list_csv_files():
 @router.get("/hello-world")
 def hello():
     return {"files": "Hi"}
+
+@router.get("/hello-world2")
+def hello2():
+    return {"files": "Hi2"}
