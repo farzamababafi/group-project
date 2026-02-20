@@ -1,8 +1,8 @@
-import App from '../components/Dashboard';
-
-
-export default function DashboardPage() {
-  return <App />;
+import Link from 'next/link'
+export default function page (){
+  return (
+    <div>
+    project page 
+    </div>
+  )
 }
-
-
