@@ -12,3 +12,12 @@ def list_csv_files():
 
     csv_files = sorted(f.stem for f in DATA_DIR.glob("*.csv"))
     return {"files": csv_files}
+
+
+@router.get("/example1")
+def list_csv_files():
+    return {"files": "Hi"}
+
+@router.get("/example")
+def list_csv_files():
+    return {"files": "Hello"}
