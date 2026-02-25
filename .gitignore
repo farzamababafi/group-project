@@ -3,6 +3,6 @@ venv/
 .venv/
 env/
 
-# Python cache
-__pycache__/
-*.py[cod]
+# Python cache (anywhere)
+**/__pycache__/
+**/*.py[cod]
