@@ -13,19 +13,7 @@ def list_csv_files():
         return {"files": [], "message": "Data folder does not exist"}
 
     csv_files = sorted(f.stem for f in DATA_DIR.glob("*.csv"))
-    print (csv_files)
     return {"files": csv_files}
-
-
-@router.get("/example1")
-def list_csv_files():
-    return {"files": "Hi"}
-
-@router.get("/example")
-def list_csv_files():
-    return {"files": "Hello"}
-
-
 
 
 router = APIRouter()
