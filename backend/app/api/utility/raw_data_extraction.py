@@ -20,6 +20,7 @@ def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=Non
     
     df['Date'] = pd.to_datetime(df['Date'], dayfirst=True)
 
+    
 
 
     start = pd.to_datetime(start_date)
@@ -28,6 +29,9 @@ def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=Non
 
     min_date = df["Date"].min()
     max_date = df["Date"].max()
+
+    if start>=end:
+        raise ValueError("start_date must be strictly earlier than end_date")
 
     if start< min_date and end>max_date:
         raise ValueError(f"Date out of range. Available range: {min_date.date()} to {max_date.date()}")
