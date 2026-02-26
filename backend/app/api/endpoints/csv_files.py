@@ -1,5 +1,7 @@
 from fastapi import APIRouter
 from pathlib import Path
+from app.api.utility.raw_data_extraction import raw_data_extraction
+from app.api.classes.Stock import StockRequest
 
 router = APIRouter()
 
@@ -11,6 +13,7 @@ def list_csv_files():
         return {"files": [], "message": "Data folder does not exist"}
 
     csv_files = sorted(f.stem for f in DATA_DIR.glob("*.csv"))
+    print (csv_files)
     return {"files": csv_files}
 
 
@@ -21,3 +24,12 @@ def list_csv_files():
 @router.get("/example")
 def list_csv_files():
     return {"files": "Hello"}
+
+
+
+
+router = APIRouter()
+@router.post("/stockreq")
+def get_data(request: StockRequest):
+    data = raw_data_extraction(request.stock_name, request.start_date, request.end_date)
+    return {"data": data}
