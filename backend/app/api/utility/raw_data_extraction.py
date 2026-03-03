@@ -15,6 +15,13 @@ def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=Non
     
     if not file_name.exists():
         raise FileNotFoundError(f"Stock file {file_name} not found")
+    
+    if start_date >= end_date:
+        raise ValueError("start_date must be strictly earlier than end_date")
+
+    if start_date < min_date and end_date > max_date:
+        raise ValueError(f"Date out of range. Available range: {min_date.date()} to {max_date.date()}")
+         
 
     df = pd.read_csv(file_name)
     
@@ -30,12 +37,7 @@ def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=Non
     min_date = df["Date"].min()
     max_date = df["Date"].max()
 
-    if start>=end:
-        raise ValueError("start_date must be strictly earlier than end_date")
 
-    if start< min_date and end>max_date:
-        raise ValueError(f"Date out of range. Available range: {min_date.date()} to {max_date.date()}")
-         
     df = df[(df['Date']>=start)&(df['Date']<=end)]
 
     df['Date'] = df['Date'].dt.strftime('%Y-%m-%d')
