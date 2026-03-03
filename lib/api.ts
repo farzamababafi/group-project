@@ -1,8 +1,7 @@
-import api from '@/lib/axios';
+import api from "@/lib/axios";
+import type { Helloworld } from "@/lib/types";
 
-import {helloworld} from './types';
-
-export const hello = async(): Promise<helloworld> =>{
-    const response = await api.get<helloworld>('/api/hellow');
-    return response.data
-}
+export const hello = async (): Promise<Helloworld> => {
+  const response = await api.get<Helloworld>("/api/hellow");
+  return response.data;
+};
