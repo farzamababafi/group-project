@@ -16,7 +16,6 @@ def list_csv_files():
     return {"files": csv_files}
 
 
-router = APIRouter()
 @router.post("/stockreq")
 def get_data(request: StockRequest):
     data = raw_data_extraction(request.stock_name, request.start_date, request.end_date)
