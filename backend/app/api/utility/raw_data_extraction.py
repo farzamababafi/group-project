@@ -1,7 +1,7 @@
-from fileinput import filename
 import pandas as pd
-from datetime import date
 from pathlib import Path
+from datetime import datetime
+
 
     
 
@@ -22,7 +22,7 @@ def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=Non
     min_date = df["Date"].min()
     max_date = df["Date"].max()
 
-    if start_date < min_date and end_date > max_date:
+    if start < min_date and end > max_date:
         raise ValueError(f"Date out of range. Available range: {min_date.date()} to {max_date.date()}")
          
 
