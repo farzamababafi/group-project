@@ -68,17 +68,8 @@ def yearly_data_average():
     for col in numeric_cols:
         yearly_avg[col] = (accum[f"{col}_sum"] / accum[f"{col}_count"]).round(2)
 
-
-    # Formatting the columns to 2 decimal places
-    for col in ["Low", "Open", "Volume", "High", "Close", "Adjusted Close"]:
-        yearly_avg[col] = yearly_avg[col].round(2)
-
     # Convert to list of dictionaries
     result = yearly_avg.to_dict(orient="records")
-
-    # Convert Year to string
-    for row in result:
-        row["Year"] = str(row["Year"])
 
     return result
 
