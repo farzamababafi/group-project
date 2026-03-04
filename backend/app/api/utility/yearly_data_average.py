@@ -1,77 +1,65 @@
 import pandas as pd
-from datetime import date
 from pathlib import Path
 
 
-DATA_DIR = Path(__file__).resolve().parents[3] / "data"
+BASE_DIR = Path(__file__).resolve().parents[3]
 
-def yearly_data_average():
+RAW_DATA_DIR = BASE_DIR / "data"
+PROCESSED_DIR = BASE_DIR / "data" / "processed_data"
 
-    if not DATA_DIR.exists():
-        raise FileNotFoundError(f"DATA_DIR not found: {DATA_DIR}")
+OUTPUT_FILE = PROCESSED_DIR / "yearly_average.csv"
+def yearly_data_average(save_to_csv: bool = True):
+
+    if not RAW_DATA_DIR.exists():
+        raise FileNotFoundError(f"RAW_DATA_DIR not found: {RAW_DATA_DIR}")
 
     # We'll maintain an accumulator of per-year sums and counts so we can
     # merge each file's statistics incrementally without keeping all rows in
     # memory at once.
     numeric_cols = ["Low", "Open", "Volume", "High", "Close", "Adjusted Close"]
-    accum = None  # DataFrame with columns Year, <col>_sum, <col>_count
+    grouped_list = []
 
-    for file in DATA_DIR.iterdir():
+    for file in RAW_DATA_DIR.glob("*.csv"):
         try:
             df = pd.read_csv(file)
-        except Exception as exc:
-            print(f"Skipping {file.name}: cannot read CSV ({exc})")
+        except Exception:
             continue
 
         if "Date" not in df.columns:
-            print(f"Skipping {file.name}: no 'Date' column")
             continue
 
         df["Date"] = pd.to_datetime(df["Date"], dayfirst=True)
         df = df.dropna(subset=["Date"])
+
         if df.empty:
             continue
+
         df["Year"] = df["Date"].dt.year
 
-        # compute per-file sums and counts
         grouped = df.groupby("Year")[numeric_cols].agg(["sum", "count"])
-        # flatten MultiIndex columns
         grouped.columns = [f"{col}_{agg}" for col, agg in grouped.columns]
         grouped = grouped.reset_index()
 
-        if accum is None:
-            accum = grouped
-        else:
-            # merge existing accum with new statistics
-            accum = pd.merge(accum, grouped, on="Year", how="outer", suffixes=("", "_new"))
-            # for each numeric column add sums and counts
-            for col in numeric_cols:
-                sum_col = f"{col}_sum"
-                cnt_col = f"{col}_count"
-                new_sum = f"{sum_col}_new"
-                new_cnt = f"{cnt_col}_new"
+        grouped_list.append(grouped)
 
-                accum[sum_col] = accum[sum_col].fillna(0) + accum.get(new_sum, 0).fillna(0)
-                accum[cnt_col] = accum[cnt_col].fillna(0) + accum.get(new_cnt, 0).fillna(0)
-
-                # drop the temporary columns if they exist
-                if new_sum in accum.columns:
-                    accum.drop(columns=[new_sum], inplace=True)
-                if new_cnt in accum.columns:
-                    accum.drop(columns=[new_cnt], inplace=True)
-
-    if accum is None or accum.empty:
+    if not grouped_list:
         return []
 
+    combined = pd.concat(grouped_list, ignore_index=True)
+    accum = combined.groupby("Year").sum().reset_index()
+
     # produce the average from sums and counts
-    yearly_avg = accum[["Year"] + numeric_cols].copy()
+    yearly_avg = accum[["Year"]].copy()
     for col in numeric_cols:
         yearly_avg[col] = (accum[f"{col}_sum"] / accum[f"{col}_count"]).round(2)
+    yearly_avg = yearly_avg.sort_values("Year").reset_index(drop=True)
+    if save_to_csv:
+        PROCESSED_DIR.mkdir(parents=True, exist_ok=True)  # 🔥 critical
+        yearly_avg.to_csv(OUTPUT_FILE, index=False)
+        return True
+    return yearly_avg.to_dict(orient="records")
 
-    # Convert to list of dictionaries
-    result = yearly_avg.to_dict(orient="records")
 
-    return result
-
-
-
+if __name__ == "__main__":
+    df = yearly_data_average(save_to_csv=True)
+    print("Yearly average CSV generated.")

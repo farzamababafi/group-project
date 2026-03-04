@@ -9,6 +9,9 @@ from pathlib import Path
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=None):
     file_name = DATA_DIR / f"{stock_name}.csv"
+    
+    start = pd.to_datetime(start_date)
+    end = pd.to_datetime(end_date)
 
     if start_date is None or end_date is None:
         raise ValueError("Both start_date and end_date must be provided")
@@ -30,8 +33,6 @@ def raw_data_extraction(stock_name: str , start_date:str=None , end_date:str=Non
     
 
 
-    start = pd.to_datetime(start_date)
-    end = pd.to_datetime(end_date)
 
 
     min_date = df["Date"].min()
