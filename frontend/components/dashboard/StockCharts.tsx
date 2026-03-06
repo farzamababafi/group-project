@@ -14,7 +14,7 @@ import {
   ReferenceLine,
 } from "recharts";
 import type { StockTimePoint } from "@/lib/types";
-
+// #knnxnd
 type Props = {
   data: StockTimePoint[];
   stockName?: string | null;
