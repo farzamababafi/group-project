@@ -8,6 +8,8 @@ type AppleAlertProps = {
   statusCode?: number;
   message: string;
   rawDetails?: any;
+  actionLabel?: string;
+  onAction?: () => void;
 };
 
 const KEYFRAMES = `
@@ -97,6 +99,8 @@ export function AppleAlert({
   statusCode,
   message,
   rawDetails,
+  actionLabel,
+  onAction,
 }: AppleAlertProps) {
   const isSuccess = tone === "success";
   const styleRef = useRef<HTMLStyleElement | null>(null);
@@ -248,6 +252,30 @@ export function AppleAlert({
         >
           {message}
         </div>
+
+        {actionLabel && typeof onAction === "function" && (
+          <div style={{ marginTop: 6 }}>
+            <button
+              type="button"
+              onClick={onAction}
+              style={{
+                fontSize: 12,
+                fontWeight: 650,
+                padding: "7px 10px",
+                borderRadius: 12,
+                border: `1px solid ${borderColor}`,
+                background: "rgba(255,255,255,0.65)",
+                color: accentColor,
+                letterSpacing: "-0.01em",
+                cursor: "pointer",
+                fontFamily:
+                  "'SF Pro Text', system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+              }}
+            >
+              {actionLabel}
+            </button>
+          </div>
+        )}
 
         {/* Raw details */}
         {rawDetails && typeof rawDetails === "object" && (

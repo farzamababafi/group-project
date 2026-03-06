@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CrisisButtonGroup } from "@/components/dashboard/buttons";
 import { StockSearchBar, type Stock } from "@/components/dashboard/stocksearchbar";
 import { Accordion } from "@/components/dashboard/Accordion";
@@ -21,10 +21,34 @@ export default function Dashboard() {
     message: string;
     raw?: any;
   } | null>(null);
-  const [successVisible, setSuccessVisible] = useState(false);
+  const [toastVisible, setToastVisible] = useState(false);
+  const [toast, setToast] = useState<null | {
+    tone: "success" | "error";
+    title: string;
+    statusCode?: number;
+    message: string;
+    action?: { label: string; kind: "change-stock" };
+  }>(null);
+  const toastTimerRef = useRef<number | null>(null);
 
 
   const step = !selectedPeriod ? 1 : !selectedStock ? 2 : 3;
+
+  function hideToast() {
+    if (toastTimerRef.current) window.clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = null;
+    setToastVisible(false);
+  }
+
+  function showToast(nextToast: NonNullable<typeof toast>, ms: number) {
+    if (toastTimerRef.current) window.clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = null;
+    setToast(nextToast);
+    setToastVisible(true);
+    toastTimerRef.current = window.setTimeout(() => {
+      setToastVisible(false);
+    }, ms);
+  }
 
   useEffect(() => {
     if (step !== 3) {
@@ -32,13 +56,12 @@ export default function Dashboard() {
       setErrorInfo(null);
       setStockSeries(null);
       setRequestStatus("idle");
-      setSuccessVisible(false);
       return;
     }
     const dates = getCrisisDates(selectedPeriod!);
     setRequestStatus("loading");
     setErrorInfo(null);
-    setSuccessVisible(false);
+    hideToast();
     postStockRequest({
       stock_name: selectedStock!.ticker,
       start_date: dates.start_date,
@@ -48,10 +71,14 @@ export default function Dashboard() {
         setStockSeries(data);
         setRequestStatus("done");
         setDetailsFetched(true);
-        setSuccessVisible(true);
-        window.setTimeout(() => {
-          setSuccessVisible(false);
-        }, 3200);
+        showToast(
+          {
+            tone: "success",
+            title: "Data loaded.",
+            message: `Showing ${selectedStock!.ticker} · ${selectedStock!.name} for the selected period.`,
+          },
+          1600
+        );
       })
       .catch((err: any) => {
         setStockSeries(null);
@@ -80,6 +107,37 @@ export default function Dashboard() {
 
         setErrorInfo({ status, message, raw });
         setRequestStatus("error");
+
+        // Friendly handling for common backend validations
+        const isOutOfRange = /Date out of range/i.test(message);
+        if (isOutOfRange) {
+          const match = message.match(/Available range:\s*([0-9-]+)\s*to\s*([0-9-]+)/i);
+          const rangeText = match ? `Available: ${match[1]} → ${match[2]}.` : "";
+
+          showToast(
+            {
+              tone: "error",
+              title: "No data for this period.",
+              message: `This stock doesn’t have data for the selected period. ${rangeText} Choose another stock.`,
+              action: { label: "Choose another stock", kind: "change-stock" },
+            },
+            2600
+          );
+
+          // Move user back to stock selection immediately
+          setSelectedStock(null);
+          return;
+        }
+
+        showToast(
+          {
+            tone: "error",
+            title: "Couldn’t load this stock.",
+            message,
+            action: { label: "Choose another stock", kind: "change-stock" },
+          },
+          2600
+        );
       });
   }, [selectedPeriod, selectedStock, step]);
 
@@ -274,15 +332,6 @@ export default function Dashboard() {
               Retrieving details for this period…
             </p>
           )}
-          {requestStatus === "error" && errorInfo && (
-            <div className="w-full max-w-7xl">
-              <AppleAlert
-                title="We couldn’t load this stock."
-                statusCode={errorInfo.status}
-                message={errorInfo.message}
-              />
-            </div>
-          )}
 
           {/* Charts + metrics */}
           <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">
@@ -299,25 +348,31 @@ export default function Dashboard() {
         </>
       )}
 
-      {/* Floating success toast */}
-      {successVisible && selectedStock && requestStatus === "done" && (
+      {/* Floating toast (success + errors) */}
+      {toastVisible && toast && (
         <div
           style={{
             position: "fixed",
-            bottom: 24,
+            top: 88,
             right: 24,
             zIndex: 40,
             maxWidth: 360,
             transition: "opacity 0.25s ease, transform 0.25s ease",
-            opacity: successVisible ? 1 : 0,
-            transform: successVisible ? "translateY(0)" : "translateY(8px)",
+            opacity: toastVisible ? 1 : 0,
+            transform: toastVisible ? "translateY(0)" : "translateY(-8px)",
           }}
         >
           <AppleAlert
-            tone="success"
-            title="Data loaded successfully."
-            statusCode={200}
-            message={`Showing ${selectedStock.ticker} · ${selectedStock.name} for the selected period.`}
+            tone={toast.tone}
+            title={toast.title}
+            statusCode={toast.statusCode}
+            message={toast.message}
+            actionLabel={toast.action?.label}
+            onAction={
+              toast.action?.kind === "change-stock"
+                ? () => setSelectedStock(null)
+                : undefined
+            }
           />
         </div>
       )}
