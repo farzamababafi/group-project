@@ -15,6 +15,17 @@ export interface StockRequestBody {
   end_date: string;   // YYYY-MM-DD
 }
 
+/** Single time‑series point returned from POST /api/stockreq */
+export interface StockTimePoint {
+  Date: string;          // "YYYY-MM-DD"
+  Open: number;
+  High: number;
+  Low: number;
+  Close: number;
+  Volume: number;
+  "Adjusted Close": number;
+}
+
 /** Date range for a crisis period */
 export interface CrisisPeriodDates {
   start_date: string;
