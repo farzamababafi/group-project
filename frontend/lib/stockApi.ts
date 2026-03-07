@@ -5,7 +5,7 @@
  */
 
 import api from "@/lib/axios";
-import type { StockRequestBody, CrisisPeriodKey, StockTimePoint } from "@/lib/types";
+import type { StockRequestBody, CrisisPeriodKey } from "@/lib/types";
 import { CRISIS_PERIOD_DATES } from "@/lib/types";
 
 // ─── GET /api/csv-files ───────────────────────────────────────────────────────
@@ -35,32 +35,10 @@ export function csvListToStocks(files: CsvFileListItem[]): { ticker: string; nam
 
 // ─── POST /api/stockreq ───────────────────────────────────────────────────────
 
-/**
- * Request raw time‑series data for a stock within a crisis period.
- *
- * Backend returns:
- *   { data: Array<{ Date, Open, High, Low, Close, Volume, "Adjusted Close" }> }
- */
-export async function postStockRequest(body: StockRequestBody): Promise<StockTimePoint[]> {
-  const response = await api.post<unknown>("/api/stockreq", body);
-  const payload: any = response.data as any;
-
-  const rawArray: any[] = Array.isArray(payload?.data)
-    ? payload.data
-    : Array.isArray(payload)
-      ? payload
-      : [];
-
-  // Normalize types so Recharts always gets numbers + ISO date strings
-  return rawArray.map((row) => ({
-    Date: String(row.Date),
-    Open: Number(row.Open),
-    High: Number(row.High),
-    Low: Number(row.Low),
-    Close: Number(row.Close),
-    Volume: Number(row.Volume),
-    "Adjusted Close": Number(row["Adjusted Close"]),
-  }));
+/** Response is a string (e.g. success message or file path). */
+export async function postStockRequest(body: StockRequestBody): Promise<string> {
+  const response = await api.post<string>("/api/stockreq", body);
+  return typeof response.data === "string" ? response.data : JSON.stringify(response.data);
 }
 
 // ─── Crisis period dates (re-export for convenience) ───────────────────────────

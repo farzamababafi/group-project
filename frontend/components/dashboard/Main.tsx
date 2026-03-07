@@ -5,145 +5,62 @@ import { CrisisButtonGroup } from "@/components/dashboard/buttons";
 import { StockSearchBar, type Stock } from "@/components/dashboard/stocksearchbar";
 import { Accordion } from "@/components/dashboard/Accordion";
 import { postStockRequest, getCrisisDates } from "@/lib/stockApi";
-import type { CrisisPeriodKey, StockTimePoint } from "@/lib/types";
+import type { CrisisPeriodKey } from "@/lib/types";
 import {Chat} from "./chat"
-import { StockCharts } from "./StockCharts";
-import { AppleAlert } from "@/components/ui/AppleAlert";
+const ACCORDION_ITEMS = [
+  {
+    id: "basic",
+    label: "Basic Metrics",
+    sublabel: "Price · Volume · EPS · Revenue",
+    icon: (
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+        <rect x="2" y="7" width="6" height="14" />
+        <rect x="9" y="3" width="6" height="18" />
+        <rect x="16" y="10" width="6" height="11" />
+      </svg>
+    ),
+  },
+  {
+    id: "featured",
+    label: "Featured Metrics",
+    sublabel: "P/E · RSI · Beta · Short Interest",
+    icon: (
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    ),
+  },
+];
 
 export default function Dashboard() {
   const [selectedStock, setSelectedStock] = useState<Stock | null>(null);
   const [selectedPeriod, setSelectedPeriod] = useState<CrisisPeriodKey | null>(null);
   const [requestStatus, setRequestStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [detailsFetched, setDetailsFetched] = useState(false);
-  const [stockSeries, setStockSeries] = useState<StockTimePoint[] | null>(null);
-  const [errorInfo, setErrorInfo] = useState<{
-    status?: number;
-    message: string;
-    raw?: any;
-  } | null>(null);
-  const [successVisible, setSuccessVisible] = useState(false);
 
-
+  // Step 1: no period selected
+  // Step 2: period selected, no stock
+  // Step 3: period + stock selected → fetch → show details
   const step = !selectedPeriod ? 1 : !selectedStock ? 2 : 3;
 
   useEffect(() => {
     if (step !== 3) {
       setDetailsFetched(false);
-      setErrorInfo(null);
-      setStockSeries(null);
-      setRequestStatus("idle");
-      setSuccessVisible(false);
       return;
     }
     const dates = getCrisisDates(selectedPeriod!);
     setRequestStatus("loading");
-    setErrorInfo(null);
-    setSuccessVisible(false);
     postStockRequest({
       stock_name: selectedStock!.ticker,
       start_date: dates.start_date,
       end_date: dates.end_date,
     })
-      .then((data) => {
-        setStockSeries(data);
+      .then(() => {
         setRequestStatus("done");
         setDetailsFetched(true);
-        setSuccessVisible(true);
-        window.setTimeout(() => {
-          setSuccessVisible(false);
-        }, 3200);
       })
-      .catch((err: any) => {
-        setStockSeries(null);
-        let status: number | undefined;
-        let message = "Something went wrong while loading this stock.";
-        let raw: unknown;
-
-        if (err && typeof err === "object") {
-          const axiosErr = err as any;
-          status = axiosErr?.response?.status;
-          raw = axiosErr?.response?.data ?? axiosErr?.message ?? String(err);
-
-          const backendDetail =
-            axiosErr?.response?.data?.detail ??
-            axiosErr?.response?.data?.message ??
-            (typeof axiosErr?.response?.data === "string"
-              ? axiosErr.response.data
-              : undefined);
-
-          if (backendDetail) {
-            message = String(backendDetail);
-          } else if (axiosErr?.message) {
-            message = String(axiosErr.message);
-          }
-        }
-
-        setErrorInfo({ status, message, raw });
-        setRequestStatus("error");
-      });
+      .catch(() => setRequestStatus("error"));
   }, [selectedPeriod, selectedStock, step]);
-
-  const accordionItems = [
-    {
-      id: "basic",
-      label: "Basic Metrics",
-      sublabel: "Price · Volume · EPS · Revenue",
-      icon: (
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-        >
-          <rect x="2" y="7" width="6" height="14" />
-          <rect x="9" y="3" width="6" height="18" />
-          <rect x="16" y="10" width="6" height="11" />
-        </svg>
-      ),
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          {stockSeries && stockSeries.length > 0 ? (
-            <StockCharts
-              data={stockSeries}
-              stockName={selectedStock?.name ?? null}
-            />
-          ) : (
-            <p
-              style={{
-                fontSize: 13,
-                color: "rgba(15,23,42,0.6)",
-                fontFamily: "'DM Sans', system-ui, -apple-system, BlinkMacSystemFont",
-              }}
-            >
-              Run a request above to see basic price and volume charts for this
-              stock.
-            </p>
-          )}
-        </div>
-      ),
-    },
-    {
-      id: "featured",
-      label: "Featured Metrics",
-      sublabel: "P/E · RSI · Beta · Short Interest",
-      icon: (
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-        >
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-        </svg>
-      ),
-    },
-  ];
 
   return (
     <main className="min-h-screen flex flex-col items-center px-8 gap-6">
@@ -274,52 +191,29 @@ export default function Dashboard() {
               Retrieving details for this period…
             </p>
           )}
-          {requestStatus === "error" && errorInfo && (
-            <div className="w-full max-w-7xl">
-              <AppleAlert
-                title="We couldn’t load this stock."
-                statusCode={errorInfo.status}
-                message={errorInfo.message}
-              />
-            </div>
+          {requestStatus === "error" && (
+            <p className="text-xs font-mono text-red-600/80">
+              Could not load details. Is the backend running?
+            </p>
           )}
 
-          {/* Charts + metrics */}
-          <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">
-            <Accordion
-              items={accordionItems}
-              allowMultiple
-              stockName={selectedStock?.name ?? null}
-            />
+          {/* DEV: show details in card immediately for development */}
+          <div
+            className="w-full max-w-7xl pb-16"
+     
+          >
+            <div style={{ padding: "" }}>
+              <Accordion
+                items={ACCORDION_ITEMS}
+                allowMultiple
+                stockName={selectedStock?.name ?? null}
+              />
+            </div>
           </div>
-
           <div className="w-full max-w-7xl pb-16">
             <Chat />
-          </div>
+            </div>
         </>
-      )}
-
-      {/* Floating success toast */}
-      {successVisible && selectedStock && requestStatus === "done" && (
-        <div
-          style={{
-            position: "fixed",
-            bottom: 24,
-            right: 24,
-            zIndex: 40,
-            maxWidth: 360,
-            transition: "opacity 0.25s ease, transform 0.25s ease",
-            opacity: successVisible ? 1 : 0,
-            transform: successVisible ? "translateY(0)" : "translateY(8px)",
-          }}
-        >
-          <AppleAlert
-            tone="success"
-            title="Data loaded successfully."
-            statusCode={200}
-            message={`Showing ${selectedStock.ticker} · ${selectedStock.name} for the selected period.`}
-          />
-        </div>
       )}
     </main>
   );
