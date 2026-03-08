@@ -2,8 +2,8 @@ import csv
 from fastapi import APIRouter
 from pathlib import Path
 from app.api.utility.raw_data_extraction import raw_data_extraction
-
 from app.api.classes.Stock import StockRequest
+from app.api.utility.llm_recomendation import get_recommendation
 
 router = APIRouter()
 
@@ -20,8 +20,8 @@ def list_csv_files():
     return {"files": csv_files}
         
 @router.get("/recommendation")
-#def list_recommendation():
-    #return {"recommendation": get_recommendations()}
+def list_recommendation():
+    return {"recommendation": get_recommendation()}
 
 @router.get("/per-year")
 def list_per_year():
