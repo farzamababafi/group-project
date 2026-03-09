@@ -36,7 +36,7 @@ def get_recommendation(user_profile: str = "", top_k: int = 1):
    # """
     try:
         response = client.chat.completions.create(
-            model=os.getenv(MODEL_NAME),
+            model=MODEL_NAME,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": "hi"}
