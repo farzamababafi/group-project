@@ -1,13 +1,10 @@
 from openai import OpenAI
-#import os
-#from dotenv import load_dotenv
-#load_dotenv()
-LLM_API_KEY="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"
-URL="https://api.groq.com/openai/v1"
-MODEL_NAME="llama-3.1-8b-instant"
+import os
+from dotenv import load_dotenv
+load_dotenv()
 client = OpenAI(    
-    api_key= LLM_API_KEY,
-    base_url=URL
+    api_key= os.getenv("LLM_API_KEY"),
+    base_url=os.getenv("URL")
     )
 SYSTEM_PROMPT = """
 You are a financial analysis assistant used in a stock analytics platform.
@@ -36,7 +33,7 @@ def get_recommendation(user_profile: str = "", top_k: int = 1):
    # """
     try:
         response = client.chat.completions.create(
-            model=MODEL_NAME,
+            model=os.getenv("MODEL_NAME"),
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": "hi"}
