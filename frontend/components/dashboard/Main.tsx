@@ -16,6 +16,7 @@ export default function Dashboard() {
   const [requestStatus, setRequestStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [detailsFetched, setDetailsFetched] = useState(false);
   const [stockSeries, setStockSeries] = useState<StockTimePoint[] | null>(null);
+  const [recommendationText, setRecommendationText] = useState<string>("");
   const [errorInfo, setErrorInfo] = useState<{
     status?: number;
     message: string;
@@ -44,8 +45,9 @@ export default function Dashboard() {
       start_date: dates.start_date,
       end_date: dates.end_date,
     })
-      .then((data) => {
-        setStockSeries(data);
+      .then((result) => {
+        setStockSeries(result.dataArray);
+        setRecommendationText(result.recommendationText);
         setRequestStatus("done");
         setDetailsFetched(true);
         setSuccessVisible(true);
@@ -294,7 +296,7 @@ export default function Dashboard() {
           </div>
 
           <div className="w-full max-w-7xl pb-16">
-            <Chat />
+            <Chat recommendationText={recommendationText} />
           </div>
         </>
       )}
