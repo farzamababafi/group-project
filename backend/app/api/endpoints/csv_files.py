@@ -18,10 +18,6 @@ def list_csv_files():
 
     csv_files = sorted(f.stem for f in DATA_DIR.glob("*.csv"))
     return {"files": csv_files}
-        
-@router.get("/recommendation")
-def list_recommendation():
-    return {"recommendation": get_recommendation()}
 
 @router.get("/per-year")
 def list_per_year():
@@ -41,4 +37,4 @@ def list_per_year():
 @router.post("/stockreq")
 def get_data(request: StockRequest):
     data = raw_data_extraction(request.stock_name, request.start_date, request.end_date)
-    return {"data": data}
+    return {"data": data, "recommendation": get_recommendation()}
