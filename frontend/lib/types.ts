@@ -26,6 +26,12 @@ export interface StockTimePoint {
   "Adjusted Close": number;
 }
 
+/** Response payload returned from POST /api/stockreq */
+export interface StockRequestResponse {
+  dataArray: StockTimePoint[];
+  recommendationText: string;
+}
+
 /** Date range for a crisis period */
 export interface CrisisPeriodDates {
   start_date: string;
