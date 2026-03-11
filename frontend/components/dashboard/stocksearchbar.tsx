@@ -151,11 +151,14 @@ function SelectedCard({ stock, onClear }: { stock: Stock; onClear: () => void })
           {stock.name}
         </div>
         <div style={{
-          fontSize: "11px", fontFamily: "'DM Mono', monospace",
-          color: "rgba(0,0,0,0.32)", letterSpacing: "0.06em", marginTop: "3px",
+          fontSize: "11px",
+          fontFamily: "'DM Mono', monospace",
+          color: "rgba(0,0,0,0.32)",
+          letterSpacing: "0.06em",
+         marginTop: "3px",
         }}>
-          {stock.ticker} · NYSE
-        </div>
+         NYSE
+      </div>
       </div>
 
       {/* Change pill */}
@@ -265,17 +268,16 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
 
   const MAX_VISIBLE = 80; // Cap rendered rows for 3300+ stocks (keeps DOM fast)
 
-  const filtered =
-    query.trim().length === 0
-      ? []
-      : sortByTicker(
-          stocks.filter(
-            (s) =>
-              s.ticker.toLowerCase().includes(query.toLowerCase()) ||
-              s.name.toLowerCase().includes(query.toLowerCase())
-          )
-        );
+  const filtered = sortByTicker(
+  stocks.filter((s) =>
+    query.trim() === ""
+      ? true
+      : s.ticker.toLowerCase().includes(query.toLowerCase()) ||
+        s.name.toLowerCase().includes(query.toLowerCase())
+  )
+);
   const displayed = filtered.slice(0, MAX_VISIBLE);
+
   const totalMatches = filtered.length;
   const hasMore = totalMatches > MAX_VISIBLE;
 
@@ -289,10 +291,13 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
   };
 
   const clearSelected = () => {
-    setSelected(null);
-    onClear?.();
-    setTimeout(() => inputRef.current?.focus(), 80);
-  };
+  const confirmReset = window.confirm("Clear selected stock?");
+  if (!confirmReset) return;
+
+  setSelected(null);
+  onClear?.();
+  setTimeout(() => inputRef.current?.focus(), 80);
+};
 
   // Close on outside click
   useEffect(() => {
@@ -486,23 +491,21 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
                         ? hasMore
                           ? `Showing first ${displayed.length} of ${totalMatches.toLocaleString()} matches`
                           : `${totalMatches} result${totalMatches !== 1 ? "s" : ""}`
-                        : `Type to search ${stocks.length.toLocaleString()} stocks`}
+                        : `Showing first ${displayed.length} of ${stocks.length.toLocaleString()} stocks`}
                     </div>
 
                     <ul ref={listRef} className="stock-scroll"
                       style={{ listStyle: "none", margin: 0, padding: "0 0 8px", maxHeight: "400px", overflowY: "auto" }}>
-                      {!query.trim() ? (
-                        <li style={{ padding: "28px 22px", textAlign: "center", color: "rgba(0,0,0,0.35)", fontSize: "14px" }}>
-                          Start typing ticker or name to search {stocks.length.toLocaleString()} stocks
-                        </li>
-                      ) : displayed.length === 0 ? (
-                        <li style={{ padding: "28px 22px", textAlign: "center", color: "rgba(0,0,0,0.28)", fontSize: "14px" }}>
-                          No results for &ldquo;{query}&rdquo;
-                        </li>
-                      ) : (
+                     
+                     {displayed.length === 0 ? (
+                      < li style={{ padding: "28px 22px", textAlign: "center", color: "rgba(0,0,0,0.28)", fontSize: "14px" }}>
+                        No results for &ldquo;{query}&rdquo;
+                      </li>
+                     ) : (
                         displayed.map((stock, i) => {
-                          const change = stock.change ?? 0;
-                          const isUp = change >= 0;
+
+                         // const change = stock.change ?? 0;
+                          //const isUp = change >= 0;
                           const isActive = i === highlighted;
                           return (
                             <motion.li
@@ -538,16 +541,7 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
                                 </div>
                               </div>
 
-                              <span style={{
-                                fontSize: "12px", fontWeight: 600,
-                                fontFamily: "'DM Mono', monospace", letterSpacing: "0.02em",
-                                color: isUp ? "#059669" : "#dc2626",
-                                background: isUp ? "rgba(5,150,105,0.08)" : "rgba(220,38,38,0.08)",
-                                border: `1px solid ${isUp ? "rgba(5,150,105,0.16)" : "rgba(220,38,38,0.16)"}`,
-                                borderRadius: "7px", padding: "4px 10px", flexShrink: 0,
-                              }}>
-                                {isUp ? "+" : ""}{change.toFixed(2)}%
-                              </span>
+                             
                             </motion.li>
                           );
                         })

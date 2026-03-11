@@ -242,7 +242,10 @@ export function Accordion({
   allowMultiple = false,
   stockName = null,
 }: AccordionProps) {
-  const [openIds, setOpenIds] = useState<Set<string>>(new Set());
+  
+  const [openIds, setOpenIds] = useState<Set<string>>(
+  new Set(items.map((item) => item.id))
+  );
 
   const toggle = (id: string) => {
     setOpenIds((prev) => {

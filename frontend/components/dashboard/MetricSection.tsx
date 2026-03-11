@@ -342,7 +342,8 @@ export function MetricSection({
 
   return (
     <div style={{ fontFamily: "-apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif" }}>
-      <FeaturedMetric metric={metric} />
+      
+      
 
       <SectionLabel text="Performance Metrics" />
 

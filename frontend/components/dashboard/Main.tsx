@@ -245,7 +245,7 @@ export default function Dashboard() {
                     {selectedStock!.ticker}
                   </span>
                   <span style={{ fontSize: 14, color: "rgba(0,0,0,0.5)" }}>
-                    {selectedStock!.name}
+                    {/* {selectedStock!.name} */}
                   </span>
                 </div>
                 <button
