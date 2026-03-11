@@ -268,12 +268,14 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
 
   const MAX_VISIBLE = 80; // Cap rendered rows for 3300+ stocks (keeps DOM fast)
 
-  const filtered = sortByTicker(
+ const normalizedQuery = query.trim().toLowerCase();
+
+const filtered = sortByTicker(
   stocks.filter((s) =>
-    query.trim() === ""
+    normalizedQuery === ""
       ? true
-      : s.ticker.toLowerCase().includes(query.toLowerCase()) ||
-        s.name.toLowerCase().includes(query.toLowerCase())
+      : s.ticker.toLowerCase().startsWith(normalizedQuery) ||
+        s.name.toLowerCase().startsWith(normalizedQuery)
   )
 );
   const displayed = filtered.slice(0, MAX_VISIBLE);
