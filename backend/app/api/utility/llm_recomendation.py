@@ -1,7 +1,8 @@
 from openai import OpenAI
+from pathlib import Path
 import os
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).resolve().parents[2] / ".env")
 client = OpenAI(    
     api_key= os.getenv("LLM_API_KEY"),
     base_url=os.getenv("URL")
