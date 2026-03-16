@@ -21,13 +21,13 @@ def calculate_avg_log_returns(df):
 def calculate_roi(df, pre_crisis):
 
     if pre_crisis.empty:
-        return None
+        return 0
 
     r_pre_crisis = (
         pre_crisis["Close"].iloc[-1] - pre_crisis["Close"].iloc[0]
     ) / pre_crisis["Close"].iloc[0]
     if r_pre_crisis == 0:
-        return None
+        return 0
     r_crisis = (
         df["Close"].iloc[-1] - df["Close"].iloc[0]
     ) / df["Close"].iloc[0]
@@ -55,7 +55,7 @@ def calculate_recovery_duration(df, crisis_start, crisis_end, pre_crisis):
     recovery = post_bottom[post_bottom["Close"] >= peak_price]
     
     if recovery.empty:
-        return None
+        return 0
     
     t_recovery = recovery.iloc[0]["Date"]
     T_recovery = len(df[(df["Date"] > t_bottom) & (df["Date"] <= t_recovery)])

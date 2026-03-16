@@ -52,7 +52,6 @@ def get_data(request: StockRequest):
         )
     except ValueError as e:
         # Return a 400 Bad Request with the error message
-        print(str(e))
         raise HTTPException(status_code=400, detail=str(e))
     metrics = metrics_main(
         data,
