@@ -38,6 +38,8 @@ def calculate_roi(df, pre_crisis):
 
 
 def calculate_recovery_duration(df, crisis_start, crisis_end, pre_crisis):
+    if pre_crisis.empty:
+        return 0
     
     # crisis dates
     crisis_start_dt = pd.to_datetime(crisis_start)
@@ -72,13 +74,17 @@ def main(data, stock_name, start_date, end_date):
     pre_crisis_start = start_date_dt.replace(year=start_date_dt.year - 1)
     pre_crisis_end = start_date_dt - pd.Timedelta(days=1)
     # Extract pre-crisis data **once**
-    pre_crisis = pd.DataFrame(
-        single_stock_data.raw_data_extraction(
-            stock_name,
-            pre_crisis_start,
-            pre_crisis_end
+    try:
+        pre_crisis = pd.DataFrame(
+            single_stock_data.raw_data_extraction(
+                stock_name,
+                pre_crisis_start,
+                pre_crisis_end
+            )
         )
-    )
+    except ValueError:
+        # Year before doesn't exist — continue without it
+        pre_crisis = pd.DataFrame()  # empty DataFrame
 
     return {
         "volatility": calculate_volatility(df),
