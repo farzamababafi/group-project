@@ -13,6 +13,7 @@ import { AppleAlert } from "@/components/ui/AppleAlert";
 export default function Dashboard() {
   const [selectedStock, setSelectedStock] = useState<Stock | null>(null);
   const [selectedPeriod, setSelectedPeriod] = useState<CrisisPeriodKey | null>(null);
+  const [searchSeed, setSearchSeed] = useState("");
   const [requestStatus, setRequestStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [detailsFetched, setDetailsFetched] = useState(false);
   const [stockSeries, setStockSeries] = useState<StockTimePoint[] | null>(null);
@@ -87,7 +88,7 @@ export default function Dashboard() {
     {
       id: "basic",
       label: "Basic Metrics",
-      sublabel: "Price · Volume · EPS · Revenue",
+      sublabel: "Open  · High · Low · Close · Adj Close · Volume",
       icon: (
         <svg
           width="14"
@@ -220,9 +221,13 @@ export default function Dashboard() {
           <div className="w-full max-w-7xl flex flex-col gap-2" style={{ minHeight: 80 }}>
             {step === 2 ? (
               <StockSearchBar
-                onSelect={setSelectedStock}
-                onClear={() => setSelectedStock(null)}
-              />
+              initialQuery={searchSeed}
+              onSelect={(stock) => {
+              setSelectedStock(stock);
+              setSearchSeed("");
+               }}
+              onClear={() => setSelectedStock(null)}
+            />
             ) : (
               /* Step 3: show selected stock + option to change */
               <div
@@ -250,13 +255,22 @@ export default function Dashboard() {
                 </div>
                 <button
                   type="button"
-                  onClick={() => setSelectedStock(null)}
+                  onClick={() => { 
+                    setSearchSeed(selectedStock?.ticker ?? "");
+                    setSelectedStock(null);
+                  }} 
+
+                 /*onClick={() => {
+                  const confirmed = window.confirm("Change selected stock?");
+                  if (!confirmed) return;
+                  setSelectedStock(null);
+                  }}
                   className="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
                   style={{
                     background: "rgba(0,0,0,0.06)",
                     color: "rgba(0,0,0,0.7)",
                     fontFamily: "'DM Sans', sans-serif",
-                  }}
+                  }} */
                 >
                   Select different stock
                 </button>

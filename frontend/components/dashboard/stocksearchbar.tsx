@@ -223,12 +223,13 @@ function SelectedCard({ stock, onClear }: { stock: Stock; onClear: () => void })
 // ─── Search Bar ───────────────────────────────────────────────────────────────
 
 type StockSearchBarProps = {
+  initialQuery?: string;
   onSelect?: (stock: Stock) => void;
   onClear?: () => void;
 };
 
-export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) {
-  const [query, setQuery] = useState("");
+export function StockSearchBar({ initialQuery = "", onSelect, onClear }: StockSearchBarProps = {}) {
+  const [query, setQuery] = useState(initialQuery);
   const [open, setOpen] = useState(false);
   const [focused, setFocused] = useState(false);
   const [highlighted, setHighlighted] = useState(0);
@@ -265,6 +266,12 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
       });
     return () => { cancelled = true; };
   }, []);
+
+  useEffect(() => {
+  setQuery(initialQuery);
+  setOpen(true);
+  setHighlighted(0);
+}, [initialQuery]);
 
   const MAX_VISIBLE = 80; // Cap rendered rows for 3300+ stocks (keeps DOM fast)
 
