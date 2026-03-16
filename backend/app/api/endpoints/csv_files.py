@@ -52,8 +52,6 @@ def get_data(request: StockRequest):
         )
     except ValueError as e:
         # Return a 400 Bad Request with the error message
-        print("farzam////////////////////")
-        print(str(e))
         raise HTTPException(status_code=400, detail=str(e))
     metrics = metrics_main(
         data,
@@ -61,4 +59,4 @@ def get_data(request: StockRequest):
         request.start_date,
         request.end_date
     )
-    return {"data": data,"metrics": metrics, "recommendation": get_recommendation()}
+    return {"data": data,"metrics": metrics, "recommendation": get_recommendation(request.stock_name, request.start_date, request.end_date, metrics)}

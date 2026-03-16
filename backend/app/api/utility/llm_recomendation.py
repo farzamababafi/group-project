@@ -20,24 +20,25 @@ Rules:
 - Focus on risk, trend, and potential interpretation.
 - Return a single concise paragraph suitable for display on a website.
 """
-def get_recommendation(user_profile: str = "", top_k: int = 1):
-   # prompt = f"""
-   # Stock metrics:
-   # Volatility: {volatility}
-    #Momentum: {momentum}
-    #Trend strength: {trend_strength}
-    #Average return: {avg_return}
-    #Sharpe ratio: {sharpe_ratio}
+def get_recommendation(stock_name, start_date, end_date, metrics):
+    prompt = f"""
+    stock name: {stock_name}
+    date range: {start_date} to {end_date}
+    Stock metrics:
+    Volatility: {metrics['volatility']}
+    avg_log_return: {metrics['avg_log_return']}
+    roi_ratio: {metrics['roi_ratio']}
+    recovery_duration: {metrics['recovery_duration']}
 
-   # Provide a short insight about this stock based on these metrics.
-   #Explain what the numbers suggest about stability, risk, and possible behavior.
-   # """
+    Provide a short insight about this stock based on these metrics.
+    Explain what the numbers suggest about stability, risk, and possible behavior.
+    """
     try:
         response = client.chat.completions.create(
             model=os.getenv("MODEL_NAME"),
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": "hi"}
+                {"role": "user", "content": prompt}
             ],
             temperature=0
         )
