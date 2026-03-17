@@ -4,6 +4,20 @@ export interface Helloworld {
 }
 
 // ─── Stock / Crisis API ───────────────────────────────────────────────────────
+/** Metrics returned from POST /api/stockreq */
+export interface StockMetrics {
+  volatility: number;
+  avg_log_return: number;
+  roi_ratio: number;
+  recovery_duration: number;
+}
+
+/** Response payload returned from POST /api/stockreq */
+export interface StockRequestResponse {
+  dataArray: StockTimePoint[];
+  recommendationText: string;
+  metrics?: StockMetrics;
+}
 
 /** Crisis period key (matches UI buttons). */
 export type CrisisPeriodKey = "dotcom" | "financial" | "covid";
