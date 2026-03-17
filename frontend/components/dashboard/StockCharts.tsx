@@ -48,7 +48,7 @@ const METRIC_MAP = METRICS.reduce(
 function fmtTick(value: string) {
   const d = new Date(value);
   if (isNaN(d.getTime())) return value;
-  return d.toLocaleString("en-US", { month: "short", year: "2-digit" });
+  return d.toLocaleString("en-US", { month: "short", year: "numeric" });
 }
 
 function fmtDate(value: string) {

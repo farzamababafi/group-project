@@ -5,7 +5,7 @@
  */
 
 import api from "@/lib/axios";
-import type { StockRequestBody, CrisisPeriodKey, StockTimePoint, StockRequestResponse } from "@/lib/types";
+import type { StockRequestBody, CrisisPeriodKey, StockTimePoint, StockRequestResponse, StockMetrics } from "@/lib/types";
 import { CRISIS_PERIOD_DATES } from "@/lib/types";
 
 // ─── GET /api/csv-files ───────────────────────────────────────────────────────
@@ -39,7 +39,7 @@ export function csvListToStocks(files: CsvFileListItem[]): { ticker: string; nam
  * Request raw time‑series data for a stock within a crisis period.
  *
  * Backend returns:
- *   { data: Array<{ Date, Open, High, Low, Close, Volume, "Adjusted Close" }> }
+ *   { data: Array<{ Date, Open, High, Low, Close, Volume, "Adjusted Close" }>, metrics: {...}, recommendation: string }
  */
 
 export async function postStockRequest(body: StockRequestBody): Promise<StockRequestResponse> {
@@ -64,9 +64,20 @@ export async function postStockRequest(body: StockRequestBody): Promise<StockReq
     "Adjusted Close": Number(row["Adjusted Close"]),
   }));
 
+  // Extract metrics if present
+  const metrics: StockMetrics | undefined = payload?.metrics && typeof payload.metrics === "object"
+    ? {
+        volatility: Number(payload.metrics.volatility),
+        avg_log_return: Number(payload.metrics.avg_log_return),
+        roi_ratio: Number(payload.metrics.roi_ratio),
+        recovery_duration: Number(payload.metrics.recovery_duration),
+      }
+    : undefined;
+
   return {
     dataArray,
     recommendationText,
+    metrics,
   };
 }
 
