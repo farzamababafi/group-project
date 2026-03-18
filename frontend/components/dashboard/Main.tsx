@@ -17,6 +17,7 @@ export default function Dashboard() {
   const [requestStatus, setRequestStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [detailsFetched, setDetailsFetched] = useState(false);
   const [stockSeries, setStockSeries] = useState<StockTimePoint[] | null>(null);
+  const [isChangingStock, setIsChangingStock] = useState(false);
   const [errorInfo, setErrorInfo] = useState<{
     status?: number;
     message: string;
@@ -25,17 +26,22 @@ export default function Dashboard() {
   const [successVisible, setSuccessVisible] = useState(false);
 
 
-  const step = !selectedPeriod ? 1 : !selectedStock ? 2 : 3;
+  
+  const step = !selectedPeriod ? 1 : !selectedStock || isChangingStock ? 2 : 3;
 
   useEffect(() => {
-    if (step !== 3) {
-      setDetailsFetched(false);
-      setErrorInfo(null);
-      setStockSeries(null);
-      setRequestStatus("idle");
-      setSuccessVisible(false);
-      return;
+    if (!selectedPeriod || !selectedStock) {
+        setDetailsFetched(false);
+        setErrorInfo(null);
+        setStockSeries(null);
+        setRequestStatus("idle");
+        setSuccessVisible(false);
+        return;
     }
+
+      if (isChangingStock) {
+          return;
+      }
     const dates = getCrisisDates(selectedPeriod!);
     setRequestStatus("loading");
     setErrorInfo(null);
@@ -82,7 +88,7 @@ export default function Dashboard() {
         setErrorInfo({ status, message, raw });
         setRequestStatus("error");
       });
-  }, [selectedPeriod, selectedStock, step]);
+    }, [selectedPeriod, selectedStock, isChangingStock]);
 
   const accordionItems = [
     {
@@ -220,14 +226,16 @@ export default function Dashboard() {
 
           <div className="w-full max-w-7xl flex flex-col gap-2" style={{ minHeight: 80 }}>
             {step === 2 ? (
-              <StockSearchBar
+             <StockSearchBar
               initialQuery={searchSeed}
               onSelect={(stock) => {
-              setSelectedStock(stock);
-              setSearchSeed("");
-               }}
-              onClear={() => setSelectedStock(null)}
-            />
+                setSelectedStock(stock);
+                setSearchSeed("");
+                setIsChangingStock(false);
+              }}
+               onClear={() => setSelectedStock(null)}
+              />
+            
             ) : (
               /* Step 3: show selected stock + option to change */
               <div
@@ -257,20 +265,14 @@ export default function Dashboard() {
                   type="button"
                   onClick={() => { 
                     setSearchSeed(selectedStock?.ticker ?? "");
-                    setSelectedStock(null);
+                    setIsChangingStock(true);
                   }} 
-
-                 /*onClick={() => {
-                  const confirmed = window.confirm("Change selected stock?");
-                  if (!confirmed) return;
-                  setSelectedStock(null);
-                  }}
                   className="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
                   style={{
                     background: "rgba(0,0,0,0.06)",
                     color: "rgba(0,0,0,0.7)",
                     fontFamily: "'DM Sans', sans-serif",
-                  }} */
+                  }} 
                 >
                   Select different stock
                 </button>
@@ -281,38 +283,36 @@ export default function Dashboard() {
       )}
 
       {/* ── Step 3: Details in a separate card (after period + stock selected) ── */}
-      {step === 3 && (
-        <>
-          {requestStatus === "loading" && (
-            <p className="text-xs font-mono text-black/50">
-              Retrieving details for this period…
-            </p>
-          )}
-          {requestStatus === "error" && errorInfo && (
-            <div className="w-full max-w-7xl">
-              <AppleAlert
-                title="We couldn’t load this stock."
-                statusCode={errorInfo.status}
-                message={errorInfo.message}
-              />
-            </div>
-          )}
-
-          {/* Charts + metrics */}
-          <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">
-            <Accordion
-              items={accordionItems}
-              allowMultiple
-              stockName={selectedStock?.name ?? null}
-            />
-          </div>
-
-          <div className="w-full max-w-7xl pb-16">
-            <Chat />
-          </div>
-        </>
+      {selectedStock && (
+  <>
+      {requestStatus === "loading" && !isChangingStock && (
+      <p className="text-xs font-mono text-black/50">
+        Retrieving details for this period…
+      </p>
+      )}
+      {requestStatus === "error" && errorInfo && !isChangingStock && (
+        <div className="w-full max-w-7xl">
+        <AppleAlert
+          title="We couldn’t load this stock."
+          statusCode={errorInfo.status}
+          message={errorInfo.message}
+        />
+      </div>
       )}
 
+      <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">
+      <Accordion
+        items={accordionItems}
+        allowMultiple
+        stockName={selectedStock?.name ?? null}
+      />
+      </div>
+
+      <div className="w-full max-w-7xl pb-16">
+      <Chat />
+      </div>
+      </>
+    )}
       {/* Floating success toast */}
       {successVisible && selectedStock && requestStatus === "done" && (
         <div

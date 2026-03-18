@@ -411,9 +411,13 @@ const filtered = sortByTicker(
                   background: "rgba(255,255,255,0.75)",
                   backdropFilter: "blur(24px) saturate(180%)",
                   WebkitBackdropFilter: "blur(24px) saturate(180%)",
-                  border: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
-                  borderBottom: open ? "1px solid rgba(0,0,0,0.05)" : undefined,
-                  transition: "border-radius 0.15s ease, border 0.2s ease",
+                  borderTop: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  borderLeft: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  borderRight: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  borderBottom: open
+                      ? "1px solid rgba(0,0,0,0.05)"
+                      : `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  transition: "border-radius 0.15s ease, border-color 0.2s ease",
                 }}
               >
                 {/* Search icon */}
