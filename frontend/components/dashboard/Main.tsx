@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { CrisisButtonGroup } from "@/components/dashboard/buttons";
+import { CrisisButtonGroup } from "@/components/dashboard/CrisisButtonGroup";
 import { StockSearchBar, type Stock } from "@/components/dashboard/stocksearchbar";
 import { Accordion } from "@/components/dashboard/Accordion";
 import { postStockRequest, getCrisisDates } from "@/lib/stockApi";
