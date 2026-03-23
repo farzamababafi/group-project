@@ -5,7 +5,7 @@
  */
 
 import api from "@/lib/axios";
-import type { StockRequestBody, CrisisPeriodKey, StockTimePoint } from "@/lib/types";
+import type { StockRequestBody, CrisisPeriodKey, StockTimePoint, StockRequestResponse, StockMetrics } from "@/lib/types";
 import { CRISIS_PERIOD_DATES } from "@/lib/types";
 
 // ─── GET /api/csv-files ───────────────────────────────────────────────────────
@@ -39,12 +39,14 @@ export function csvListToStocks(files: CsvFileListItem[]): { ticker: string; nam
  * Request raw time‑series data for a stock within a crisis period.
  *
  * Backend returns:
- *   { data: Array<{ Date, Open, High, Low, Close, Volume, "Adjusted Close" }> }
+ *   { data: Array<{ Date, Open, High, Low, Close, Volume, "Adjusted Close" }>, metrics: {...}, recommendation: string }
  */
-export async function postStockRequest(body: StockRequestBody): Promise<StockTimePoint[]> {
+
+export async function postStockRequest(body: StockRequestBody): Promise<StockRequestResponse> {
   const response = await api.post<unknown>("/api/stockreq", body);
   const payload: any = response.data as any;
 
+  const recommendationText: string = payload?.recommendation ?? "Placeholder";
   const rawArray: any[] = Array.isArray(payload?.data)
     ? payload.data
     : Array.isArray(payload)
@@ -52,7 +54,7 @@ export async function postStockRequest(body: StockRequestBody): Promise<StockTim
       : [];
 
   // Normalize types so Recharts always gets numbers + ISO date strings
-  return rawArray.map((row) => ({
+  const dataArray = rawArray.map((row) => ({
     Date: String(row.Date),
     Open: Number(row.Open),
     High: Number(row.High),
@@ -61,6 +63,22 @@ export async function postStockRequest(body: StockRequestBody): Promise<StockTim
     Volume: Number(row.Volume),
     "Adjusted Close": Number(row["Adjusted Close"]),
   }));
+
+  // Extract metrics if present
+  const metrics: StockMetrics | undefined = payload?.metrics && typeof payload.metrics === "object"
+    ? {
+        volatility: Number(payload.metrics.volatility),
+        avg_log_return: Number(payload.metrics.avg_log_return),
+        roi_ratio: Number(payload.metrics.roi_ratio),
+        recovery_duration: Number(payload.metrics.recovery_duration),
+      }
+    : undefined;
+
+  return {
+    dataArray,
+    recommendationText,
+    metrics,
+  };
 }
 
 // ─── Crisis period dates (re-export for convenience) ───────────────────────────

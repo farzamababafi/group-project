@@ -8,6 +8,7 @@ import { postStockRequest, getCrisisDates } from "@/lib/stockApi";
 import type { CrisisPeriodKey, StockTimePoint } from "@/lib/types";
 import {Chat} from "./chat"
 import { StockCharts } from "./StockCharts";
+import { MetricsAccordion } from "./MetricsAccordion";
 import { AppleAlert } from "@/components/ui/AppleAlert";
 
 export default function Dashboard() {
@@ -18,6 +19,8 @@ export default function Dashboard() {
   const [detailsFetched, setDetailsFetched] = useState(false);
   const [stockSeries, setStockSeries] = useState<StockTimePoint[] | null>(null);
   const [isChangingStock, setIsChangingStock] = useState(false);
+  const [recommendationText, setRecommendationText] = useState<string>("");
+  const [metrics, setMetrics] = useState<any | null>(null);
   const [errorInfo, setErrorInfo] = useState<{
     status?: number;
     message: string;
@@ -51,8 +54,10 @@ export default function Dashboard() {
       start_date: dates.start_date,
       end_date: dates.end_date,
     })
-      .then((data) => {
-        setStockSeries(data);
+      .then((result) => {
+        setStockSeries(result.dataArray);
+        setRecommendationText(result.recommendationText);
+        setMetrics(result.metrics ?? null);
         setRequestStatus("done");
         setDetailsFetched(true);
         setSuccessVisible(true);
@@ -62,6 +67,7 @@ export default function Dashboard() {
       })
       .catch((err: any) => {
         setStockSeries(null);
+        setMetrics(null);
         let status: number | undefined;
         let message = "Something went wrong while loading this stock.";
         let raw: unknown;
@@ -135,7 +141,7 @@ export default function Dashboard() {
     {
       id: "featured",
       label: "Featured Metrics",
-      sublabel: "P/E · RSI · Beta · Short Interest",
+      sublabel: "Volatility · Log Return · ROI · Recovery",
       icon: (
         <svg
           width="14"
@@ -149,6 +155,7 @@ export default function Dashboard() {
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
         </svg>
       ),
+      content: <MetricsAccordion metrics={metrics} />,
     },
   ];
 
@@ -287,21 +294,36 @@ export default function Dashboard() {
       )}
 
       {/* ── Step 3: Details in a separate card (after period + stock selected) ── */}
-      {selectedStock && (
-  <>
-      {requestStatus === "loading" && !isChangingStock && (
-      <p className="text-xs font-mono text-black/50">
-        Retrieving details for this period…
-      </p>
-      )}
-      {requestStatus === "error" && errorInfo && !isChangingStock && (
-        <div className="w-full max-w-7xl">
-        <AppleAlert
-          title="We couldn’t load this stock."
-          statusCode={errorInfo.status}
-          message={errorInfo.message}
-        />
-      </div>
+      {step === 3 && (
+        <>
+          {requestStatus === "loading" && (
+            <p className="text-xs font-mono text-black/50">
+              Retrieving details for this period…
+            </p>
+          )}
+          {requestStatus === "error" && errorInfo && (
+            <div className="w-full max-w-7xl">
+              <AppleAlert
+                title="We couldn’t load this stock."
+                statusCode={errorInfo.status}
+                message={errorInfo.message}
+              />
+            </div>
+          )}
+
+          {/* Charts + metrics */}
+          <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">
+            <Accordion
+              items={accordionItems}
+              allowMultiple
+              stockName={selectedStock?.name ?? null}
+            />
+          </div>
+
+          <div className="w-full max-w-7xl pb-16">
+            <Chat recommendationText={recommendationText} />
+          </div>
+        </>
       )}
 
       <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">

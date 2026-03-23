@@ -4,6 +4,8 @@ from pathlib import Path
 from app.api.utility.raw_data_extraction import raw_data_extraction
 from app.api.classes.Stock import StockRequest
 from app.api.utility.llm_recomendation import get_recommendation
+from app.api.utility.metric_computation import main as metrics_main
+from fastapi import HTTPException
 
 router = APIRouter()
 
@@ -18,10 +20,6 @@ def list_csv_files():
 
     csv_files = sorted(f.stem for f in DATA_DIR.glob("*.csv"))
     return {"files": csv_files}
-        
-@router.get("/recommendation")
-def list_recommendation():
-    return {"recommendation": get_recommendation()}
 
 @router.get("/per-year")
 def list_per_year():
@@ -40,5 +38,25 @@ def list_per_year():
 
 @router.post("/stockreq")
 def get_data(request: StockRequest):
-    data = raw_data_extraction(request.stock_name, request.start_date, request.end_date)
-    return {"data": data}
+    file_name = DATA_DIR / f"{request.stock_name}.csv"
+    if not file_name.exists():
+        raise HTTPException(
+            status_code=404,
+            detail=f"Stock file {request.stock_name}.csv not found"
+        )
+    try:
+        data = raw_data_extraction(
+            request.stock_name,
+            request.start_date,
+            request.end_date
+        )
+    except ValueError as e:
+        # Return a 400 Bad Request with the error message
+        raise HTTPException(status_code=400, detail=str(e))
+    metrics = metrics_main(
+        data,
+        request.stock_name,
+        request.start_date,
+        request.end_date
+    )
+    return {"data": data,"metrics": metrics, "recommendation": get_recommendation(request.stock_name, request.start_date, request.end_date, metrics)}
