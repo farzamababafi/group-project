@@ -226,14 +226,18 @@ export default function Dashboard() {
 
           <div className="w-full max-w-7xl flex flex-col gap-2" style={{ minHeight: 80 }}>
             {step === 2 ? (
-             <StockSearchBar
+              <StockSearchBar
               initialQuery={searchSeed}
               onSelect={(stock) => {
                 setSelectedStock(stock);
                 setSearchSeed("");
                 setIsChangingStock(false);
               }}
-               onClear={() => setSelectedStock(null)}
+              onCancel={() => {
+                setIsChangingStock(false);
+                setSearchSeed("");
+              }}
+              pinnedStock={isChangingStock ? selectedStock : null}
               />
             
             ) : (
@@ -263,10 +267,10 @@ export default function Dashboard() {
                 </div>
                 <button
                   type="button"
-                  onClick={() => { 
-                    setSearchSeed(selectedStock?.ticker ?? "");
+                  onClick={() => {
+                    setSearchSeed("");
                     setIsChangingStock(true);
-                  }} 
+                  }}
                   className="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
                   style={{
                     background: "rgba(0,0,0,0.06)",
