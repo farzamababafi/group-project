@@ -223,18 +223,21 @@ function SelectedCard({ stock, onClear }: { stock: Stock; onClear: () => void })
 // ─── Search Bar ───────────────────────────────────────────────────────────────
 
 type StockSearchBarProps = {
+  initialQuery?: string;
   onSelect?: (stock: Stock) => void;
-  onClear?: () => void;
+  onCancel?: () => void;
+  pinnedStock?: Stock | null;
 };
 
-export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) {
-  const [query, setQuery] = useState("");
+export function StockSearchBar({ initialQuery = "", onSelect, onCancel, pinnedStock }: StockSearchBarProps = {}) {
+  const [query, setQuery] = useState(initialQuery);
   const [open, setOpen] = useState(false);
   const [focused, setFocused] = useState(false);
   const [highlighted, setHighlighted] = useState(0);
   const [selected, setSelected] = useState<Stock | null>(null);
   const [stocks, setStocks] = useState<Stock[]>([]);
   const [loading, setLoading] = useState(true);
+  const [resetting, setResetting] = useState(false);
   const [loadError, setLoadError] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
@@ -266,17 +269,30 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
     return () => { cancelled = true; };
   }, []);
 
+  useEffect(() => {
+  setQuery(initialQuery);
+  setOpen(true);
+  setHighlighted(0);
+}, [initialQuery]);
+
   const MAX_VISIBLE = 80; // Cap rendered rows for 3300+ stocks (keeps DOM fast)
 
+  const normalizedQuery = query.trim().toLowerCase();
+
   const filtered = sortByTicker(
-  stocks.filter((s) =>
-    query.trim() === ""
-      ? true
-      : s.ticker.toLowerCase().includes(query.toLowerCase()) ||
-        s.name.toLowerCase().includes(query.toLowerCase())
-  )
-);
-  const displayed = filtered.slice(0, MAX_VISIBLE);
+    stocks.filter((s) =>
+      normalizedQuery === ""
+        ? true
+        : s.ticker.toLowerCase().startsWith(normalizedQuery) ||
+          s.name.toLowerCase().startsWith(normalizedQuery)
+    )
+  );
+
+  // Pin current stock at top (excluding it from the regular list to avoid duplicate)
+  const pinnedInResults = pinnedStock ? filtered.find((s) => s.ticker === pinnedStock.ticker) : null;
+  const filteredWithoutPinned = pinnedInResults ? filtered.filter((s) => s.ticker !== pinnedStock!.ticker) : filtered;
+  const displayed = filteredWithoutPinned.slice(0, MAX_VISIBLE - (pinnedInResults ? 1 : 0));
+  const displayedWithPinned = pinnedInResults ? [pinnedInResults, ...displayed] : displayed;
 
   const totalMatches = filtered.length;
   const hasMore = totalMatches > MAX_VISIBLE;
@@ -286,41 +302,46 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
     onSelect?.(stock);
     setQuery("");
     setOpen(false);
+    setResetting(false);
     inputRef.current?.blur();
     setFocused(false);
   };
 
-  const clearSelected = () => {
-  const confirmReset = window.confirm("Clear selected stock?");
-  if (!confirmReset) return;
+  const handleResetClick = () => {
+    setResetting(true);
+    setQuery("");
+    setOpen(true);
+    setHighlighted(0);
+    setTimeout(() => inputRef.current?.focus(), 80);
+  };
 
-  setSelected(null);
-  onClear?.();
-  setTimeout(() => inputRef.current?.focus(), 80);
-};
-
-  // Close on outside click
+  // Close on outside click; if resetting, cancel reset without clearing selection
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (!containerRef.current?.contains(e.target as Node)) {
         setOpen(false);
         setFocused(false);
+        if (resetting) {
+          setResetting(false);
+        } else {
+          onCancel?.();
+        }
       }
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
-  }, []);
+  }, [resetting, onCancel]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowDown") {
       e.preventDefault();
       setOpen(true);
-      setHighlighted((h) => Math.min(h + 1, displayed.length - 1));
+      setHighlighted((h) => Math.min(h + 1, displayedWithPinned.length - 1));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setHighlighted((h) => Math.max(h - 1, 0));
     } else if (e.key === "Enter") {
-      if (open && displayed[highlighted]) selectStock(displayed[highlighted]);
+      if (open && displayedWithPinned[highlighted]) selectStock(displayedWithPinned[highlighted]);
     } else if (e.key === "Escape") {
       setOpen(false);
       inputRef.current?.blur();
@@ -332,7 +353,7 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
   }, [query]);
 
   useEffect(() => {
-    setHighlighted((h) => Math.min(h, Math.max(0, displayed.length - 1)));
+    setHighlighted((h) => Math.min(h, Math.max(0, displayedWithPinned.length - 1)));
   }, [displayed.length]);
 
   useEffect(() => {
@@ -377,9 +398,9 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
             Could not load stocks. Make sure the backend is running at the API URL.
           </div>
         )}
-        {/* ── Search input — hidden when stock is selected ── */}
+        {/* ── Search input — hidden when stock is selected (and not resetting) ── */}
         <AnimatePresence mode="wait">
-          {!selected ? (
+          {!selected || resetting ? (
             <motion.div
               key="searchbar"
               initial={{ opacity: 0, y: -8, scale: 0.98 }}
@@ -402,9 +423,13 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
                   background: "rgba(255,255,255,0.75)",
                   backdropFilter: "blur(24px) saturate(180%)",
                   WebkitBackdropFilter: "blur(24px) saturate(180%)",
-                  border: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
-                  borderBottom: open ? "1px solid rgba(0,0,0,0.05)" : undefined,
-                  transition: "border-radius 0.15s ease, border 0.2s ease",
+                  borderTop: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  borderLeft: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  borderRight: `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  borderBottom: open
+                      ? "1px solid rgba(0,0,0,0.05)"
+                      : `1px solid ${focused ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.07)"}`,
+                  transition: "border-radius 0.15s ease, border-color 0.2s ease",
                 }}
               >
                 {/* Search icon */}
@@ -497,16 +522,14 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
                     <ul ref={listRef} className="stock-scroll"
                       style={{ listStyle: "none", margin: 0, padding: "0 0 8px", maxHeight: "400px", overflowY: "auto" }}>
                      
-                     {displayed.length === 0 ? (
-                      < li style={{ padding: "28px 22px", textAlign: "center", color: "rgba(0,0,0,0.28)", fontSize: "14px" }}>
+                     {displayedWithPinned.length === 0 ? (
+                      <li style={{ padding: "28px 22px", textAlign: "center", color: "rgba(0,0,0,0.28)", fontSize: "14px" }}>
                         No results for &ldquo;{query}&rdquo;
                       </li>
                      ) : (
-                        displayed.map((stock, i) => {
-
-                         // const change = stock.change ?? 0;
-                          //const isUp = change >= 0;
+                        displayedWithPinned.map((stock, i) => {
                           const isActive = i === highlighted;
+                          const isPinned = pinnedStock?.ticker === stock.ticker && i === 0;
                           return (
                             <motion.li
                               key={stock.ticker}
@@ -541,7 +564,17 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
                                 </div>
                               </div>
 
-                             
+                              {isPinned && (
+                                <span style={{
+                                  fontSize: "10px", fontFamily: "'DM Mono', monospace",
+                                  letterSpacing: "0.08em", textTransform: "uppercase",
+                                  color: "rgba(0,0,0,0.35)", background: "rgba(0,0,0,0.06)",
+                                  border: "1px solid rgba(0,0,0,0.08)", borderRadius: "6px",
+                                  padding: "2px 7px", flexShrink: 0,
+                                }}>
+                                  Current
+                                </span>
+                              )}
                             </motion.li>
                           );
                         })
@@ -584,7 +617,7 @@ export function StockSearchBar({ onSelect, onClear }: StockSearchBarProps = {}) 
               transition={{ type: "spring", stiffness: 380, damping: 26 }}
               style={{ position: "relative" }}
             >
-              <SelectedCard stock={selected} onClear={clearSelected} />
+              <SelectedCard stock={selected!} onClear={handleResetClick} />
             </motion.div>
           )}
         </AnimatePresence>
