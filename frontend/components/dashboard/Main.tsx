@@ -326,19 +326,6 @@ export default function Dashboard() {
         </>
       )}
 
-      <div className="w-full max-w-7xl pb-10 flex flex-col gap-8">
-      <Accordion
-        items={accordionItems}
-        allowMultiple
-        stockName={selectedStock?.name ?? null}
-      />
-      </div>
-
-      <div className="w-full max-w-7xl pb-16">
-      <Chat />
-      </div>
-      </>
-    )}
       {/* Floating success toast */}
       {successVisible && selectedStock && requestStatus === "done" && (
         <div
