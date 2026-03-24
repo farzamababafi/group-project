@@ -54,7 +54,24 @@ export function CrisisButtonGroup({
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: 20 }}>
+      <style>{`
+        .crisis-cards-grid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 20px;
+        }
+        @media (max-width: 860px) {
+          .crisis-cards-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+        @media (max-width: 440px) {
+          .crisis-cards-grid {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+          }
+        }
+      `}</style>
+      <div className="crisis-cards-grid">
         {(["dotcom", "financial", "covid"] as const).map((v) => (
           <CrisisCard
             key={v}
