@@ -210,7 +210,7 @@ export default function Dashboard() {
       <div className="w-full max-w-9xl flex flex-col items-center gap-4">
         <CrisisButtonGroup
           selectedPeriod={selectedPeriod}
-          onSelectPeriod={(p) => { setSelectedPeriod(p); if (p !== "custom") setCustomDates(null); }}
+          onSelectPeriod={(p) => { setSelectedPeriod(p); }}
           onCustomDates={setCustomDates}
         />
 
