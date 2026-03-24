@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { CrisisButtonGroup } from "@/components/dashboard/CrisisSelector";
+import { themes, CUSTOM_ACCENT } from "@/components/dashboard/crisis-period/types";
 import { StockSearchBar, type Stock } from "@/components/dashboard/stocksearchbar";
 import { Accordion } from "@/components/dashboard/Accordion";
 import { postStockRequest, getCrisisDates } from "@/lib/stockApi";
@@ -10,6 +11,7 @@ import {Chat} from "./chat"
 import { StockCharts } from "./StockCharts";
 import { MetricsAccordion } from "./MetricsAccordion";
 import { AppleAlert } from "@/components/ui/AppleAlert";
+import { ExportButton } from "./pdf/ExportButton";
 
 export default function Dashboard() {
   const [selectedStock, setSelectedStock] = useState<Stock | null>(null);
@@ -235,64 +237,84 @@ export default function Dashboard() {
             <div className="flex-1 h-px bg-black/[0.06]" />
           </div>
 
-          <div className="w-full max-w-7xl flex flex-col gap-2" style={{ minHeight: 80 }}>
-            {step === 2 ? (
-              <StockSearchBar
-              initialQuery={searchSeed}
-              onSelect={(stock) => {
-                setSelectedStock(stock);
-                setSearchSeed("");
-                setIsChangingStock(false);
-              }}
-              onCancel={() => {
-                setIsChangingStock(false);
-                setSearchSeed("");
-              }}
-              pinnedStock={isChangingStock ? selectedStock : null}
-              />
-            
-            ) : (
-              /* Step 3: show selected stock + option to change */
-              <div
-                className="w-full flex items-center justify-between gap-4 rounded-2xl px-5 py-4"
-                style={{
-                  background: "rgba(255,255,255,0.85)",
-                  border: "1px solid rgba(0,0,0,0.08)",
-                  boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
+          <div className="w-full max-w-7xl flex items-center gap-3" style={{ minHeight: 80 }}>
+            <div className="flex-1 min-w-0">
+              {step === 2 ? (
+                <StockSearchBar
+                initialQuery={searchSeed}
+                onSelect={(stock) => {
+                  setSelectedStock(stock);
+                  setSearchSeed("");
+                  setIsChangingStock(false);
                 }}
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span
+                onCancel={() => {
+                  setIsChangingStock(false);
+                  setSearchSeed("");
+                }}
+                pinnedStock={isChangingStock ? selectedStock : null}
+                />
+              ) : (
+                /* Step 3: show selected stock + option to change */
+                <div
+                  className="w-full flex items-center justify-between gap-4 rounded-2xl px-5 py-4"
+                  style={{
+                    background: "rgba(255,255,255,0.85)",
+                    border: "1px solid rgba(0,0,0,0.08)",
+                    boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                    <span
+                      style={{
+                        fontFamily: "'DM Mono', monospace",
+                        fontWeight: 700,
+                        fontSize: 15,
+                        color: "rgba(0,0,0,0.85)",
+                      }}
+                    >
+                      {selectedStock!.ticker}
+                    </span>
+                    <span style={{ fontSize: 14, color: "rgba(0,0,0,0.5)" }}>
+                      {/* {selectedStock!.name} */}
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchSeed("");
+                      setIsChangingStock(true);
+                    }}
+                    className="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
                     style={{
-                      fontFamily: "'DM Mono', monospace",
-                      fontWeight: 700,
-                      fontSize: 15,
-                      color: "rgba(0,0,0,0.85)",
+                      background: "rgba(0,0,0,0.06)",
+                      color: "rgba(0,0,0,0.7)",
+                      fontFamily: "'DM Sans', sans-serif",
                     }}
                   >
-                    {selectedStock!.ticker}
-                  </span>
-                  <span style={{ fontSize: 14, color: "rgba(0,0,0,0.5)" }}>
-                    {/* {selectedStock!.name} */}
-                  </span>
+                    Select different stock
+                  </button>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSearchSeed("");
-                    setIsChangingStock(true);
-                  }}
-                  className="text-sm font-medium px-4 py-2 rounded-lg transition-colors"
-                  style={{
-                    background: "rgba(0,0,0,0.06)",
-                    color: "rgba(0,0,0,0.7)",
-                    fontFamily: "'DM Sans', sans-serif",
-                  }} 
-                >
-                  Select different stock
-                </button>
-              </div>
-            )}
+              )}
+            </div>
+
+            {/* Export PDF — shown once data is loaded, sits to the right of the bar */}
+            {detailsFetched && stockSeries && stockSeries.length > 0 && customReady && (() => {
+              const exportDates = selectedPeriod === "custom" ? customDates! : getCrisisDates(selectedPeriod as Exclude<CrisisPeriodKey, "custom">);
+              const periodLabels: Record<string, string> = { dotcom: "Dot-com Bubble", financial: "Global Financial Crisis", covid: "COVID-19 Pandemic", custom: "Custom Range" };
+              const accentColor = selectedPeriod === "custom" ? CUSTOM_ACCENT : themes[selectedPeriod as keyof typeof themes]?.accent ?? CUSTOM_ACCENT;
+              return (
+                <ExportButton
+                  ticker={selectedStock!.ticker}
+                  period={periodLabels[selectedPeriod!] ?? selectedPeriod!}
+                  startDate={exportDates.start_date}
+                  endDate={exportDates.end_date}
+                  metrics={metrics}
+                  recommendationText={recommendationText}
+                  data={stockSeries}
+                  accentColor={accentColor}
+                />
+              );
+            })()}
           </div>
         </>
       )}
