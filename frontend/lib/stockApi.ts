@@ -86,6 +86,6 @@ export async function postStockRequest(body: StockRequestBody): Promise<StockReq
 export type { CrisisPeriodKey };
 export { CRISIS_PERIOD_DATES };
 
-export function getCrisisDates(period: CrisisPeriodKey) {
+export function getCrisisDates(period: Exclude<CrisisPeriodKey, "custom">) {
   return CRISIS_PERIOD_DATES[period];
 }

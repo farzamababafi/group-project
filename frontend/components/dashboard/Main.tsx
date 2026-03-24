@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { CrisisButtonGroup } from "@/components/dashboard/buttons";
+import { CrisisButtonGroup } from "@/components/dashboard/CrisisSelector";
 import { StockSearchBar, type Stock } from "@/components/dashboard/stocksearchbar";
 import { Accordion } from "@/components/dashboard/Accordion";
 import { postStockRequest, getCrisisDates } from "@/lib/stockApi";
@@ -14,6 +14,7 @@ import { AppleAlert } from "@/components/ui/AppleAlert";
 export default function Dashboard() {
   const [selectedStock, setSelectedStock] = useState<Stock | null>(null);
   const [selectedPeriod, setSelectedPeriod] = useState<CrisisPeriodKey | null>(null);
+  const [customDates, setCustomDates] = useState<{ start_date: string; end_date: string } | null>(null);
   const [searchSeed, setSearchSeed] = useState("");
   const [requestStatus, setRequestStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [detailsFetched, setDetailsFetched] = useState(false);
@@ -30,6 +31,7 @@ export default function Dashboard() {
 
 
   
+  const customReady = selectedPeriod !== "custom" || customDates !== null;
   const step = !selectedPeriod ? 1 : !selectedStock || isChangingStock ? 2 : 3;
 
   useEffect(() => {
@@ -45,7 +47,8 @@ export default function Dashboard() {
       if (isChangingStock) {
           return;
       }
-    const dates = getCrisisDates(selectedPeriod!);
+    if (selectedPeriod === "custom" && !customDates) return;
+    const dates = selectedPeriod === "custom" ? customDates! : getCrisisDates(selectedPeriod);
     setRequestStatus("loading");
     setErrorInfo(null);
     setSuccessVisible(false);
@@ -94,7 +97,7 @@ export default function Dashboard() {
         setErrorInfo({ status, message, raw });
         setRequestStatus("error");
       });
-    }, [selectedPeriod, selectedStock, isChangingStock]);
+    }, [selectedPeriod, selectedStock, isChangingStock, customDates]);
 
   const accordionItems = [
     {
@@ -207,7 +210,8 @@ export default function Dashboard() {
       <div className="w-full max-w-9xl flex flex-col items-center gap-4">
         <CrisisButtonGroup
           selectedPeriod={selectedPeriod}
-          onSelectPeriod={setSelectedPeriod}
+          onSelectPeriod={(p) => { setSelectedPeriod(p); }}
+          onCustomDates={setCustomDates}
         />
 
         {step === 1 && (
@@ -294,7 +298,7 @@ export default function Dashboard() {
       )}
 
       {/* ── Step 3: Details in a separate card (after period + stock selected) ── */}
-      {step === 3 && (
+      {step === 3 && customReady && (
         <>
           {requestStatus === "loading" && (
             <p className="text-xs font-mono text-black/50">
