@@ -12,6 +12,7 @@ COPY pyproject.toml uv.lock README.md ./
 COPY run.py ./
 COPY app ./app
 COPY data ./data
+COPY processed_data ./processed_data
 
 # Install dependencies using uv
 RUN uv sync --dev

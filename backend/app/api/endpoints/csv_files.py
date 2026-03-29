@@ -23,7 +23,7 @@ def list_csv_files():
 
 @router.get("/per-year")
 def list_per_year():
-    output_file = DATA_DIR / "processed_data" /"yearly_average.csv"
+    output_file = DATA_DIR.parent / "processed_data" / "yearly_average.csv"
     if not output_file.exists():
         return {"data": [], "message": "Yearly average file not generated"}
 

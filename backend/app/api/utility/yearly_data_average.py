@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 RAW_DATA_DIR = BASE_DIR / "data"
-PROCESSED_DIR = BASE_DIR / "data" / "processed_data"
+PROCESSED_DIR = BASE_DIR / "processed_data"
 
 OUTPUT_FILE = PROCESSED_DIR / "yearly_average.csv"
 def yearly_data_average(save_to_csv: bool = True):

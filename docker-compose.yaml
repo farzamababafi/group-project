@@ -8,10 +8,11 @@ services:
       - "8000:8000"
     volumes:
       - ./backend/app:/app/app
-      - ./backend/data:/app/data
       - ./backend/run.py:/app/run.py
       - ./backend/pyproject.toml:/app/pyproject.toml
       - ./backend/uv.lock:/app/uv.lock
+      - ./backend/data:/app/data
+      - ./backend/processed_data:/app/processed_data
     environment:
       - UVicorn_ENV=development
     command: ["uv", "run", "dev"]
