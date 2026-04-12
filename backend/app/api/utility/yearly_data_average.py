@@ -1,5 +1,6 @@
 import pandas as pd
 from pathlib import Path
+from typing import Iterable
 
 
 BASE_DIR = Path(__file__).resolve().parents[3]
@@ -8,7 +9,10 @@ RAW_DATA_DIR = BASE_DIR / "data"
 PROCESSED_DIR = BASE_DIR / "processed_data"
 
 OUTPUT_FILE = PROCESSED_DIR / "yearly_average.csv"
-def yearly_data_average(save_to_csv: bool = True):
+def yearly_data_average(
+    save_to_csv: bool = True,
+    file_names: Iterable[str] | None = None,
+):
 
     if not RAW_DATA_DIR.exists():
         raise FileNotFoundError(f"RAW_DATA_DIR not found: {RAW_DATA_DIR}")
@@ -19,7 +23,17 @@ def yearly_data_average(save_to_csv: bool = True):
     numeric_cols = ["Low", "Open", "Volume", "High", "Close", "Adjusted Close"]
     grouped_list = []
 
-    for file in RAW_DATA_DIR.glob("*.csv"):
+    if file_names is None:
+        files = RAW_DATA_DIR.glob("*.csv")
+    else:
+        files = []
+        for file_name in file_names:
+            path = Path(file_name)
+            if path.suffix.lower() != ".csv":
+                path = path.with_suffix(".csv")
+            files.append(RAW_DATA_DIR / path.name)
+
+    for file in files:
         try:
             df = pd.read_csv(file)
         except Exception:

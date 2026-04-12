@@ -1,4 +1,5 @@
 import csv
+import json
 from fastapi import APIRouter
 from pathlib import Path
 from app.api.utility.raw_data_extraction import raw_data_extraction
@@ -23,16 +24,12 @@ def list_csv_files():
 
 @router.get("/per-year")
 def list_per_year():
-    output_file = DATA_DIR.parent / "processed_data" / "yearly_average.csv"
+    output_file = DATA_DIR.parent / "processed_data" / "sector_yearly_average.json"
     if not output_file.exists():
-        return {"data": [], "message": "Yearly average file not generated"}
+        return {"data": {}, "message": "Sector yearly average file not generated"}
 
-    data = []
-
-    with open(output_file, mode="r", newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            data.append(row)
+    with open(output_file, mode="r", encoding="utf-8") as f:
+        data = json.load(f)
 
     return {"data": data}
 
