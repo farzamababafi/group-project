@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from app.api.utility.yearly_data_average import PROCESSED_DIR, yearly_data_average
+from yearly_data_average import PROCESSED_DIR, yearly_data_average
 
 
 STOCK_DETAILS_FILE = PROCESSED_DIR / "stocks_details.csv"

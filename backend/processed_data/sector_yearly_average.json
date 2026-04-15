@@ -245,129 +245,129 @@
     },
     {
       "Year": 1997,
-      "Low": 34.12,
-      "Open": 34.52,
-      "Volume": 1031299.06,
-      "High": 34.96,
-      "Close": 34.54,
-      "Adjusted Close": 26.32
+      "Low": 22.6,
+      "Open": 22.88,
+      "Volume": 1051991.42,
+      "High": 23.16,
+      "Close": 22.89,
+      "Adjusted Close": 14.51
     },
     {
       "Year": 1998,
-      "Low": 32.22,
-      "Open": 33.03,
-      "Volume": 1230816.69,
-      "High": 33.62,
-      "Close": 33.04,
-      "Adjusted Close": 23.75
+      "Low": 25.97,
+      "Open": 26.37,
+      "Volume": 1274135.23,
+      "High": 26.75,
+      "Close": 26.38,
+      "Adjusted Close": 16.76
     },
     {
       "Year": 1999,
-      "Low": 30.94,
-      "Open": 31.51,
-      "Volume": 1329006.96,
-      "High": 32.05,
-      "Close": 31.52,
-      "Adjusted Close": 20.04
+      "Low": 30.08,
+      "Open": 30.55,
+      "Volume": 1370366.04,
+      "High": 30.99,
+      "Close": 30.56,
+      "Adjusted Close": 18.72
     },
     {
       "Year": 2000,
-      "Low": 33.91,
-      "Open": 34.77,
-      "Volume": 1472721.39,
-      "High": 35.51,
-      "Close": 34.68,
-      "Adjusted Close": 22.96
+      "Low": 33.62,
+      "Open": 34.44,
+      "Volume": 1511766.55,
+      "High": 35.14,
+      "Close": 34.36,
+      "Adjusted Close": 22.32
     },
     {
       "Year": 2001,
-      "Low": 22.51,
-      "Open": 22.84,
-      "Volume": 1676792.96,
-      "High": 23.18,
-      "Close": 22.85,
-      "Adjusted Close": 15.32
+      "Low": 23.03,
+      "Open": 23.37,
+      "Volume": 1716806.74,
+      "High": 23.72,
+      "Close": 23.38,
+      "Adjusted Close": 15.67
     },
     {
       "Year": 2002,
-      "Low": 21.28,
-      "Open": 21.65,
-      "Volume": 2177145.98,
-      "High": 21.98,
-      "Close": 21.64,
-      "Adjusted Close": 15.88
+      "Low": 21.76,
+      "Open": 22.13,
+      "Volume": 2225664.45,
+      "High": 22.47,
+      "Close": 22.12,
+      "Adjusted Close": 16.23
     },
     {
       "Year": 2003,
-      "Low": 21.24,
-      "Open": 21.51,
-      "Volume": 5355854.94,
-      "High": 21.8,
-      "Close": 21.54,
-      "Adjusted Close": 16.2
+      "Low": 21.7,
+      "Open": 21.97,
+      "Volume": 5471130.79,
+      "High": 22.27,
+      "Close": 22.0,
+      "Adjusted Close": 16.55
     },
     {
       "Year": 2004,
-      "Low": 25.59,
-      "Open": 25.89,
-      "Volume": 7516408.76,
-      "High": 26.21,
-      "Close": 25.91,
-      "Adjusted Close": 19.47
+      "Low": 26.12,
+      "Open": 26.42,
+      "Volume": 7670053.72,
+      "High": 26.74,
+      "Close": 26.43,
+      "Adjusted Close": 19.87
     },
     {
       "Year": 2005,
-      "Low": 24.8,
-      "Open": 25.07,
-      "Volume": 12016868.18,
-      "High": 25.33,
-      "Close": 25.06,
-      "Adjusted Close": 18.94
+      "Low": 25.29,
+      "Open": 25.56,
+      "Volume": 12250493.42,
+      "High": 25.83,
+      "Close": 25.55,
+      "Adjusted Close": 19.31
     },
     {
       "Year": 2006,
-      "Low": 22.66,
-      "Open": 22.93,
-      "Volume": 10073265.83,
-      "High": 23.19,
-      "Close": 22.93,
-      "Adjusted Close": 17.31
+      "Low": 23.08,
+      "Open": 23.35,
+      "Volume": 10260067.78,
+      "High": 23.62,
+      "Close": 23.35,
+      "Adjusted Close": 17.63
     },
     {
       "Year": 2007,
-      "Low": 135.7,
-      "Open": 140.01,
-      "Volume": 8282634.68,
-      "High": 142.89,
-      "Close": 138.9,
-      "Adjusted Close": 132.18
+      "Low": 138.09,
+      "Open": 142.49,
+      "Volume": 8429087.0,
+      "High": 145.41,
+      "Close": 141.35,
+      "Adjusted Close": 134.52
     },
     {
       "Year": 2008,
-      "Low": 49.78,
-      "Open": 52.01,
-      "Volume": 9204983.47,
-      "High": 53.45,
-      "Close": 51.56,
-      "Adjusted Close": 46.94
+      "Low": 50.61,
+      "Open": 52.88,
+      "Volume": 9357615.52,
+      "High": 54.33,
+      "Close": 52.41,
+      "Adjusted Close": 47.72
     },
     {
       "Year": 2009,
-      "Low": 40.83,
-      "Open": 42.34,
-      "Volume": 6670672.87,
-      "High": 43.6,
-      "Close": 42.24,
-      "Adjusted Close": 38.8
+      "Low": 41.37,
+      "Open": 42.89,
+      "Volume": 6758626.41,
+      "High": 44.17,
+      "Close": 42.8,
+      "Adjusted Close": 39.31
     },
     {
       "Year": 2010,
-      "Low": 62.28,
-      "Open": 63.94,
-      "Volume": 6604396.56,
-      "High": 65.69,
+      "Low": 62.29,
+      "Open": 63.95,
+      "Volume": 6605201.66,
+      "High": 65.7,
       "Close": 64.04,
-      "Adjusted Close": 60.28
+      "Adjusted Close": 60.29
     },
     {
       "Year": 2011,
@@ -389,93 +389,93 @@
     },
     {
       "Year": 2013,
-      "Low": 78.5,
-      "Open": 80.28,
-      "Volume": 4206778.18,
-      "High": 81.82,
-      "Close": 80.22,
-      "Adjusted Close": 76.26
+      "Low": 79.44,
+      "Open": 81.24,
+      "Volume": 4257393.27,
+      "High": 82.8,
+      "Close": 81.18,
+      "Adjusted Close": 77.17
     },
     {
       "Year": 2014,
-      "Low": 68.05,
-      "Open": 69.48,
-      "Volume": 3537614.88,
-      "High": 70.75,
-      "Close": 69.34,
-      "Adjusted Close": 65.43
+      "Low": 68.92,
+      "Open": 70.36,
+      "Volume": 3582707.39,
+      "High": 71.65,
+      "Close": 70.22,
+      "Adjusted Close": 66.26
     },
     {
       "Year": 2015,
-      "Low": 69.38,
-      "Open": 70.72,
-      "Volume": 2783738.56,
-      "High": 71.81,
-      "Close": 70.6,
-      "Adjusted Close": 67.12
+      "Low": 70.2,
+      "Open": 71.55,
+      "Volume": 2816474.66,
+      "High": 72.66,
+      "Close": 71.43,
+      "Adjusted Close": 67.91
     },
     {
       "Year": 2016,
-      "Low": 41.75,
-      "Open": 42.33,
-      "Volume": 2655693.17,
-      "High": 42.9,
-      "Close": 42.29,
-      "Adjusted Close": 39.23
+      "Low": 42.23,
+      "Open": 42.81,
+      "Volume": 2686094.97,
+      "High": 43.39,
+      "Close": 42.77,
+      "Adjusted Close": 39.68
     },
     {
       "Year": 2017,
-      "Low": 46.8,
-      "Open": 47.21,
-      "Volume": 2309162.79,
-      "High": 47.6,
-      "Close": 47.21,
-      "Adjusted Close": 44.39
+      "Low": 47.34,
+      "Open": 47.74,
+      "Volume": 2335403.27,
+      "High": 48.14,
+      "Close": 47.75,
+      "Adjusted Close": 44.89
     },
     {
       "Year": 2018,
-      "Low": 50.91,
-      "Open": 51.51,
-      "Volume": 2642504.86,
-      "High": 52.05,
-      "Close": 51.46,
-      "Adjusted Close": 49.16
+      "Low": 51.47,
+      "Open": 52.08,
+      "Volume": 2671605.76,
+      "High": 52.63,
+      "Close": 52.02,
+      "Adjusted Close": 49.7
     },
     {
       "Year": 2019,
-      "Low": 45.35,
-      "Open": 45.79,
-      "Volume": 2278203.57,
-      "High": 46.22,
-      "Close": 45.8,
-      "Adjusted Close": 44.04
+      "Low": 45.83,
+      "Open": 46.28,
+      "Volume": 2302749.59,
+      "High": 46.72,
+      "Close": 46.29,
+      "Adjusted Close": 44.51
     },
     {
       "Year": 2020,
-      "Low": 45.59,
-      "Open": 46.23,
-      "Volume": 2946286.74,
-      "High": 46.88,
-      "Close": 46.25,
-      "Adjusted Close": 45.01
+      "Low": 46.08,
+      "Open": 46.72,
+      "Volume": 2977967.25,
+      "High": 47.38,
+      "Close": 46.74,
+      "Adjusted Close": 45.49
     },
     {
       "Year": 2021,
-      "Low": 61.86,
-      "Open": 62.57,
-      "Volume": 3653611.45,
-      "High": 63.26,
-      "Close": 62.55,
-      "Adjusted Close": 61.72
+      "Low": 62.52,
+      "Open": 63.24,
+      "Volume": 3692601.44,
+      "High": 63.94,
+      "Close": 63.22,
+      "Adjusted Close": 62.38
     },
     {
       "Year": 2022,
-      "Low": 47.78,
-      "Open": 48.39,
-      "Volume": 2954319.5,
-      "High": 48.99,
-      "Close": 48.36,
-      "Adjusted Close": 47.78
+      "Low": 48.29,
+      "Open": 48.91,
+      "Volume": 2985633.15,
+      "High": 49.51,
+      "Close": 48.88,
+      "Adjusted Close": 48.29
     }
   ],
   "Consumer Discretionary": [
@@ -580,381 +580,381 @@
     },
     {
       "Year": 1981,
-      "Low": 3.06,
-      "Open": 0.82,
-      "Volume": 360232.11,
-      "High": 3.13,
-      "Close": 3.08,
-      "Adjusted Close": 1.34
+      "Low": 3.07,
+      "Open": 0.79,
+      "Volume": 366742.92,
+      "High": 3.14,
+      "Close": 3.09,
+      "Adjusted Close": 1.32
     },
     {
       "Year": 1982,
-      "Low": 3.29,
-      "Open": 0.9,
-      "Volume": 664685.67,
-      "High": 3.39,
-      "Close": 3.32,
+      "Low": 3.33,
+      "Open": 0.89,
+      "Volume": 675600.2,
+      "High": 3.42,
+      "Close": 3.36,
       "Adjusted Close": 1.43
     },
     {
       "Year": 1983,
-      "Low": 5.9,
-      "Open": 1.68,
-      "Volume": 748995.9,
-      "High": 6.04,
-      "Close": 5.94,
-      "Adjusted Close": 2.86
+      "Low": 5.73,
+      "Open": 1.41,
+      "Volume": 765076.34,
+      "High": 5.86,
+      "Close": 5.77,
+      "Adjusted Close": 2.61
     },
     {
       "Year": 1984,
-      "Low": 5.59,
-      "Open": 2.06,
-      "Volume": 723688.91,
-      "High": 5.73,
-      "Close": 5.64,
-      "Adjusted Close": 3.0
+      "Low": 5.42,
+      "Open": 1.82,
+      "Volume": 738113.32,
+      "High": 5.55,
+      "Close": 5.47,
+      "Adjusted Close": 2.78
     },
     {
       "Year": 1985,
-      "Low": 6.03,
-      "Open": 2.95,
-      "Volume": 707195.61,
-      "High": 6.15,
-      "Close": 6.08,
-      "Adjusted Close": 3.36
+      "Low": 6.04,
+      "Open": 2.9,
+      "Volume": 720693.36,
+      "High": 6.16,
+      "Close": 6.1,
+      "Adjusted Close": 3.33
     },
     {
       "Year": 1986,
-      "Low": 8.55,
-      "Open": 4.11,
-      "Volume": 823093.97,
-      "High": 8.76,
-      "Close": 8.66,
-      "Adjusted Close": 5.32
+      "Low": 8.68,
+      "Open": 4.15,
+      "Volume": 837295.98,
+      "High": 8.88,
+      "Close": 8.78,
+      "Adjusted Close": 5.39
     },
     {
       "Year": 1987,
-      "Low": 10.08,
-      "Open": 4.25,
-      "Volume": 830331.23,
-      "High": 10.39,
-      "Close": 10.23,
-      "Adjusted Close": 6.68
+      "Low": 10.18,
+      "Open": 4.26,
+      "Volume": 843151.02,
+      "High": 10.49,
+      "Close": 10.34,
+      "Adjusted Close": 6.73
     },
     {
       "Year": 1988,
-      "Low": 9.04,
-      "Open": 4.48,
-      "Volume": 513976.74,
-      "High": 9.24,
-      "Close": 9.13,
-      "Adjusted Close": 5.72
+      "Low": 9.13,
+      "Open": 4.5,
+      "Volume": 521198.4,
+      "High": 9.32,
+      "Close": 9.22,
+      "Adjusted Close": 5.76
     },
     {
       "Year": 1989,
-      "Low": 10.95,
-      "Open": 5.45,
-      "Volume": 633288.01,
-      "High": 11.15,
-      "Close": 11.05,
-      "Adjusted Close": 6.98
+      "Low": 11.06,
+      "Open": 5.48,
+      "Volume": 641889.94,
+      "High": 11.26,
+      "Close": 11.16,
+      "Adjusted Close": 7.04
     },
     {
       "Year": 1990,
-      "Low": 9.08,
-      "Open": 5.75,
-      "Volume": 654011.09,
-      "High": 9.28,
-      "Close": 9.17,
-      "Adjusted Close": 5.62
+      "Low": 9.17,
+      "Open": 5.8,
+      "Volume": 662830.59,
+      "High": 9.38,
+      "Close": 9.27,
+      "Adjusted Close": 5.67
     },
     {
       "Year": 1991,
-      "Low": 9.35,
-      "Open": 7.03,
-      "Volume": 716251.78,
-      "High": 9.59,
-      "Close": 9.47,
-      "Adjusted Close": 6.18
+      "Low": 9.41,
+      "Open": 7.06,
+      "Volume": 725630.94,
+      "High": 9.66,
+      "Close": 9.54,
+      "Adjusted Close": 6.2
     },
     {
       "Year": 1992,
-      "Low": 11.25,
-      "Open": 11.25,
-      "Volume": 892117.11,
-      "High": 11.58,
-      "Close": 11.43,
-      "Adjusted Close": 7.8
+      "Low": 11.34,
+      "Open": 11.33,
+      "Volume": 903011.38,
+      "High": 11.67,
+      "Close": 11.51,
+      "Adjusted Close": 7.84
     },
     {
       "Year": 1993,
-      "Low": 13.06,
-      "Open": 13.24,
-      "Volume": 896272.0,
-      "High": 13.41,
-      "Close": 13.24,
-      "Adjusted Close": 9.21
+      "Low": 13.15,
+      "Open": 13.33,
+      "Volume": 905792.69,
+      "High": 13.5,
+      "Close": 13.33,
+      "Adjusted Close": 9.26
     },
     {
       "Year": 1994,
-      "Low": 13.44,
-      "Open": 13.64,
-      "Volume": 819992.5,
-      "High": 13.82,
-      "Close": 13.62,
-      "Adjusted Close": 9.93
+      "Low": 13.53,
+      "Open": 13.73,
+      "Volume": 827356.79,
+      "High": 13.91,
+      "Close": 13.71,
+      "Adjusted Close": 9.99
     },
     {
       "Year": 1995,
-      "Low": 15.03,
-      "Open": 15.26,
-      "Volume": 954110.83,
-      "High": 15.48,
-      "Close": 15.27,
-      "Adjusted Close": 11.67
+      "Low": 15.13,
+      "Open": 15.37,
+      "Volume": 962284.0,
+      "High": 15.59,
+      "Close": 15.38,
+      "Adjusted Close": 11.75
     },
     {
       "Year": 1996,
-      "Low": 46.17,
-      "Open": 46.81,
-      "Volume": 955050.36,
-      "High": 47.4,
-      "Close": 46.77,
-      "Adjusted Close": 42.93
+      "Low": 46.54,
+      "Open": 47.19,
+      "Volume": 962900.34,
+      "High": 47.78,
+      "Close": 47.14,
+      "Adjusted Close": 43.27
     },
     {
       "Year": 1997,
-      "Low": 36.48,
-      "Open": 36.94,
-      "Volume": 1267115.34,
-      "High": 37.48,
-      "Close": 37.04,
-      "Adjusted Close": 32.71
+      "Low": 36.74,
+      "Open": 37.21,
+      "Volume": 1276510.52,
+      "High": 37.75,
+      "Close": 37.3,
+      "Adjusted Close": 32.94
     },
     {
       "Year": 1998,
-      "Low": 25784.75,
-      "Open": 26141.33,
-      "Volume": 4052778.04,
-      "High": 26482.44,
-      "Close": 26141.35,
-      "Adjusted Close": 26136.71
+      "Low": 28.15,
+      "Open": 28.73,
+      "Volume": 4096765.57,
+      "High": 29.29,
+      "Close": 28.74,
+      "Adjusted Close": 24.06
     },
     {
       "Year": 1999,
-      "Low": 48554.19,
-      "Open": 51969.1,
-      "Volume": 3851475.26,
-      "High": 55486.71,
-      "Close": 51969.09,
-      "Adjusted Close": 51964.58
+      "Low": 28.53,
+      "Open": 29.06,
+      "Volume": 3906169.44,
+      "High": 29.65,
+      "Close": 29.05,
+      "Adjusted Close": 24.47
     },
     {
       "Year": 2000,
-      "Low": 21048.49,
-      "Open": 22481.1,
-      "Volume": 2502177.4,
-      "High": 24043.47,
-      "Close": 22481.15,
-      "Adjusted Close": 22477.57
+      "Low": 27.81,
+      "Open": 28.43,
+      "Volume": 2564063.42,
+      "High": 29.1,
+      "Close": 28.48,
+      "Adjusted Close": 24.81
     },
     {
       "Year": 2001,
-      "Low": 1514.91,
-      "Open": 1620.8,
-      "Volume": 2571959.8,
-      "High": 1820.71,
-      "Close": 1620.83,
-      "Adjusted Close": 1617.02
+      "Low": 28.26,
+      "Open": 28.72,
+      "Volume": 2638065.27,
+      "High": 29.19,
+      "Close": 28.76,
+      "Adjusted Close": 24.84
     },
     {
       "Year": 2002,
-      "Low": 107.4,
-      "Open": 113.07,
-      "Volume": 2648566.54,
-      "High": 119.38,
-      "Close": 113.03,
-      "Adjusted Close": 108.42
+      "Low": 35.14,
+      "Open": 35.72,
+      "Volume": 2716193.55,
+      "High": 36.21,
+      "Close": 35.68,
+      "Adjusted Close": 30.96
     },
     {
       "Year": 2003,
-      "Low": 90.47,
-      "Open": 94.81,
-      "Volume": 2566274.42,
-      "High": 102.14,
-      "Close": 94.89,
-      "Adjusted Close": 90.55
+      "Low": 36.28,
+      "Open": 36.77,
+      "Volume": 2625471.48,
+      "High": 37.32,
+      "Close": 36.85,
+      "Adjusted Close": 32.41
     },
     {
       "Year": 2004,
-      "Low": 74.03,
-      "Open": 77.49,
-      "Volume": 2241433.97,
-      "High": 82.3,
-      "Close": 78.16,
-      "Adjusted Close": 73.17
+      "Low": 45.94,
+      "Open": 46.57,
+      "Volume": 2285146.65,
+      "High": 47.18,
+      "Close": 46.58,
+      "Adjusted Close": 41.5
     },
     {
       "Year": 2005,
-      "Low": 52.35,
-      "Open": 53.39,
-      "Volume": 2219908.49,
-      "High": 54.54,
-      "Close": 53.39,
-      "Adjusted Close": 47.92
+      "Low": 48.4,
+      "Open": 49.11,
+      "Volume": 2266786.19,
+      "High": 49.76,
+      "Close": 49.07,
+      "Adjusted Close": 43.48
     },
     {
       "Year": 2006,
-      "Low": 53.58,
-      "Open": 54.81,
-      "Volume": 2293831.68,
-      "High": 56.24,
-      "Close": 55.2,
-      "Adjusted Close": 49.22
+      "Low": 45.05,
+      "Open": 45.71,
+      "Volume": 2340734.26,
+      "High": 46.38,
+      "Close": 45.73,
+      "Adjusted Close": 39.63
     },
     {
       "Year": 2007,
-      "Low": 60.83,
-      "Open": 62.4,
-      "Volume": 2902265.14,
-      "High": 63.9,
-      "Close": 62.48,
-      "Adjusted Close": 56.51
+      "Low": 48.23,
+      "Open": 49.27,
+      "Volume": 2954365.77,
+      "High": 50.16,
+      "Close": 49.19,
+      "Adjusted Close": 43.1
     },
     {
       "Year": 2008,
-      "Low": 33.2,
-      "Open": 34.31,
-      "Volume": 3489520.21,
-      "High": 35.26,
-      "Close": 34.2,
-      "Adjusted Close": 30.2
+      "Low": 32.36,
+      "Open": 33.44,
+      "Volume": 3557066.87,
+      "High": 34.36,
+      "Close": 33.33,
+      "Adjusted Close": 29.25
     },
     {
       "Year": 2009,
-      "Low": 22.21,
-      "Open": 22.7,
-      "Volume": 3574188.09,
-      "High": 23.17,
-      "Close": 22.7,
-      "Adjusted Close": 19.76
+      "Low": 21.1,
+      "Open": 21.6,
+      "Volume": 3667959.7,
+      "High": 22.08,
+      "Close": 21.6,
+      "Adjusted Close": 18.58
     },
     {
       "Year": 2010,
-      "Low": 30.42,
-      "Open": 30.89,
-      "Volume": 3142116.6,
-      "High": 31.5,
-      "Close": 31.03,
-      "Adjusted Close": 27.27
+      "Low": 27.92,
+      "Open": 28.38,
+      "Volume": 3219277.12,
+      "High": 28.84,
+      "Close": 28.39,
+      "Adjusted Close": 24.54
     },
     {
       "Year": 2011,
-      "Low": 31.53,
-      "Open": 32.03,
-      "Volume": 2585508.12,
-      "High": 32.51,
-      "Close": 32.02,
-      "Adjusted Close": 28.6
+      "Low": 31.58,
+      "Open": 32.07,
+      "Volume": 2644919.06,
+      "High": 32.54,
+      "Close": 32.07,
+      "Adjusted Close": 28.56
     },
     {
       "Year": 2012,
-      "Low": 33.32,
-      "Open": 33.74,
-      "Volume": 1977977.65,
-      "High": 34.15,
-      "Close": 33.75,
-      "Adjusted Close": 30.48
+      "Low": 33.96,
+      "Open": 34.37,
+      "Volume": 2020420.23,
+      "High": 34.79,
+      "Close": 34.39,
+      "Adjusted Close": 31.05
     },
     {
       "Year": 2013,
-      "Low": 40.06,
-      "Open": 40.47,
-      "Volume": 1997656.13,
-      "High": 40.89,
-      "Close": 40.5,
-      "Adjusted Close": 36.11
+      "Low": 40.87,
+      "Open": 41.29,
+      "Volume": 2038861.83,
+      "High": 41.72,
+      "Close": 41.32,
+      "Adjusted Close": 36.84
     },
     {
       "Year": 2014,
-      "Low": 46.18,
-      "Open": 46.67,
-      "Volume": 1900572.13,
-      "High": 47.16,
-      "Close": 46.68,
-      "Adjusted Close": 42.43
+      "Low": 47.14,
+      "Open": 47.64,
+      "Volume": 1938979.05,
+      "High": 48.14,
+      "Close": 47.65,
+      "Adjusted Close": 43.33
     },
     {
       "Year": 2015,
-      "Low": 49.96,
-      "Open": 50.52,
-      "Volume": 1601346.03,
-      "High": 51.05,
-      "Close": 50.52,
-      "Adjusted Close": 46.33
+      "Low": 51.05,
+      "Open": 51.62,
+      "Volume": 1638250.78,
+      "High": 52.16,
+      "Close": 51.62,
+      "Adjusted Close": 47.36
     },
     {
       "Year": 2016,
-      "Low": 48.32,
-      "Open": 48.84,
-      "Volume": 1678675.37,
-      "High": 49.38,
-      "Close": 48.87,
-      "Adjusted Close": 45.29
+      "Low": 49.38,
+      "Open": 49.92,
+      "Volume": 1718697.08,
+      "High": 50.47,
+      "Close": 49.94,
+      "Adjusted Close": 46.3
     },
     {
       "Year": 2017,
-      "Low": 56.65,
-      "Open": 57.19,
-      "Volume": 1722876.67,
-      "High": 57.74,
-      "Close": 57.22,
-      "Adjusted Close": 53.59
+      "Low": 57.92,
+      "Open": 58.47,
+      "Volume": 1765435.45,
+      "High": 59.04,
+      "Close": 58.5,
+      "Adjusted Close": 54.81
     },
     {
       "Year": 2018,
-      "Low": 63.23,
-      "Open": 64.07,
-      "Volume": 2099236.8,
-      "High": 64.87,
-      "Close": 64.02,
-      "Adjusted Close": 60.76
+      "Low": 64.65,
+      "Open": 65.52,
+      "Volume": 2151227.52,
+      "High": 66.35,
+      "Close": 65.47,
+      "Adjusted Close": 62.15
     },
     {
       "Year": 2019,
-      "Low": 66.97,
-      "Open": 67.71,
-      "Volume": 1968652.98,
-      "High": 68.48,
-      "Close": 67.75,
-      "Adjusted Close": 65.57
+      "Low": 68.53,
+      "Open": 69.28,
+      "Volume": 2017761.19,
+      "High": 70.07,
+      "Close": 69.32,
+      "Adjusted Close": 67.1
     },
     {
       "Year": 2020,
-      "Low": 71.22,
-      "Open": 72.55,
-      "Volume": 3324346.43,
-      "High": 73.84,
-      "Close": 72.53,
-      "Adjusted Close": 70.91
+      "Low": 72.91,
+      "Open": 74.27,
+      "Volume": 3406481.95,
+      "High": 75.59,
+      "Close": 74.25,
+      "Adjusted Close": 72.6
     },
     {
       "Year": 2021,
-      "Low": 103.33,
-      "Open": 104.78,
-      "Volume": 2245715.52,
-      "High": 106.19,
-      "Close": 104.78,
-      "Adjusted Close": 103.42
+      "Low": 105.67,
+      "Open": 107.16,
+      "Volume": 2297615.3,
+      "High": 108.6,
+      "Close": 107.15,
+      "Adjusted Close": 105.78
     },
     {
       "Year": 2022,
-      "Low": 90.62,
-      "Open": 92.17,
-      "Volume": 2112829.3,
-      "High": 93.7,
-      "Close": 92.15,
-      "Adjusted Close": 91.92
+      "Low": 92.22,
+      "Open": 93.8,
+      "Volume": 2151148.28,
+      "High": 95.35,
+      "Close": 93.77,
+      "Adjusted Close": 93.54
     }
   ],
   "Consumer Staples": [
@@ -1186,254 +1186,254 @@
     {
       "Year": 1995,
       "Low": 13.43,
-      "Open": 13.55,
-      "Volume": 839367.66,
+      "Open": 13.56,
+      "Volume": 839881.09,
       "High": 13.69,
-      "Close": 13.56,
-      "Adjusted Close": 8.3
+      "Close": 13.57,
+      "Adjusted Close": 8.29
     },
     {
       "Year": 1996,
-      "Low": 15.71,
-      "Open": 15.86,
-      "Volume": 910711.86,
-      "High": 16.03,
-      "Close": 15.88,
-      "Adjusted Close": 9.99
+      "Low": 15.66,
+      "Open": 15.82,
+      "Volume": 924030.94,
+      "High": 15.98,
+      "Close": 15.83,
+      "Adjusted Close": 9.85
     },
     {
       "Year": 1997,
-      "Low": 18.88,
-      "Open": 19.09,
-      "Volume": 896306.34,
-      "High": 19.32,
-      "Close": 19.11,
-      "Adjusted Close": 11.98
+      "Low": 18.7,
+      "Open": 18.91,
+      "Volume": 906687.27,
+      "High": 19.13,
+      "Close": 18.93,
+      "Adjusted Close": 11.69
     },
     {
       "Year": 1998,
-      "Low": 22.03,
-      "Open": 22.35,
-      "Volume": 921522.41,
-      "High": 22.66,
-      "Close": 22.35,
-      "Adjusted Close": 14.33
+      "Low": 22.12,
+      "Open": 22.43,
+      "Volume": 933148.92,
+      "High": 22.74,
+      "Close": 22.44,
+      "Adjusted Close": 14.3
     },
     {
       "Year": 1999,
-      "Low": 22.11,
-      "Open": 22.47,
-      "Volume": 1010355.73,
-      "High": 22.81,
-      "Close": 22.46,
-      "Adjusted Close": 14.47
+      "Low": 22.24,
+      "Open": 22.6,
+      "Volume": 1023335.83,
+      "High": 22.94,
+      "Close": 22.59,
+      "Adjusted Close": 14.49
     },
     {
       "Year": 2000,
-      "Low": 19.07,
-      "Open": 19.38,
-      "Volume": 1216447.66,
-      "High": 19.7,
-      "Close": 19.39,
-      "Adjusted Close": 12.94
+      "Low": 18.97,
+      "Open": 19.27,
+      "Volume": 1247001.38,
+      "High": 19.57,
+      "Close": 19.28,
+      "Adjusted Close": 12.65
     },
     {
       "Year": 2001,
-      "Low": 20.2,
-      "Open": 20.46,
-      "Volume": 1091619.31,
-      "High": 20.72,
-      "Close": 20.48,
-      "Adjusted Close": 13.52
+      "Low": 20.39,
+      "Open": 20.64,
+      "Volume": 1117958.63,
+      "High": 20.9,
+      "Close": 20.66,
+      "Adjusted Close": 13.51
     },
     {
       "Year": 2002,
-      "Low": 21.94,
-      "Open": 22.21,
-      "Volume": 1174054.64,
-      "High": 22.48,
-      "Close": 22.22,
-      "Adjusted Close": 14.8
+      "Low": 22.26,
+      "Open": 22.54,
+      "Volume": 1203394.14,
+      "High": 22.81,
+      "Close": 22.55,
+      "Adjusted Close": 14.93
     },
     {
       "Year": 2003,
-      "Low": 30.67,
-      "Open": 31.41,
-      "Volume": 1132704.21,
-      "High": 32.18,
-      "Close": 31.61,
-      "Adjusted Close": 24.09
+      "Low": 31.25,
+      "Open": 32.01,
+      "Volume": 1160879.19,
+      "High": 32.8,
+      "Close": 32.22,
+      "Adjusted Close": 24.5
     },
     {
       "Year": 2004,
-      "Low": 48.78,
-      "Open": 50.23,
-      "Volume": 1192381.11,
-      "High": 51.56,
-      "Close": 50.14,
-      "Adjusted Close": 41.13
+      "Low": 50.35,
+      "Open": 51.86,
+      "Volume": 1235123.92,
+      "High": 53.23,
+      "Close": 51.76,
+      "Adjusted Close": 42.43
     },
     {
       "Year": 2005,
-      "Low": 47.56,
-      "Open": 48.74,
-      "Volume": 1391675.6,
-      "High": 49.76,
-      "Close": 48.67,
-      "Adjusted Close": 39.46
+      "Low": 49.06,
+      "Open": 50.28,
+      "Volume": 1441010.21,
+      "High": 51.33,
+      "Close": 50.21,
+      "Adjusted Close": 40.67
     },
     {
       "Year": 2006,
-      "Low": 59.29,
-      "Open": 60.67,
-      "Volume": 1648948.92,
-      "High": 61.98,
-      "Close": 60.72,
-      "Adjusted Close": 51.56
+      "Low": 61.22,
+      "Open": 62.64,
+      "Volume": 1706429.2,
+      "High": 64.0,
+      "Close": 62.7,
+      "Adjusted Close": 53.21
     },
     {
       "Year": 2007,
-      "Low": 87.75,
-      "Open": 90.45,
-      "Volume": 1919374.03,
-      "High": 92.16,
-      "Close": 89.98,
-      "Adjusted Close": 80.59
+      "Low": 90.54,
+      "Open": 93.33,
+      "Volume": 1984668.2,
+      "High": 95.09,
+      "Close": 92.85,
+      "Adjusted Close": 83.13
     },
     {
       "Year": 2008,
-      "Low": 45.12,
-      "Open": 46.49,
-      "Volume": 2605683.53,
-      "High": 47.68,
-      "Close": 46.4,
-      "Adjusted Close": 38.79
+      "Low": 45.76,
+      "Open": 47.16,
+      "Volume": 2680929.56,
+      "High": 48.38,
+      "Close": 47.06,
+      "Adjusted Close": 39.24
     },
     {
       "Year": 2009,
-      "Low": 29.34,
-      "Open": 30.01,
-      "Volume": 2154005.75,
-      "High": 30.63,
-      "Close": 30.0,
-      "Adjusted Close": -64305.67
+      "Low": 29.31,
+      "Open": 29.99,
+      "Volume": 2242555.39,
+      "High": 30.6,
+      "Close": 29.96,
+      "Adjusted Close": 23.96
     },
     {
       "Year": 2010,
-      "Low": 35.12,
-      "Open": 35.55,
-      "Volume": 1658562.95,
-      "High": 36.0,
-      "Close": 35.61,
-      "Adjusted Close": -187012.73
+      "Low": 35.17,
+      "Open": 35.57,
+      "Volume": 1719825.13,
+      "High": 36.01,
+      "Close": 35.64,
+      "Adjusted Close": 28.77
     },
     {
       "Year": 2011,
-      "Low": 39.64,
-      "Open": 40.11,
-      "Volume": 1474228.35,
-      "High": 40.58,
-      "Close": 40.13,
-      "Adjusted Close": -48730.53
+      "Low": 40.49,
+      "Open": 40.96,
+      "Volume": 1525650.6,
+      "High": 41.44,
+      "Close": 40.99,
+      "Adjusted Close": 34.07
     },
     {
       "Year": 2012,
-      "Low": 58.55,
-      "Open": 58.9,
-      "Volume": 1293343.71,
-      "High": 59.26,
-      "Close": 58.93,
-      "Adjusted Close": 3797.01
+      "Low": 60.3,
+      "Open": 60.66,
+      "Volume": 1336160.03,
+      "High": 61.03,
+      "Close": 60.69,
+      "Adjusted Close": 47.21
     },
     {
       "Year": 2013,
-      "Low": 44.76,
-      "Open": 45.12,
-      "Volume": 1097967.39,
-      "High": 45.51,
-      "Close": 45.17,
-      "Adjusted Close": 2773.71
+      "Low": 46.08,
+      "Open": 46.45,
+      "Volume": 1132791.86,
+      "High": 46.85,
+      "Close": 46.51,
+      "Adjusted Close": 39.62
     },
     {
       "Year": 2014,
-      "Low": 48.71,
-      "Open": 49.06,
-      "Volume": 1027994.96,
-      "High": 49.42,
-      "Close": 49.07,
-      "Adjusted Close": 2492.38
+      "Low": 50.14,
+      "Open": 50.5,
+      "Volume": 1059799.09,
+      "High": 50.87,
+      "Close": 50.51,
+      "Adjusted Close": 43.7
     },
     {
       "Year": 2015,
-      "Low": 50.75,
-      "Open": 51.19,
-      "Volume": 1052999.19,
-      "High": 51.61,
-      "Close": 51.2,
-      "Adjusted Close": 1348.76
+      "Low": 52.21,
+      "Open": 52.67,
+      "Volume": 1083980.61,
+      "High": 53.11,
+      "Close": 52.68,
+      "Adjusted Close": 46.12
     },
     {
       "Year": 2016,
-      "Low": 51.58,
-      "Open": 51.99,
-      "Volume": 1149509.55,
-      "High": 52.41,
-      "Close": 52.01,
-      "Adjusted Close": 38.43
+      "Low": 53.05,
+      "Open": 53.47,
+      "Volume": 1183196.25,
+      "High": 53.91,
+      "Close": 53.49,
+      "Adjusted Close": 47.11
     },
     {
       "Year": 2017,
-      "Low": 56.45,
-      "Open": 56.82,
-      "Volume": 1069585.96,
-      "High": 57.18,
-      "Close": 56.83,
-      "Adjusted Close": 51.04
+      "Low": 58.05,
+      "Open": 58.43,
+      "Volume": 1100972.48,
+      "High": 58.81,
+      "Close": 58.44,
+      "Adjusted Close": 52.49
     },
     {
       "Year": 2018,
-      "Low": 61.32,
-      "Open": 61.81,
-      "Volume": 1228645.19,
-      "High": 62.29,
-      "Close": 61.8,
-      "Adjusted Close": 56.83
+      "Low": 63.07,
+      "Open": 63.58,
+      "Volume": 1264655.96,
+      "High": 64.07,
+      "Close": 63.56,
+      "Adjusted Close": 58.45
     },
     {
       "Year": 2019,
-      "Low": 63.71,
-      "Open": 64.17,
-      "Volume": 1107733.74,
-      "High": 64.64,
-      "Close": 64.18,
-      "Adjusted Close": 60.22
+      "Low": 65.66,
+      "Open": 66.14,
+      "Volume": 1142216.73,
+      "High": 66.61,
+      "Close": 66.14,
+      "Adjusted Close": 62.06
     },
     {
       "Year": 2020,
-      "Low": 65.17,
-      "Open": 65.88,
-      "Volume": 1222597.26,
-      "High": 66.6,
-      "Close": 65.88,
-      "Adjusted Close": 63.07
+      "Low": 67.04,
+      "Open": 67.78,
+      "Volume": 1258216.19,
+      "High": 68.51,
+      "Close": 67.78,
+      "Adjusted Close": 64.89
     },
     {
       "Year": 2021,
-      "Low": 77.37,
-      "Open": 78.04,
-      "Volume": 1076982.22,
-      "High": 78.72,
-      "Close": 78.04,
-      "Adjusted Close": 76.15
+      "Low": 79.56,
+      "Open": 80.26,
+      "Volume": 1107862.67,
+      "High": 80.96,
+      "Close": 80.25,
+      "Adjusted Close": 78.32
     },
     {
       "Year": 2022,
-      "Low": 71.41,
-      "Open": 72.11,
-      "Volume": 1128844.31,
-      "High": 72.79,
-      "Close": 72.1,
-      "Adjusted Close": 71.28
+      "Low": 73.42,
+      "Open": 74.14,
+      "Volume": 1160983.55,
+      "High": 74.84,
+      "Close": 74.13,
+      "Adjusted Close": 73.29
     }
   ],
   "Energy": [
@@ -1655,264 +1655,264 @@
     },
     {
       "Year": 1994,
-      "Low": 20.81,
-      "Open": 21.09,
-      "Volume": 507401.79,
-      "High": 21.4,
-      "Close": 21.13,
-      "Adjusted Close": 14.64
+      "Low": 20.82,
+      "Open": 21.1,
+      "Volume": 502581.57,
+      "High": 21.41,
+      "Close": 21.14,
+      "Adjusted Close": 14.65
     },
     {
       "Year": 1995,
-      "Low": 21.81,
-      "Open": 22.13,
-      "Volume": 527117.42,
-      "High": 22.5,
-      "Close": 22.18,
-      "Adjusted Close": 16.04
+      "Low": 21.83,
+      "Open": 22.15,
+      "Volume": 517596.67,
+      "High": 22.53,
+      "Close": 22.21,
+      "Adjusted Close": 16.07
     },
     {
       "Year": 1996,
-      "Low": 42.8,
-      "Open": 43.95,
-      "Volume": 591463.39,
-      "High": 45.01,
-      "Close": 43.95,
-      "Adjusted Close": 35.94
+      "Low": 43.27,
+      "Open": 44.44,
+      "Volume": 583960.74,
+      "High": 45.52,
+      "Close": 44.44,
+      "Adjusted Close": 36.38
     },
     {
       "Year": 1997,
-      "Low": 47.3,
-      "Open": 48.27,
-      "Volume": 647617.61,
-      "High": 49.27,
-      "Close": 48.29,
-      "Adjusted Close": 37.83
+      "Low": 47.82,
+      "Open": 48.8,
+      "Volume": 642590.44,
+      "High": 49.82,
+      "Close": 48.83,
+      "Adjusted Close": 38.24
     },
     {
       "Year": 1998,
-      "Low": 68.21,
-      "Open": 69.64,
-      "Volume": 740792.51,
-      "High": 70.94,
-      "Close": 69.6,
-      "Adjusted Close": 44.54
+      "Low": 69.21,
+      "Open": 70.67,
+      "Volume": 735920.37,
+      "High": 71.99,
+      "Close": 70.62,
+      "Adjusted Close": 45.12
     },
     {
       "Year": 1999,
-      "Low": 88.5,
-      "Open": 90.16,
-      "Volume": 764665.11,
-      "High": 91.66,
-      "Close": 90.17,
-      "Adjusted Close": 57.17
+      "Low": 89.99,
+      "Open": 91.67,
+      "Volume": 755496.47,
+      "High": 93.21,
+      "Close": 91.69,
+      "Adjusted Close": 58.07
     },
     {
       "Year": 2000,
-      "Low": 63.5,
-      "Open": 64.99,
-      "Volume": 942320.16,
-      "High": 66.48,
-      "Close": 65.04,
-      "Adjusted Close": 47.22
+      "Low": 64.56,
+      "Open": 66.07,
+      "Volume": 956562.03,
+      "High": 67.59,
+      "Close": 66.12,
+      "Adjusted Close": 47.98
     },
     {
       "Year": 2001,
-      "Low": 74.92,
-      "Open": 76.64,
-      "Volume": 1181257.33,
-      "High": 78.25,
-      "Close": 76.67,
-      "Adjusted Close": 57.25
+      "Low": 76.18,
+      "Open": 77.94,
+      "Volume": 1199995.13,
+      "High": 79.57,
+      "Close": 77.97,
+      "Adjusted Close": 58.21
     },
     {
       "Year": 2002,
-      "Low": 67.17,
-      "Open": 68.64,
-      "Volume": 1178224.52,
-      "High": 70.01,
-      "Close": 68.62,
-      "Adjusted Close": 52.88
+      "Low": 68.23,
+      "Open": 69.73,
+      "Volume": 1195476.08,
+      "High": 71.11,
+      "Close": 69.71,
+      "Adjusted Close": 53.7
     },
     {
       "Year": 2003,
-      "Low": 68.4,
-      "Open": 69.41,
-      "Volume": 1098402.45,
-      "High": 70.33,
-      "Close": 69.48,
-      "Adjusted Close": 53.94
+      "Low": 69.41,
+      "Open": 70.43,
+      "Volume": 1112586.94,
+      "High": 71.37,
+      "Close": 70.5,
+      "Adjusted Close": 54.73
     },
     {
       "Year": 2004,
-      "Low": 370738971465.35,
-      "Open": 384238477666.18,
-      "Volume": 1245791.84,
-      "High": 394016911176.97,
-      "Close": 381608734536.8,
-      "Adjusted Close": 381608734518.44
+      "Low": 88.83,
+      "Open": 90.11,
+      "Volume": 1267708.16,
+      "High": 91.29,
+      "Close": 90.1,
+      "Adjusted Close": 71.34
     },
     {
       "Year": 2005,
-      "Low": 850867707929.87,
-      "Open": 868978513838.04,
-      "Volume": 1716181.55,
-      "High": 882136837872.75,
-      "Close": 864994133303.78,
-      "Adjusted Close": 864994133282.96
+      "Low": 124.34,
+      "Open": 126.62,
+      "Volume": 1778213.21,
+      "High": 128.78,
+      "Close": 126.49,
+      "Adjusted Close": 104.81
     },
     {
       "Year": 2006,
-      "Low": 432986270292.52,
-      "Open": 441386743455.44,
-      "Volume": 2052629.15,
-      "High": 448588668502.1,
-      "Close": 440569261357.63,
-      "Adjusted Close": 440569261337.22
+      "Low": 122.9,
+      "Open": 125.26,
+      "Volume": 2133705.15,
+      "High": 127.19,
+      "Close": 124.99,
+      "Adjusted Close": 103.7
     },
     {
       "Year": 2007,
-      "Low": 269116286197.98,
-      "Open": 276050645017.21,
-      "Volume": 2059864.42,
-      "High": 282520298670.03,
-      "Close": 275469260072.73,
-      "Adjusted Close": 275469260051.91
+      "Low": 129.78,
+      "Open": 132.44,
+      "Volume": 2135565.93,
+      "High": 134.75,
+      "Close": 132.23,
+      "Adjusted Close": 110.58
     },
     {
       "Year": 2008,
-      "Low": 90972988073.57,
-      "Open": 94823515470.45,
-      "Volume": 2798639.12,
-      "High": 98341031301.55,
-      "Close": 94225233677.64,
-      "Adjusted Close": 94225233658.69
+      "Low": 87.7,
+      "Open": 90.44,
+      "Volume": 2891886.59,
+      "High": 92.73,
+      "Close": 90.19,
+      "Adjusted Close": 70.54
     },
     {
       "Year": 2009,
-      "Low": 22337003068.7,
-      "Open": 23659938890.24,
-      "Volume": 2340916.73,
-      "High": 24550458770.56,
-      "Close": 23277675889.73,
-      "Adjusted Close": 23277675878.36
+      "Low": 58.53,
+      "Open": 60.07,
+      "Volume": 2414465.53,
+      "High": 61.57,
+      "Close": 60.11,
+      "Adjusted Close": 48.31
     },
     {
       "Year": 2010,
-      "Low": 13099292866.57,
-      "Open": 13581214214.81,
-      "Volume": 1997218.94,
-      "High": 13959466378.23,
-      "Close": 13589059443.8,
-      "Adjusted Close": 13589059431.09
+      "Low": 65.97,
+      "Open": 67.17,
+      "Volume": 2051394.59,
+      "High": 68.27,
+      "Close": 67.15,
+      "Adjusted Close": 54.01
     },
     {
       "Year": 2011,
-      "Low": 6478475628.74,
-      "Open": 6738799145.28,
-      "Volume": 1862053.36,
-      "High": 6966522209.61,
-      "Close": 6678560328.23,
-      "Adjusted Close": 6678560314.86
+      "Low": 64.8,
+      "Open": 66.13,
+      "Volume": 1912332.44,
+      "High": 67.26,
+      "Close": 65.99,
+      "Adjusted Close": 52.2
     },
     {
       "Year": 2012,
-      "Low": 1926292017.94,
-      "Open": 2013523565.1,
-      "Volume": 1524747.41,
-      "High": 2112432964.63,
-      "Close": 1996006780.91,
-      "Adjusted Close": 1996006768.85
+      "Low": 70.57,
+      "Open": 71.83,
+      "Volume": 1562307.83,
+      "High": 73.03,
+      "Close": 71.85,
+      "Adjusted Close": 59.43
     },
     {
       "Year": 2013,
-      "Low": 1716066015.11,
-      "Open": 1778364519.89,
-      "Volume": 1275997.8,
-      "High": 1856040212.71,
-      "Close": 1780455072.03,
-      "Adjusted Close": 1780455058.48
+      "Low": 93.11,
+      "Open": 94.62,
+      "Volume": 1306609.0,
+      "High": 96.15,
+      "Close": 94.7,
+      "Adjusted Close": 80.78
     },
     {
       "Year": 2014,
-      "Low": 764932857.99,
-      "Open": 796089909.51,
-      "Volume": 1510465.18,
-      "High": 818037539.09,
-      "Close": 787764283.34,
-      "Adjusted Close": 787764269.0
+      "Low": 105.21,
+      "Open": 107.2,
+      "Volume": 1546326.42,
+      "High": 109.02,
+      "Close": 107.08,
+      "Adjusted Close": 92.37
     },
     {
       "Year": 2015,
-      "Low": 151946560.28,
-      "Open": 157467228.78,
-      "Volume": 1915140.31,
-      "High": 162631524.11,
-      "Close": 156979559.43,
-      "Adjusted Close": 156979551.56
+      "Low": 53.06,
+      "Open": 54.39,
+      "Volume": 1983553.46,
+      "High": 55.7,
+      "Close": 54.35,
+      "Adjusted Close": 46.2
     },
     {
       "Year": 2016,
-      "Low": 42042468.22,
-      "Open": 45084180.25,
-      "Volume": 1942994.8,
-      "High": 48662445.67,
-      "Close": 44468758.41,
-      "Adjusted Close": 44468753.68
+      "Low": 33.54,
+      "Open": 34.26,
+      "Volume": 2025663.25,
+      "High": 35.01,
+      "Close": 34.27,
+      "Adjusted Close": 29.36
     },
     {
       "Year": 2017,
-      "Low": 8008946.84,
-      "Open": 8658313.42,
-      "Volume": 1586975.98,
-      "High": 9188974.69,
-      "Close": 8407879.99,
-      "Adjusted Close": 8407875.69
+      "Low": 34.41,
+      "Open": 34.94,
+      "Volume": 1652914.8,
+      "High": 35.43,
+      "Close": 34.89,
+      "Adjusted Close": 30.42
     },
     {
       "Year": 2018,
-      "Low": 150.94,
-      "Open": 158.44,
-      "Volume": 1823012.41,
-      "High": 164.08,
-      "Close": 156.04,
-      "Adjusted Close": 152.21
+      "Low": 36.2,
+      "Open": 36.79,
+      "Volume": 1898964.05,
+      "High": 37.33,
+      "Close": 36.74,
+      "Adjusted Close": 32.75
     },
     {
       "Year": 2019,
-      "Low": 69.56,
-      "Open": 71.72,
-      "Volume": 1915031.36,
-      "High": 73.6,
-      "Close": 71.45,
-      "Adjusted Close": 68.79
+      "Low": 29.72,
+      "Open": 30.18,
+      "Volume": 1973377.45,
+      "High": 30.63,
+      "Close": 30.18,
+      "Adjusted Close": 27.42
     },
     {
       "Year": 2020,
-      "Low": 19.06,
-      "Open": 19.58,
-      "Volume": 3417847.47,
-      "High": 20.04,
-      "Close": 19.53,
-      "Adjusted Close": 18.42
+      "Low": 18.71,
+      "Open": 19.18,
+      "Volume": 3510313.08,
+      "High": 19.6,
+      "Close": 19.14,
+      "Adjusted Close": 18.0
     },
     {
       "Year": 2021,
-      "Low": 30.39,
-      "Open": 30.97,
-      "Volume": 2733739.54,
-      "High": 31.59,
-      "Close": 30.99,
-      "Adjusted Close": 30.32
+      "Low": 30.81,
+      "Open": 31.39,
+      "Volume": 2794084.74,
+      "High": 32.0,
+      "Close": 31.4,
+      "Adjusted Close": 30.72
     },
     {
       "Year": 2022,
-      "Low": 40.92,
-      "Open": 41.79,
-      "Volume": 2896262.81,
-      "High": 42.67,
-      "Close": 41.84,
-      "Adjusted Close": 41.61
+      "Low": 41.73,
+      "Open": 42.61,
+      "Volume": 2943337.13,
+      "High": 43.51,
+      "Close": 42.66,
+      "Adjusted Close": 42.43
     }
   ],
   "Financials": [
@@ -2116,264 +2116,264 @@
     },
     {
       "Year": 1994,
-      "Low": 91.86,
-      "Open": 92.3,
-      "Volume": 255562.38,
-      "High": 92.76,
-      "Close": 92.34,
-      "Adjusted Close": 84.35
+      "Low": 92.09,
+      "Open": 92.52,
+      "Volume": 256251.39,
+      "High": 92.98,
+      "Close": 92.57,
+      "Adjusted Close": 84.59
     },
     {
       "Year": 1995,
-      "Low": 118.11,
-      "Open": 118.76,
-      "Volume": 248651.86,
-      "High": 119.43,
-      "Close": 118.84,
-      "Adjusted Close": 110.9
+      "Low": 119.82,
+      "Open": 120.48,
+      "Volume": 253067.2,
+      "High": 121.16,
+      "Close": 120.57,
+      "Adjusted Close": 112.6
     },
     {
       "Year": 1996,
-      "Low": 141.1,
-      "Open": 142.05,
-      "Volume": 238753.56,
-      "High": 142.95,
-      "Close": 142.08,
-      "Adjusted Close": 133.24
+      "Low": 144.16,
+      "Open": 145.14,
+      "Volume": 244709.94,
+      "High": 146.07,
+      "Close": 145.17,
+      "Adjusted Close": 136.23
     },
     {
       "Year": 1997,
-      "Low": 176.41,
-      "Open": 177.55,
-      "Volume": 236168.61,
-      "High": 178.69,
-      "Close": 177.63,
-      "Adjusted Close": 166.05
+      "Low": 180.4,
+      "Open": 181.56,
+      "Volume": 242200.54,
+      "High": 182.74,
+      "Close": 181.65,
+      "Adjusted Close": 169.9
     },
     {
       "Year": 1998,
-      "Low": 248.72,
-      "Open": 250.92,
-      "Volume": 259591.46,
-      "High": 253.11,
-      "Close": 250.98,
-      "Adjusted Close": 238.03
+      "Low": 256.18,
+      "Open": 258.44,
+      "Volume": 267964.15,
+      "High": 260.7,
+      "Close": 258.51,
+      "Adjusted Close": 245.29
     },
     {
       "Year": 1999,
-      "Low": 232.01,
-      "Open": 234.31,
-      "Volume": 264375.59,
-      "High": 236.63,
-      "Close": 234.19,
-      "Adjusted Close": 221.96
+      "Low": 238.64,
+      "Open": 241.0,
+      "Volume": 272658.51,
+      "High": 243.39,
+      "Close": 240.87,
+      "Adjusted Close": 228.39
     },
     {
       "Year": 2000,
-      "Low": 190.22,
-      "Open": 192.46,
-      "Volume": 288816.81,
-      "High": 194.77,
-      "Close": 192.71,
-      "Adjusted Close": 181.08
+      "Low": 194.91,
+      "Open": 197.2,
+      "Volume": 298010.88,
+      "High": 199.56,
+      "Close": 197.46,
+      "Adjusted Close": 185.72
     },
     {
       "Year": 2001,
-      "Low": 220.31,
-      "Open": 222.16,
-      "Volume": 317833.97,
-      "High": 224.1,
-      "Close": 222.35,
-      "Adjusted Close": 210.75
+      "Low": 225.38,
+      "Open": 227.27,
+      "Volume": 325692.65,
+      "High": 229.25,
+      "Close": 227.46,
+      "Adjusted Close": 215.68
     },
     {
       "Year": 2002,
-      "Low": 220.01,
-      "Open": 221.75,
-      "Volume": 368020.19,
-      "High": 223.55,
-      "Close": 221.81,
-      "Adjusted Close": 210.81
+      "Low": 225.16,
+      "Open": 226.94,
+      "Volume": 377043.99,
+      "High": 228.78,
+      "Close": 227.0,
+      "Adjusted Close": 215.83
     },
     {
       "Year": 2003,
-      "Low": 212.73,
-      "Open": 213.95,
-      "Volume": 349498.21,
-      "High": 215.13,
-      "Close": 213.91,
-      "Adjusted Close": 202.75
+      "Low": 217.1,
+      "Open": 218.35,
+      "Volume": 357033.34,
+      "High": 219.56,
+      "Close": 218.3,
+      "Adjusted Close": 207.01
     },
     {
       "Year": 2004,
-      "Low": 238.21,
-      "Open": 239.57,
-      "Volume": 325701.55,
-      "High": 240.79,
-      "Close": 239.58,
-      "Adjusted Close": 227.06
+      "Low": 242.7,
+      "Open": 244.09,
+      "Volume": 332182.11,
+      "High": 245.33,
+      "Close": 244.09,
+      "Adjusted Close": 231.44
     },
     {
       "Year": 2005,
-      "Low": 225.9,
-      "Open": 227.13,
-      "Volume": 354709.01,
-      "High": 228.38,
-      "Close": 227.09,
-      "Adjusted Close": 214.18
+      "Low": 229.8,
+      "Open": 231.05,
+      "Volume": 361208.09,
+      "High": 232.32,
+      "Close": 231.01,
+      "Adjusted Close": 218.0
     },
     {
       "Year": 2006,
-      "Low": 239.58,
-      "Open": 240.78,
-      "Volume": 454093.93,
-      "High": 242.01,
-      "Close": 240.92,
-      "Adjusted Close": 227.73
+      "Low": 243.52,
+      "Open": 244.73,
+      "Volume": 460943.33,
+      "High": 245.98,
+      "Close": 244.88,
+      "Adjusted Close": 231.57
     },
     {
       "Year": 2007,
-      "Low": 277.36,
-      "Open": 279.25,
-      "Volume": 747419.73,
-      "High": 280.88,
-      "Close": 279.25,
-      "Adjusted Close": 265.8
+      "Low": 281.88,
+      "Open": 283.8,
+      "Volume": 759594.98,
+      "High": 285.46,
+      "Close": 283.8,
+      "Adjusted Close": 270.2
     },
     {
       "Year": 2008,
-      "Low": 266.19,
-      "Open": 271.01,
-      "Volume": 1446071.4,
-      "High": 274.56,
-      "Close": 270.66,
-      "Adjusted Close": 259.84
+      "Low": 271.17,
+      "Open": 276.09,
+      "Volume": 1474309.74,
+      "High": 279.71,
+      "Close": 275.73,
+      "Adjusted Close": 264.8
     },
     {
       "Year": 2009,
-      "Low": 198.74,
-      "Open": 201.25,
-      "Volume": 2298185.09,
-      "High": 203.55,
-      "Close": 201.43,
-      "Adjusted Close": 191.6
+      "Low": 202.93,
+      "Open": 205.5,
+      "Volume": 2354613.7,
+      "High": 207.86,
+      "Close": 205.68,
+      "Adjusted Close": 195.8
     },
     {
       "Year": 2010,
-      "Low": 232.73,
-      "Open": 234.75,
-      "Volume": 1469282.03,
-      "High": 236.79,
-      "Close": 234.85,
-      "Adjusted Close": 223.91
+      "Low": 237.66,
+      "Open": 239.73,
+      "Volume": 1504633.33,
+      "High": 241.82,
+      "Close": 239.84,
+      "Adjusted Close": 228.81
     },
     {
       "Year": 2011,
-      "Low": 217.48,
-      "Open": 219.26,
-      "Volume": 1363666.82,
-      "High": 221.05,
-      "Close": 219.32,
-      "Adjusted Close": 209.03
+      "Low": 221.86,
+      "Open": 223.68,
+      "Volume": 1395430.32,
+      "High": 225.51,
+      "Close": 223.74,
+      "Adjusted Close": 213.38
     },
     {
       "Year": 2012,
-      "Low": 224.76,
-      "Open": 225.95,
-      "Volume": 1144745.31,
-      "High": 227.19,
-      "Close": 226.14,
-      "Adjusted Close": 216.11
+      "Low": 229.15,
+      "Open": 230.36,
+      "Volume": 1171311.15,
+      "High": 231.63,
+      "Close": 230.56,
+      "Adjusted Close": 220.48
     },
     {
       "Year": 2013,
-      "Low": 274.82,
-      "Open": 276.45,
-      "Volume": 867269.49,
-      "High": 277.93,
-      "Close": 276.47,
-      "Adjusted Close": 270.33
+      "Low": 280.18,
+      "Open": 281.85,
+      "Volume": 886440.46,
+      "High": 283.36,
+      "Close": 281.87,
+      "Adjusted Close": 275.77
     },
     {
       "Year": 2014,
-      "Low": 314.63,
-      "Open": 316.5,
-      "Volume": 719988.45,
-      "High": 318.15,
-      "Close": 316.46,
-      "Adjusted Close": 310.24
+      "Low": 320.79,
+      "Open": 322.7,
+      "Volume": 735374.39,
+      "High": 324.39,
+      "Close": 322.66,
+      "Adjusted Close": 316.48
     },
     {
       "Year": 2015,
-      "Low": 326.3,
-      "Open": 328.58,
-      "Volume": 739930.8,
-      "High": 330.24,
-      "Close": 328.21,
-      "Adjusted Close": 322.7
+      "Low": 332.57,
+      "Open": 334.91,
+      "Volume": 756048.5,
+      "High": 336.6,
+      "Close": 334.53,
+      "Adjusted Close": 329.05
     },
     {
       "Year": 2016,
-      "Low": 331.43,
-      "Open": 333.22,
-      "Volume": 847611.37,
-      "High": 335.15,
-      "Close": 333.52,
-      "Adjusted Close": 329.21
+      "Low": 337.91,
+      "Open": 339.74,
+      "Volume": 866092.95,
+      "High": 341.72,
+      "Close": 340.05,
+      "Adjusted Close": 335.77
     },
     {
       "Year": 2017,
-      "Low": 404.27,
-      "Open": 406.38,
-      "Volume": 656193.64,
-      "High": 408.09,
-      "Close": 406.29,
-      "Adjusted Close": 401.78
+      "Low": 412.18,
+      "Open": 414.34,
+      "Volume": 667852.67,
+      "High": 416.08,
+      "Close": 414.25,
+      "Adjusted Close": 409.76
     },
     {
       "Year": 2018,
-      "Low": 469.63,
-      "Open": 473.7,
-      "Volume": 720280.0,
-      "High": 477.0,
-      "Close": 473.08,
-      "Adjusted Close": 469.05
+      "Low": 479.47,
+      "Open": 483.63,
+      "Volume": 700226.42,
+      "High": 487.02,
+      "Close": 483.01,
+      "Adjusted Close": 478.98
     },
     {
       "Year": 2019,
-      "Low": 476.86,
-      "Open": 479.43,
-      "Volume": 667214.94,
-      "High": 482.17,
-      "Close": 479.57,
-      "Adjusted Close": 476.66
+      "Low": 485.91,
+      "Open": 488.53,
+      "Volume": 636110.67,
+      "High": 491.33,
+      "Close": 488.68,
+      "Adjusted Close": 485.78
     },
     {
       "Year": 2020,
-      "Low": 464.19,
-      "Open": 468.43,
-      "Volume": 962048.54,
-      "High": 472.61,
-      "Close": 468.39,
-      "Adjusted Close": 466.54
+      "Low": 473.05,
+      "Open": 477.38,
+      "Volume": 909382.18,
+      "High": 481.66,
+      "Close": 477.35,
+      "Adjusted Close": 475.5
     },
     {
       "Year": 2021,
-      "Low": 616.57,
-      "Open": 621.01,
-      "Volume": 1126482.26,
-      "High": 625.19,
-      "Close": 620.8,
-      "Adjusted Close": 619.58
+      "Low": 628.6,
+      "Open": 633.13,
+      "Volume": 787211.65,
+      "High": 637.39,
+      "Close": 632.92,
+      "Adjusted Close": 631.7
     },
     {
       "Year": 2022,
-      "Low": 676.84,
-      "Open": 685.04,
-      "Volume": 870258.1,
-      "High": 690.8,
-      "Close": 683.65,
-      "Adjusted Close": 683.33
+      "Low": 690.08,
+      "Open": 698.46,
+      "Volume": 820659.01,
+      "High": 704.34,
+      "Close": 697.04,
+      "Adjusted Close": 696.72
     }
   ],
   "Health Care": [
@@ -2631,228 +2631,228 @@
     },
     {
       "Year": 1998,
-      "Low": 80.99,
-      "Open": 84.36,
-      "Volume": 1159619.74,
-      "High": 87.33,
-      "Close": 83.84,
-      "Adjusted Close": 80.2
+      "Low": 80.94,
+      "Open": 84.31,
+      "Volume": 1160636.9,
+      "High": 87.28,
+      "Close": 83.8,
+      "Adjusted Close": 80.15
     },
     {
       "Year": 1999,
-      "Low": 73.09,
-      "Open": 76.03,
-      "Volume": 1217564.64,
-      "High": 78.81,
-      "Close": 75.89,
-      "Adjusted Close": 72.05
+      "Low": 72.15,
+      "Open": 75.09,
+      "Volume": 1229829.93,
+      "High": 77.84,
+      "Close": 74.95,
+      "Adjusted Close": 71.07
     },
     {
       "Year": 2000,
-      "Low": 130.15,
-      "Open": 138.68,
-      "Volume": 1379267.99,
-      "High": 146.12,
-      "Close": 138.12,
-      "Adjusted Close": 134.01
+      "Low": 130.65,
+      "Open": 139.22,
+      "Volume": 1391678.05,
+      "High": 146.7,
+      "Close": 138.65,
+      "Adjusted Close": 134.5
     },
     {
       "Year": 2001,
-      "Low": 82.97,
-      "Open": 86.35,
-      "Volume": 1342645.61,
-      "High": 89.41,
-      "Close": 86.2,
-      "Adjusted Close": 82.46
+      "Low": 83.61,
+      "Open": 87.01,
+      "Volume": 1353584.7,
+      "High": 90.1,
+      "Close": 86.86,
+      "Adjusted Close": 83.1
     },
     {
       "Year": 2002,
-      "Low": 54.75,
-      "Open": 57.01,
-      "Volume": 1489491.08,
-      "High": 59.04,
-      "Close": 56.84,
-      "Adjusted Close": 53.89
+      "Low": 55.13,
+      "Open": 57.4,
+      "Volume": 1500839.06,
+      "High": 59.44,
+      "Close": 57.23,
+      "Adjusted Close": 54.26
     },
     {
       "Year": 2003,
-      "Low": 50.35,
-      "Open": 52.08,
-      "Volume": 1432786.76,
-      "High": 53.74,
-      "Close": 52.1,
-      "Adjusted Close": 49.38
+      "Low": 50.66,
+      "Open": 52.39,
+      "Volume": 1441720.84,
+      "High": 54.07,
+      "Close": 52.42,
+      "Adjusted Close": 49.68
     },
     {
       "Year": 2004,
-      "Low": 385.81,
-      "Open": 396.37,
-      "Volume": 1327758.75,
-      "High": 404.16,
-      "Close": 395.79,
-      "Adjusted Close": 389.87
+      "Low": 388.54,
+      "Open": 399.17,
+      "Volume": 1337214.42,
+      "High": 407.02,
+      "Close": 398.59,
+      "Adjusted Close": 392.63
     },
     {
       "Year": 2005,
-      "Low": 8599.7,
-      "Open": 9031.89,
-      "Volume": 1297538.36,
-      "High": 9301.51,
-      "Close": 8934.0,
-      "Adjusted Close": 8916.53
+      "Low": 1722.23,
+      "Open": 1775.55,
+      "Volume": 1306588.6,
+      "High": 1815.62,
+      "Close": 1772.03,
+      "Adjusted Close": 1754.45
     },
     {
       "Year": 2006,
-      "Low": 25362.81,
-      "Open": 26461.6,
-      "Volume": 1449600.68,
-      "High": 27156.94,
-      "Close": 26363.55,
-      "Adjusted Close": 26341.72
+      "Low": 2303.95,
+      "Open": 2367.09,
+      "Volume": 1468183.55,
+      "High": 2421.96,
+      "Close": 2359.87,
+      "Adjusted Close": 2337.75
     },
     {
       "Year": 2007,
-      "Low": 15899.49,
-      "Open": 16572.76,
-      "Volume": 1587914.56,
-      "High": 17052.83,
-      "Close": 16503.41,
-      "Adjusted Close": 16499.01
+      "Low": 886.26,
+      "Open": 912.7,
+      "Volume": 1605734.15,
+      "High": 936.81,
+      "Close": 911.14,
+      "Adjusted Close": 906.7
     },
     {
       "Year": 2008,
-      "Low": 8989.65,
-      "Open": 9400.44,
-      "Volume": 1884430.29,
-      "High": 9843.18,
-      "Close": 9494.16,
-      "Adjusted Close": 9492.01
+      "Low": 276.32,
+      "Open": 289.19,
+      "Volume": 1904780.17,
+      "High": 299.92,
+      "Close": 287.81,
+      "Adjusted Close": 285.63
     },
     {
       "Year": 2009,
-      "Low": 11684.92,
-      "Open": 12186.07,
-      "Volume": 1869380.06,
-      "High": 12748.97,
-      "Close": 12392.72,
-      "Adjusted Close": 12390.99
+      "Low": 224.73,
+      "Open": 237.83,
+      "Volume": 1890597.03,
+      "High": 249.12,
+      "Close": 237.32,
+      "Adjusted Close": 235.56
     },
     {
       "Year": 2010,
-      "Low": 6035.92,
-      "Open": 6416.52,
-      "Volume": 1715030.22,
-      "High": 6678.78,
-      "Close": 6325.73,
-      "Adjusted Close": 6323.89
+      "Low": 230.98,
+      "Open": 240.64,
+      "Volume": 1733680.29,
+      "High": 247.98,
+      "Close": 238.33,
+      "Adjusted Close": 236.47
     },
     {
       "Year": 2011,
-      "Low": 373.91,
-      "Open": 398.19,
-      "Volume": 1608536.2,
-      "High": 413.21,
-      "Close": 397.73,
-      "Adjusted Close": 395.95
+      "Low": 170.72,
+      "Open": 177.11,
+      "Volume": 1625192.41,
+      "High": 181.26,
+      "Close": 175.45,
+      "Adjusted Close": 173.66
     },
     {
       "Year": 2012,
-      "Low": 1819.31,
-      "Open": 1833.8,
-      "Volume": 1322233.17,
-      "High": 1856.03,
-      "Close": 1840.49,
-      "Adjusted Close": 1838.79
+      "Low": 1743.88,
+      "Open": 1754.94,
+      "Volume": 1335445.03,
+      "High": 1774.95,
+      "Close": 1762.27,
+      "Adjusted Close": 1760.56
     },
     {
       "Year": 2013,
-      "Low": 1039.15,
-      "Open": 1076.97,
-      "Volume": 1286915.16,
-      "High": 1111.59,
-      "Close": 1072.92,
-      "Adjusted Close": 1071.11
+      "Low": 1007.27,
+      "Open": 1044.71,
+      "Volume": 1298733.54,
+      "High": 1078.9,
+      "Close": 1040.55,
+      "Adjusted Close": 1038.73
     },
     {
       "Year": 2014,
-      "Low": 1450.87,
-      "Open": 1496.78,
-      "Volume": 1131269.1,
-      "High": 1549.24,
-      "Close": 1496.85,
-      "Adjusted Close": 1495.09
+      "Low": 1440.62,
+      "Open": 1486.33,
+      "Volume": 1140475.5,
+      "High": 1538.73,
+      "Close": 1486.47,
+      "Adjusted Close": 1484.7
     },
     {
       "Year": 2015,
-      "Low": 959.11,
-      "Open": 990.39,
-      "Volume": 1107608.87,
-      "High": 1020.39,
-      "Close": 988.69,
-      "Adjusted Close": 986.99
+      "Low": 959.51,
+      "Open": 990.82,
+      "Volume": 1119441.8,
+      "High": 1020.88,
+      "Close": 989.16,
+      "Adjusted Close": 987.46
     },
     {
       "Year": 2016,
-      "Low": 328.65,
-      "Open": 344.66,
-      "Volume": 1211531.89,
-      "High": 356.03,
-      "Close": 340.96,
-      "Adjusted Close": 339.52
+      "Low": 330.55,
+      "Open": 346.67,
+      "Volume": 1225344.19,
+      "High": 358.09,
+      "Close": 342.95,
+      "Adjusted Close": 341.52
     },
     {
       "Year": 2017,
-      "Low": 126.4,
-      "Open": 129.81,
-      "Volume": 1128828.61,
-      "High": 132.81,
-      "Close": 129.31,
-      "Adjusted Close": 127.97
+      "Low": 126.24,
+      "Open": 129.66,
+      "Volume": 1141749.91,
+      "High": 132.67,
+      "Close": 129.16,
+      "Adjusted Close": 127.82
     },
     {
       "Year": 2018,
-      "Low": 92.3,
-      "Open": 94.84,
-      "Volume": 1192308.9,
-      "High": 97.14,
-      "Close": 94.54,
-      "Adjusted Close": 93.34
+      "Low": 91.73,
+      "Open": 94.29,
+      "Volume": 1205782.26,
+      "High": 96.61,
+      "Close": 93.99,
+      "Adjusted Close": 92.79
     },
     {
       "Year": 2019,
-      "Low": 57.74,
-      "Open": 58.6,
-      "Volume": 1233396.75,
-      "High": 59.4,
-      "Close": 58.58,
-      "Adjusted Close": 57.66
+      "Low": 57.45,
+      "Open": 58.32,
+      "Volume": 1245008.87,
+      "High": 59.12,
+      "Close": 58.29,
+      "Adjusted Close": 57.37
     },
     {
       "Year": 2020,
-      "Low": 64.22,
-      "Open": 65.37,
-      "Volume": 1963884.92,
-      "High": 66.5,
-      "Close": 65.38,
-      "Adjusted Close": 64.68
+      "Low": 64.65,
+      "Open": 65.8,
+      "Volume": 1973521.91,
+      "High": 66.93,
+      "Close": 65.81,
+      "Adjusted Close": 65.1
     },
     {
       "Year": 2021,
-      "Low": 83.56,
-      "Open": 84.87,
-      "Volume": 1754694.73,
-      "High": 86.05,
-      "Close": 84.83,
-      "Adjusted Close": 84.38
+      "Low": 84.13,
+      "Open": 85.45,
+      "Volume": 1764147.43,
+      "High": 86.63,
+      "Close": 85.4,
+      "Adjusted Close": 84.95
     },
     {
       "Year": 2022,
-      "Low": 68.74,
-      "Open": 69.88,
-      "Volume": 1867370.8,
-      "High": 70.99,
-      "Close": 69.87,
-      "Adjusted Close": 69.73
+      "Low": 69.22,
+      "Open": 70.37,
+      "Volume": 1879200.64,
+      "High": 71.49,
+      "Close": 70.36,
+      "Adjusted Close": 70.22
     }
   ],
   "Industrials": [
@@ -3083,255 +3083,255 @@
     },
     {
       "Year": 1995,
-      "Low": 2644.52,
-      "Open": 2645.48,
-      "Volume": 423745.25,
-      "High": 2645.68,
-      "Close": 2645.49,
-      "Adjusted Close": 2640.9
+      "Low": 14.82,
+      "Open": 15.01,
+      "Volume": 426717.66,
+      "High": 15.21,
+      "Close": 15.02,
+      "Adjusted Close": 10.4
     },
     {
       "Year": 1996,
-      "Low": 2745.89,
-      "Open": 2746.15,
-      "Volume": 435355.88,
-      "High": 2746.42,
-      "Close": 2746.16,
-      "Adjusted Close": 2740.86
+      "Low": 17.71,
+      "Open": 17.97,
+      "Volume": 438509.82,
+      "High": 18.25,
+      "Close": 17.99,
+      "Adjusted Close": 12.65
     },
     {
       "Year": 1997,
-      "Low": 1717.0,
-      "Open": 1717.29,
-      "Volume": 428830.44,
-      "High": 1717.61,
-      "Close": 1717.32,
-      "Adjusted Close": 1711.04
+      "Low": 21.22,
+      "Open": 21.51,
+      "Volume": 431612.49,
+      "High": 21.84,
+      "Close": 21.54,
+      "Adjusted Close": 15.22
     },
     {
       "Year": 1998,
-      "Low": 1557.74,
-      "Open": 1558.26,
-      "Volume": 518215.53,
-      "High": 1558.73,
-      "Close": 1558.25,
-      "Adjusted Close": 1551.8
+      "Low": 25.74,
+      "Open": 26.27,
+      "Volume": 521395.71,
+      "High": 26.73,
+      "Close": 26.25,
+      "Adjusted Close": 19.77
     },
     {
       "Year": 1999,
-      "Low": 639280068.51,
-      "Open": 639280069.62,
-      "Volume": 525512.42,
-      "High": 639280070.14,
-      "Close": 639280069.62,
-      "Adjusted Close": 639280063.56
+      "Low": 25.7,
+      "Open": 26.23,
+      "Volume": 528811.63,
+      "High": 26.76,
+      "Close": 26.24,
+      "Adjusted Close": 20.13
     },
     {
       "Year": 2000,
-      "Low": 1395371479.89,
-      "Open": 1395371481.92,
-      "Volume": 551357.64,
-      "High": 1395371484.01,
-      "Close": 1395371481.88,
-      "Adjusted Close": 1395371475.43
+      "Low": 52.84,
+      "Open": 54.88,
+      "Volume": 554725.05,
+      "High": 56.97,
+      "Close": 54.83,
+      "Adjusted Close": 48.34
     },
     {
       "Year": 2001,
-      "Low": 178844295.36,
-      "Open": 178844297.13,
-      "Volume": 661157.27,
-      "High": 178844411.37,
-      "Close": 178844296.91,
-      "Adjusted Close": 178844289.67
+      "Low": 49.56,
+      "Open": 51.34,
+      "Volume": 666036.77,
+      "High": 52.82,
+      "Close": 51.12,
+      "Adjusted Close": 43.82
     },
     {
       "Year": 2002,
-      "Low": 38246887.49,
-      "Open": 38246888.24,
-      "Volume": 757111.22,
-      "High": 38246888.89,
-      "Close": 38246888.15,
-      "Adjusted Close": 38246882.9
+      "Low": 27.92,
+      "Open": 28.69,
+      "Volume": 763498.68,
+      "High": 29.33,
+      "Close": 28.59,
+      "Adjusted Close": 23.3
     },
     {
       "Year": 2003,
-      "Low": 3782501.01,
-      "Open": 3782501.55,
-      "Volume": 684563.63,
-      "High": 3811959.73,
-      "Close": 3782501.65,
-      "Adjusted Close": 3782496.5
+      "Low": 26.99,
+      "Open": 27.53,
+      "Volume": 689028.99,
+      "High": 28.16,
+      "Close": 27.63,
+      "Adjusted Close": 22.45
     },
     {
       "Year": 2004,
-      "Low": 281850.76,
-      "Open": 299405.34,
-      "Volume": 669646.27,
-      "High": 316069.74,
-      "Close": 299405.31,
-      "Adjusted Close": 299398.92
+      "Low": 35.01,
+      "Open": 35.73,
+      "Volume": 675074.14,
+      "High": 36.45,
+      "Close": 35.7,
+      "Adjusted Close": 29.26
     },
     {
       "Year": 2005,
-      "Low": 817.39,
-      "Open": 906.64,
-      "Volume": 686271.57,
-      "High": 1246.25,
-      "Close": 900.41,
-      "Adjusted Close": 893.62
+      "Low": 36.89,
+      "Open": 37.66,
+      "Volume": 692995.52,
+      "High": 38.32,
+      "Close": 37.55,
+      "Adjusted Close": 30.7
     },
     {
       "Year": 2006,
-      "Low": 56.29,
-      "Open": 58.01,
-      "Volume": 761653.46,
-      "High": 60.26,
-      "Close": 57.83,
-      "Adjusted Close": 48.01
+      "Low": 54.49,
+      "Open": 56.03,
+      "Volume": 768573.21,
+      "High": 57.23,
+      "Close": 55.83,
+      "Adjusted Close": 45.92
     },
     {
       "Year": 2007,
-      "Low": 58.75,
-      "Open": 60.16,
-      "Volume": 904540.28,
-      "High": 61.36,
+      "Low": 58.78,
+      "Open": 60.18,
+      "Volume": 911076.6,
+      "High": 61.37,
       "Close": 60.06,
-      "Adjusted Close": 50.12
+      "Adjusted Close": 50.05
     },
     {
       "Year": 2008,
-      "Low": 1032.34,
-      "Open": 1043.62,
-      "Volume": 1265941.0,
-      "High": 1054.84,
-      "Close": 1048.42,
-      "Adjusted Close": 989.4
+      "Low": 1039.02,
+      "Open": 1050.36,
+      "Volume": 1274228.24,
+      "High": 1061.65,
+      "Close": 1055.19,
+      "Adjusted Close": 995.79
     },
     {
       "Year": 2009,
-      "Low": 374.64,
-      "Open": 382.46,
-      "Volume": 1198945.34,
-      "High": 392.84,
-      "Close": 387.66,
-      "Adjusted Close": 375.76
+      "Low": 377.62,
+      "Open": 385.5,
+      "Volume": 1208558.25,
+      "High": 395.97,
+      "Close": 390.75,
+      "Adjusted Close": 378.75
     },
     {
       "Year": 2010,
-      "Low": 222.85,
-      "Open": 227.43,
-      "Volume": 893132.35,
-      "High": 230.29,
-      "Close": 225.99,
-      "Adjusted Close": 208.35
+      "Low": 224.48,
+      "Open": 229.08,
+      "Volume": 899676.86,
+      "High": 231.97,
+      "Close": 227.64,
+      "Adjusted Close": 209.86
     },
     {
       "Year": 2011,
-      "Low": 158.43,
-      "Open": 163.18,
-      "Volume": 858994.06,
-      "High": 166.46,
-      "Close": 162.4,
-      "Adjusted Close": 149.19
+      "Low": 159.53,
+      "Open": 164.32,
+      "Volume": 864999.76,
+      "High": 167.62,
+      "Close": 163.54,
+      "Adjusted Close": 150.23
     },
     {
       "Year": 2012,
-      "Low": 91.44,
-      "Open": 93.72,
-      "Volume": 694467.1,
-      "High": 95.96,
-      "Close": 93.71,
-      "Adjusted Close": 87.29
+      "Low": 92.05,
+      "Open": 94.34,
+      "Volume": 698891.73,
+      "High": 96.6,
+      "Close": 94.33,
+      "Adjusted Close": 87.87
     },
     {
       "Year": 2013,
-      "Low": 83.66,
-      "Open": 85.38,
-      "Volume": 613548.51,
-      "High": 87.21,
-      "Close": 85.49,
-      "Adjusted Close": 78.6
+      "Low": 84.18,
+      "Open": 85.91,
+      "Volume": 617957.4,
+      "High": 87.76,
+      "Close": 86.03,
+      "Adjusted Close": 79.11
     },
     {
       "Year": 2014,
-      "Low": 97.74,
-      "Open": 99.36,
-      "Volume": 672247.65,
-      "High": 101.16,
-      "Close": 99.4,
-      "Adjusted Close": 92.69
+      "Low": 98.27,
+      "Open": 99.91,
+      "Volume": 676678.68,
+      "High": 101.72,
+      "Close": 99.94,
+      "Adjusted Close": 93.24
     },
     {
       "Year": 2015,
-      "Low": 65.15,
-      "Open": 66.24,
-      "Volume": 640261.98,
-      "High": 67.14,
-      "Close": 66.09,
-      "Adjusted Close": 60.19
+      "Low": 65.39,
+      "Open": 66.49,
+      "Volume": 645582.13,
+      "High": 67.39,
+      "Close": 66.34,
+      "Adjusted Close": 60.44
     },
     {
       "Year": 2016,
-      "Low": 55.1,
-      "Open": 56.32,
-      "Volume": 622530.71,
-      "High": 57.79,
-      "Close": 56.24,
-      "Adjusted Close": 51.11
+      "Low": 55.33,
+      "Open": 56.55,
+      "Volume": 626191.8,
+      "High": 58.04,
+      "Close": 56.47,
+      "Adjusted Close": 51.33
     },
     {
       "Year": 2017,
-      "Low": 63.58,
-      "Open": 64.54,
-      "Volume": 560110.4,
-      "High": 65.57,
-      "Close": 64.44,
-      "Adjusted Close": 59.39
+      "Low": 63.88,
+      "Open": 64.84,
+      "Volume": 562415.79,
+      "High": 65.89,
+      "Close": 64.74,
+      "Adjusted Close": 59.68
     },
     {
       "Year": 2018,
-      "Low": 64.32,
-      "Open": 65.02,
-      "Volume": 615348.19,
-      "High": 65.66,
-      "Close": 64.96,
-      "Adjusted Close": 60.49
+      "Low": 64.58,
+      "Open": 65.28,
+      "Volume": 610610.78,
+      "High": 65.93,
+      "Close": 65.22,
+      "Adjusted Close": 60.74
     },
     {
       "Year": 2019,
-      "Low": 62.23,
-      "Open": 62.75,
-      "Volume": 586108.57,
-      "High": 63.28,
-      "Close": 62.78,
-      "Adjusted Close": 58.99
+      "Low": 62.53,
+      "Open": 63.06,
+      "Volume": 576389.18,
+      "High": 63.59,
+      "Close": 63.08,
+      "Adjusted Close": 59.27
     },
     {
       "Year": 2020,
-      "Low": 60.35,
-      "Open": 61.13,
-      "Volume": 1343672.34,
-      "High": 61.9,
-      "Close": 61.12,
-      "Adjusted Close": 58.84
+      "Low": 60.64,
+      "Open": 61.43,
+      "Volume": 1282513.48,
+      "High": 62.21,
+      "Close": 61.42,
+      "Adjusted Close": 59.12
     },
     {
       "Year": 2021,
-      "Low": 81.13,
-      "Open": 81.97,
-      "Volume": 1323991.64,
-      "High": 82.78,
-      "Close": 81.96,
-      "Adjusted Close": 80.24
+      "Low": 81.58,
+      "Open": 82.42,
+      "Volume": 965346.27,
+      "High": 83.24,
+      "Close": 82.41,
+      "Adjusted Close": 80.68
     },
     {
       "Year": 2022,
-      "Low": 75.47,
-      "Open": 76.4,
-      "Volume": 1074236.12,
-      "High": 77.31,
-      "Close": 76.39,
-      "Adjusted Close": 75.76
+      "Low": 75.9,
+      "Open": 76.83,
+      "Volume": 844585.08,
+      "High": 77.75,
+      "Close": 76.82,
+      "Adjusted Close": 76.19
     }
   ],
   "Information Technology": [
@@ -3463,815 +3463,815 @@
     },
     {
       "Year": 1984,
-      "Low": 36813.32,
-      "Open": 36810.6,
-      "Volume": 6206601.43,
-      "High": 37769.1,
-      "Close": 36813.39,
-      "Adjusted Close": 20188.91
+      "Low": 5.63,
+      "Open": 2.87,
+      "Volume": 6273991.24,
+      "High": 5.84,
+      "Close": 5.7,
+      "Adjusted Close": 4.11
     },
     {
       "Year": 1985,
-      "Low": 45959.82,
-      "Open": 46097.91,
-      "Volume": 6028347.72,
-      "High": 47493.02,
-      "Close": 46100.23,
-      "Adjusted Close": 25281.47
+      "Low": 5.16,
+      "Open": 2.85,
+      "Volume": 6177590.64,
+      "High": 5.34,
+      "Close": 5.22,
+      "Adjusted Close": 3.65
     },
     {
       "Year": 1986,
-      "Low": 43355.22,
-      "Open": 44216.55,
-      "Volume": 6842459.07,
-      "High": 45108.14,
-      "Close": 44218.91,
-      "Adjusted Close": 24249.73
+      "Low": 5.03,
+      "Open": 2.69,
+      "Volume": 6992653.6,
+      "High": 5.21,
+      "Close": 5.1,
+      "Adjusted Close": 3.53
     },
     {
       "Year": 1987,
-      "Low": 48554.08,
-      "Open": 49802.04,
-      "Volume": 9172241.35,
-      "High": 51011.84,
-      "Close": 49804.66,
-      "Adjusted Close": 27313.19
+      "Low": 5.49,
+      "Open": 2.92,
+      "Volume": 9354748.39,
+      "High": 5.71,
+      "Close": 5.58,
+      "Adjusted Close": 4.11
     },
     {
       "Year": 1988,
-      "Low": 25987.76,
-      "Open": 26668.29,
-      "Volume": 6678004.11,
-      "High": 27270.06,
-      "Close": 26670.89,
-      "Adjusted Close": 14627.0
+      "Low": 4.96,
+      "Open": 2.37,
+      "Volume": 6806427.27,
+      "High": 5.13,
+      "Close": 5.03,
+      "Adjusted Close": 3.85
     },
     {
       "Year": 1989,
-      "Low": 22473.36,
-      "Open": 23078.03,
-      "Volume": 6698378.74,
-      "High": 23703.61,
-      "Close": 23140.69,
-      "Adjusted Close": 12739.32
+      "Low": 113.34,
+      "Open": 49.66,
+      "Volume": 6815348.56,
+      "High": 121.71,
+      "Close": 113.41,
+      "Adjusted Close": 112.35
     },
     {
       "Year": 1990,
-      "Low": 6226.67,
-      "Open": 6566.17,
-      "Volume": 6558823.78,
-      "High": 6993.04,
-      "Close": 6596.91,
-      "Adjusted Close": 3651.97
+      "Low": 79.03,
+      "Open": 47.87,
+      "Volume": 6662717.0,
+      "High": 88.44,
+      "Close": 79.11,
+      "Adjusted Close": 78.24
     },
     {
       "Year": 1991,
-      "Low": 1968.71,
-      "Open": 1953.21,
-      "Volume": 8164815.57,
-      "High": 2021.69,
-      "Close": 1995.69,
-      "Adjusted Close": 1141.48
+      "Low": 106.52,
+      "Open": 64.66,
+      "Volume": 8289789.76,
+      "High": 110.92,
+      "Close": 107.8,
+      "Adjusted Close": 106.9
     },
     {
       "Year": 1992,
-      "Low": 1933.56,
-      "Open": 1980.27,
-      "Volume": 6130339.43,
-      "High": 2027.76,
-      "Close": 1980.45,
-      "Adjusted Close": 1173.37
+      "Low": 191.33,
+      "Open": 197.72,
+      "Volume": 6213598.23,
+      "High": 204.32,
+      "Close": 197.91,
+      "Adjusted Close": 197.03
     },
     {
       "Year": 1993,
-      "Low": 1489.93,
-      "Open": 1535.22,
-      "Volume": 7116251.28,
-      "High": 1582.37,
-      "Close": 1535.08,
-      "Adjusted Close": 920.52
+      "Low": 175.13,
+      "Open": 179.87,
+      "Volume": 7207320.51,
+      "High": 184.54,
+      "Close": 179.73,
+      "Adjusted Close": 178.26
     },
     {
       "Year": 1994,
-      "Low": 660.58,
-      "Open": 684.61,
-      "Volume": 6231900.44,
-      "High": 708.41,
-      "Close": 684.16,
-      "Adjusted Close": 426.9
+      "Low": 117.17,
+      "Open": 119.23,
+      "Volume": 6369440.41,
+      "High": 122.07,
+      "Close": 120.02,
+      "Adjusted Close": 118.48
     },
     {
       "Year": 1995,
-      "Low": 536.45,
-      "Open": 559.98,
-      "Volume": 7109445.74,
-      "High": 583.02,
-      "Close": 559.68,
-      "Adjusted Close": 379.64
+      "Low": 165.09,
+      "Open": 168.51,
+      "Volume": 7255814.97,
+      "High": 172.45,
+      "Close": 168.94,
+      "Adjusted Close": 166.6
     },
     {
       "Year": 1996,
-      "Low": 634.44,
-      "Open": 664.75,
-      "Volume": 5194879.65,
-      "High": 692.52,
-      "Close": 661.38,
-      "Adjusted Close": 461.81
+      "Low": 224.75,
+      "Open": 231.28,
+      "Volume": 5367120.21,
+      "High": 237.28,
+      "Close": 230.53,
+      "Adjusted Close": 228.05
     },
     {
       "Year": 1997,
-      "Low": 719.97,
-      "Open": 747.6,
-      "Volume": 5652508.18,
-      "High": 772.77,
-      "Close": 746.82,
-      "Adjusted Close": 536.33
+      "Low": 287.86,
+      "Open": 295.45,
+      "Volume": 5838184.22,
+      "High": 302.69,
+      "Close": 295.19,
+      "Adjusted Close": 292.32
     },
     {
       "Year": 1998,
-      "Low": 156410.27,
-      "Open": 161974.83,
-      "Volume": 5668349.39,
-      "High": 168281.55,
-      "Close": 161976.33,
-      "Adjusted Close": 161716.72
+      "Low": 335.9,
+      "Open": 343.14,
+      "Volume": 5935523.4,
+      "High": 349.6,
+      "Close": 342.81,
+      "Adjusted Close": 339.95
     },
     {
       "Year": 1999,
-      "Low": 23043.74,
-      "Open": 24785.63,
-      "Volume": 5944767.54,
-      "High": 27882.5,
-      "Close": 24791.6,
-      "Adjusted Close": 24198.38
+      "Low": 230.74,
+      "Open": 237.74,
+      "Volume": 6203263.62,
+      "High": 244.5,
+      "Close": 237.36,
+      "Adjusted Close": 233.33
     },
     {
       "Year": 2000,
-      "Low": 6470.66,
-      "Open": 6858.16,
-      "Volume": 5487572.39,
-      "High": 7184.48,
-      "Close": 6843.3,
-      "Adjusted Close": 5787.71
+      "Low": 276.64,
+      "Open": 287.88,
+      "Volume": 5700557.36,
+      "High": 298.15,
+      "Close": 287.23,
+      "Adjusted Close": 281.5
     },
     {
       "Year": 2001,
-      "Low": 1709.64,
-      "Open": 1774.58,
-      "Volume": 5278574.9,
-      "High": 1842.24,
-      "Close": 1780.64,
-      "Adjusted Close": -1.4526968623239998e+30
+      "Low": 63.98,
+      "Open": 66.73,
+      "Volume": 5454480.06,
+      "High": 69.0,
+      "Close": 66.55,
+      "Adjusted Close": 63.92
     },
     {
       "Year": 2002,
-      "Low": 929.92,
-      "Open": 977.61,
-      "Volume": 4912756.99,
-      "High": 1017.78,
-      "Close": 968.14,
-      "Adjusted Close": 6.279302655856937e+28
+      "Low": 38.78,
+      "Open": 40.34,
+      "Volume": 5087571.34,
+      "High": 41.81,
+      "Close": 40.32,
+      "Adjusted Close": 38.45
     },
     {
       "Year": 2003,
-      "Low": 543.06,
-      "Open": 560.88,
-      "Volume": 4430706.94,
-      "High": 580.79,
-      "Close": 561.13,
-      "Adjusted Close": 4.08456195748716e+26
+      "Low": 47.15,
+      "Open": 48.89,
+      "Volume": 4592202.45,
+      "High": 50.72,
+      "Close": 49.18,
+      "Adjusted Close": 47.23
     },
     {
       "Year": 2004,
-      "Low": 495.35,
-      "Open": 512.89,
-      "Volume": 5109455.02,
-      "High": 529.62,
-      "Close": 511.72,
-      "Adjusted Close": 1.0865787364688563e+25
+      "Low": 82.78,
+      "Open": 85.41,
+      "Volume": 5298253.27,
+      "High": 88.07,
+      "Close": 85.62,
+      "Adjusted Close": 83.29
     },
     {
       "Year": 2005,
-      "Low": 380.79,
-      "Open": 390.72,
-      "Volume": 5962056.94,
-      "High": 401.01,
-      "Close": 391.04,
-      "Adjusted Close": -3.538019250390408e+24
+      "Low": 68.18,
+      "Open": 70.5,
+      "Volume": 6191205.16,
+      "High": 72.93,
+      "Close": 70.52,
+      "Adjusted Close": 68.25
     },
     {
       "Year": 2006,
-      "Low": 379.82,
-      "Open": 390.03,
-      "Volume": 6745548.66,
-      "High": 398.93,
-      "Close": 390.64,
-      "Adjusted Close": 2.424689599891629e+24
+      "Low": 44.52,
+      "Open": 45.59,
+      "Volume": 6989457.99,
+      "High": 46.77,
+      "Close": 45.74,
+      "Adjusted Close": 43.26
     },
     {
       "Year": 2007,
-      "Low": 2316.55,
-      "Open": 2372.25,
-      "Volume": 7085884.28,
-      "High": 2440.62,
-      "Close": 2371.19,
-      "Adjusted Close": -1.3614377853555674e+24
+      "Low": 53.43,
+      "Open": 54.93,
+      "Volume": 7355744.88,
+      "High": 56.41,
+      "Close": 55.07,
+      "Adjusted Close": 52.36
     },
     {
       "Year": 2008,
-      "Low": 906.41,
-      "Open": 930.26,
-      "Volume": 8032014.78,
-      "High": 952.32,
-      "Close": 928.03,
-      "Adjusted Close": 1.9145517125628723e+23
+      "Low": 36.31,
+      "Open": 37.61,
+      "Volume": 8322779.64,
+      "High": 38.67,
+      "Close": 37.55,
+      "Adjusted Close": 35.54
     },
     {
       "Year": 2009,
-      "Low": 239.01,
-      "Open": 242.96,
-      "Volume": 5309187.7,
-      "High": 248.71,
-      "Close": 242.14,
-      "Adjusted Close": 6.856983663593087e+23
+      "Low": 23.34,
+      "Open": 24.04,
+      "Volume": 5507352.97,
+      "High": 24.78,
+      "Close": 24.1,
+      "Adjusted Close": 22.5
     },
     {
       "Year": 2010,
-      "Low": 255.8,
-      "Open": 262.21,
-      "Volume": 5351899.39,
-      "High": 266.73,
-      "Close": 261.35,
-      "Adjusted Close": 4.481217843152845e+22
+      "Low": 28.66,
+      "Open": 29.35,
+      "Volume": 5531885.53,
+      "High": 30.03,
+      "Close": 29.33,
+      "Adjusted Close": 27.45
     },
     {
       "Year": 2011,
-      "Low": 151.88,
-      "Open": 156.2,
-      "Volume": 4807186.68,
-      "High": 160.8,
-      "Close": 156.75,
-      "Adjusted Close": -6.769900811922681e+22
+      "Low": 28.73,
+      "Open": 29.34,
+      "Volume": 4978343.59,
+      "High": 29.97,
+      "Close": 29.34,
+      "Adjusted Close": 27.35
     },
     {
       "Year": 2012,
-      "Low": 83.87,
-      "Open": 86.27,
-      "Volume": 4263792.26,
-      "High": 88.92,
-      "Close": 86.49,
-      "Adjusted Close": 4.013320299201162e+22
+      "Low": 29.6,
+      "Open": 30.26,
+      "Volume": 4412094.97,
+      "High": 30.94,
+      "Close": 30.25,
+      "Adjusted Close": 28.36
     },
     {
       "Year": 2013,
-      "Low": 126.54,
-      "Open": 129.68,
-      "Volume": 3555246.04,
-      "High": 132.7,
-      "Close": 130.0,
-      "Adjusted Close": -1.937019931077548e+22
+      "Low": 34.03,
+      "Open": 34.64,
+      "Volume": 3682899.8,
+      "High": 35.3,
+      "Close": 34.68,
+      "Adjusted Close": 32.73
     },
     {
       "Year": 2014,
-      "Low": 124.13,
-      "Open": 126.35,
-      "Volume": 2549353.24,
-      "High": 128.37,
-      "Close": 126.22,
-      "Adjusted Close": 3.2158501070520776e+21
+      "Low": 36.83,
+      "Open": 37.5,
+      "Volume": 2639502.53,
+      "High": 38.14,
+      "Close": 37.47,
+      "Adjusted Close": 35.47
     },
     {
       "Year": 2015,
-      "Low": 93.76,
-      "Open": 95.5,
-      "Volume": 2321664.45,
-      "High": 97.11,
-      "Close": 95.35,
-      "Adjusted Close": -8.564077683452306e+20
+      "Low": 34.84,
+      "Open": 35.39,
+      "Volume": 2405179.3,
+      "High": 35.93,
+      "Close": 35.39,
+      "Adjusted Close": 33.64
     },
     {
       "Year": 2016,
-      "Low": 90.4,
-      "Open": 92.39,
-      "Volume": 2159903.9,
-      "High": 94.78,
-      "Close": 92.44,
-      "Adjusted Close": 3.132562720087295e+20
+      "Low": 35.8,
+      "Open": 36.51,
+      "Volume": 2241441.88,
+      "High": 37.32,
+      "Close": 36.51,
+      "Adjusted Close": 35.01
     },
     {
       "Year": 2017,
-      "Low": 99.77,
-      "Open": 101.38,
-      "Volume": 2141877.38,
-      "High": 103.16,
-      "Close": 101.44,
-      "Adjusted Close": -5.077266529054066e+18
+      "Low": 43.54,
+      "Open": 44.33,
+      "Volume": 2222333.58,
+      "High": 45.15,
+      "Close": 44.28,
+      "Adjusted Close": 42.72
     },
     {
       "Year": 2018,
-      "Low": 92.99,
-      "Open": 94.14,
-      "Volume": 2584478.67,
-      "High": 95.27,
-      "Close": 94.14,
-      "Adjusted Close": -5.306420995544719e+16
+      "Low": 46.29,
+      "Open": 47.02,
+      "Volume": 2656617.42,
+      "High": 47.71,
+      "Close": 46.99,
+      "Adjusted Close": 45.56
     },
     {
       "Year": 2019,
-      "Low": 84.86,
-      "Open": 85.73,
-      "Volume": 2184711.25,
-      "High": 86.69,
-      "Close": 85.88,
-      "Adjusted Close": -444942510854.13
+      "Low": 49.94,
+      "Open": 50.53,
+      "Volume": 2235812.47,
+      "High": 51.13,
+      "Close": 50.56,
+      "Adjusted Close": 49.46
     },
     {
       "Year": 2020,
-      "Low": 91.2,
-      "Open": 92.69,
-      "Volume": 2536268.73,
-      "High": 94.04,
-      "Close": 92.67,
-      "Adjusted Close": -186779907.47
+      "Low": 59.42,
+      "Open": 60.44,
+      "Volume": 2612223.13,
+      "High": 61.47,
+      "Close": 60.47,
+      "Adjusted Close": 59.7
     },
     {
       "Year": 2021,
-      "Low": 112.49,
-      "Open": 113.85,
-      "Volume": 2202688.03,
-      "High": 115.11,
-      "Close": 113.81,
-      "Adjusted Close": -12227.09
+      "Low": 87.72,
+      "Open": 89.04,
+      "Volume": 2265772.69,
+      "High": 90.29,
+      "Close": 89.02,
+      "Adjusted Close": 88.47
     },
     {
       "Year": 2022,
-      "Low": 90.71,
-      "Open": 92.09,
-      "Volume": 2317000.56,
-      "High": 93.37,
-      "Close": 92.04,
-      "Adjusted Close": 83.08
+      "Low": 73.72,
+      "Open": 75.09,
+      "Volume": 2394723.39,
+      "High": 76.41,
+      "Close": 75.05,
+      "Adjusted Close": 74.86
     }
   ],
   "Materials": [
     {
       "Year": 1972,
-      "Low": 6.99,
-      "Open": 6.98,
-      "Volume": 135794.13,
-      "High": 7.05,
-      "Close": 7.02,
-      "Adjusted Close": 1.66
+      "Low": 7.51,
+      "Open": 7.5,
+      "Volume": 186949.45,
+      "High": 7.59,
+      "Close": 7.55,
+      "Adjusted Close": 1.17
     },
     {
       "Year": 1973,
-      "Low": 4.43,
-      "Open": 1.97,
-      "Volume": 89210.1,
-      "High": 4.53,
-      "Close": 4.46,
-      "Adjusted Close": 1.39
+      "Low": 4.58,
+      "Open": 1.72,
+      "Volume": 103802.77,
+      "High": 4.69,
+      "Close": 4.62,
+      "Adjusted Close": 1.32
     },
     {
       "Year": 1974,
-      "Low": 4.41,
-      "Open": 1.64,
-      "Volume": 100707.05,
-      "High": 4.53,
-      "Close": 4.45,
-      "Adjusted Close": 1.5
+      "Low": 4.82,
+      "Open": 1.59,
+      "Volume": 117305.23,
+      "High": 4.96,
+      "Close": 4.86,
+      "Adjusted Close": 1.58
     },
     {
       "Year": 1975,
-      "Low": 5.22,
-      "Open": 1.84,
-      "Volume": 114705.9,
-      "High": 5.35,
-      "Close": 5.26,
-      "Adjusted Close": 1.44
+      "Low": 5.75,
+      "Open": 1.89,
+      "Volume": 130960.26,
+      "High": 5.9,
+      "Close": 5.8,
+      "Adjusted Close": 1.53
     },
     {
       "Year": 1976,
-      "Low": 5.35,
-      "Open": 2.24,
-      "Volume": 125066.77,
-      "High": 5.49,
-      "Close": 5.4,
-      "Adjusted Close": 1.47
+      "Low": 5.74,
+      "Open": 2.19,
+      "Volume": 142747.03,
+      "High": 5.89,
+      "Close": 5.79,
+      "Adjusted Close": 1.48
     },
     {
       "Year": 1977,
-      "Low": 5.26,
-      "Open": 1.69,
-      "Volume": 123828.25,
-      "High": 5.38,
-      "Close": 5.3,
+      "Low": 5.6,
+      "Open": 1.52,
+      "Volume": 141387.46,
+      "High": 5.74,
+      "Close": 5.65,
       "Adjusted Close": 1.49
     },
     {
       "Year": 1978,
-      "Low": 5.36,
-      "Open": 1.44,
-      "Volume": 143412.31,
-      "High": 5.49,
-      "Close": 5.41,
-      "Adjusted Close": 1.52
+      "Low": 5.67,
+      "Open": 1.18,
+      "Volume": 163745.49,
+      "High": 5.8,
+      "Close": 5.72,
+      "Adjusted Close": 1.5
     },
     {
       "Year": 1979,
-      "Low": 5.95,
-      "Open": 1.65,
-      "Volume": 145654.46,
-      "High": 6.07,
-      "Close": 5.99,
-      "Adjusted Close": 1.76
+      "Low": 6.22,
+      "Open": 1.29,
+      "Volume": 166202.5,
+      "High": 6.34,
+      "Close": 6.26,
+      "Adjusted Close": 1.69
     },
     {
       "Year": 1980,
-      "Low": 11.82,
-      "Open": 1.17,
-      "Volume": 186761.55,
-      "High": 12.23,
-      "Close": 11.88,
-      "Adjusted Close": 8.45
+      "Low": 12.13,
+      "Open": 0.96,
+      "Volume": 195750.31,
+      "High": 12.55,
+      "Close": 12.19,
+      "Adjusted Close": 8.72
     },
     {
       "Year": 1981,
-      "Low": 11.0,
-      "Open": 1.3,
-      "Volume": 199052.77,
-      "High": 11.33,
-      "Close": 11.05,
-      "Adjusted Close": 7.8
+      "Low": 11.09,
+      "Open": 0.99,
+      "Volume": 207060.91,
+      "High": 11.43,
+      "Close": 11.14,
+      "Adjusted Close": 7.93
     },
     {
       "Year": 1982,
-      "Low": 8.59,
-      "Open": 1.23,
-      "Volume": 250566.77,
-      "High": 8.86,
-      "Close": 8.64,
-      "Adjusted Close": 5.99
+      "Low": 8.63,
+      "Open": 0.97,
+      "Volume": 260535.06,
+      "High": 8.9,
+      "Close": 8.67,
+      "Adjusted Close": 6.07
     },
     {
       "Year": 1983,
-      "Low": 15.53,
-      "Open": 2.59,
-      "Volume": 299428.53,
-      "High": 15.95,
-      "Close": 15.69,
-      "Adjusted Close": 11.59
+      "Low": 15.69,
+      "Open": 2.23,
+      "Volume": 311334.9,
+      "High": 16.12,
+      "Close": 15.85,
+      "Adjusted Close": 11.81
     },
     {
       "Year": 1984,
-      "Low": 14.2,
-      "Open": 2.99,
-      "Volume": 262357.25,
-      "High": 14.57,
-      "Close": 14.37,
-      "Adjusted Close": 10.5
+      "Low": 14.31,
+      "Open": 2.66,
+      "Volume": 272621.91,
+      "High": 14.69,
+      "Close": 14.48,
+      "Adjusted Close": 10.67
     },
     {
       "Year": 1985,
-      "Low": 13.51,
-      "Open": 5.58,
-      "Volume": 283200.63,
-      "High": 13.83,
-      "Close": 13.66,
-      "Adjusted Close": 9.33
+      "Low": 13.48,
+      "Open": 5.24,
+      "Volume": 294038.15,
+      "High": 13.8,
+      "Close": 13.63,
+      "Adjusted Close": 9.39
     },
     {
       "Year": 1986,
-      "Low": 15.32,
-      "Open": 8.06,
-      "Volume": 414467.44,
-      "High": 15.77,
-      "Close": 15.55,
-      "Adjusted Close": 10.17
+      "Low": 15.15,
+      "Open": 7.62,
+      "Volume": 429719.5,
+      "High": 15.61,
+      "Close": 15.39,
+      "Adjusted Close": 10.13
     },
     {
       "Year": 1987,
-      "Low": 20.14,
-      "Open": 10.37,
-      "Volume": 445368.29,
-      "High": 20.88,
-      "Close": 20.51,
-      "Adjusted Close": 13.8
+      "Low": 20.11,
+      "Open": 9.99,
+      "Volume": 460771.43,
+      "High": 20.87,
+      "Close": 20.49,
+      "Adjusted Close": 13.86
     },
     {
       "Year": 1988,
-      "Low": 16.75,
-      "Open": 9.94,
-      "Volume": 317661.48,
-      "High": 17.16,
-      "Close": 16.96,
-      "Adjusted Close": 11.13
+      "Low": 16.76,
+      "Open": 9.72,
+      "Volume": 328066.84,
+      "High": 17.18,
+      "Close": 16.97,
+      "Adjusted Close": 11.17
     },
     {
       "Year": 1989,
-      "Low": 18.41,
-      "Open": 10.35,
-      "Volume": 296043.34,
-      "High": 18.82,
-      "Close": 18.63,
-      "Adjusted Close": 12.57
+      "Low": 18.42,
+      "Open": 10.12,
+      "Volume": 305084.33,
+      "High": 18.85,
+      "Close": 18.65,
+      "Adjusted Close": 12.61
     },
     {
       "Year": 1990,
-      "Low": 18.7,
-      "Open": 16.39,
-      "Volume": 247646.26,
-      "High": 19.19,
-      "Close": 18.95,
-      "Adjusted Close": 12.97
+      "Low": 18.73,
+      "Open": 16.35,
+      "Volume": 255015.5,
+      "High": 19.24,
+      "Close": 18.99,
+      "Adjusted Close": 13.02
     },
     {
       "Year": 1991,
-      "Low": 17.41,
-      "Open": 17.6,
-      "Volume": 242823.54,
-      "High": 17.87,
-      "Close": 17.65,
-      "Adjusted Close": 11.6
+      "Low": 17.43,
+      "Open": 17.63,
+      "Volume": 249948.87,
+      "High": 17.91,
+      "Close": 17.68,
+      "Adjusted Close": 11.61
     },
     {
       "Year": 1992,
-      "Low": 17.35,
-      "Open": 17.58,
-      "Volume": 221405.35,
-      "High": 17.79,
-      "Close": 17.58,
-      "Adjusted Close": 11.46
+      "Low": 17.33,
+      "Open": 17.56,
+      "Volume": 227446.66,
+      "High": 17.77,
+      "Close": 17.56,
+      "Adjusted Close": 11.42
     },
     {
       "Year": 1993,
-      "Low": 17.71,
-      "Open": 17.95,
-      "Volume": 246336.76,
-      "High": 18.2,
-      "Close": 17.97,
-      "Adjusted Close": 12.0
+      "Low": 17.6,
+      "Open": 17.85,
+      "Volume": 252716.08,
+      "High": 18.1,
+      "Close": 17.86,
+      "Adjusted Close": 11.89
     },
     {
       "Year": 1994,
-      "Low": 16.79,
-      "Open": 16.93,
-      "Volume": 279956.41,
-      "High": 17.2,
-      "Close": 17.0,
-      "Adjusted Close": 11.76
+      "Low": 16.7,
+      "Open": 16.85,
+      "Volume": 286039.16,
+      "High": 17.13,
+      "Close": 16.92,
+      "Adjusted Close": 11.67
     },
     {
       "Year": 1995,
-      "Low": 20.84,
-      "Open": 20.97,
-      "Volume": 242659.68,
-      "High": 21.36,
-      "Close": 21.11,
+      "Low": 20.85,
+      "Open": 20.99,
+      "Volume": 247430.05,
+      "High": 21.38,
+      "Close": 21.13,
       "Adjusted Close": 16.14
     },
     {
       "Year": 1996,
-      "Low": 19.24,
-      "Open": 19.45,
-      "Volume": 227561.73,
-      "High": 19.85,
-      "Close": 19.54,
-      "Adjusted Close": 14.72
+      "Low": 19.14,
+      "Open": 19.36,
+      "Volume": 231531.62,
+      "High": 19.77,
+      "Close": 19.45,
+      "Adjusted Close": 14.62
     },
     {
       "Year": 1997,
-      "Low": 16.72,
-      "Open": 16.94,
-      "Volume": 239630.98,
-      "High": 17.15,
-      "Close": 16.94,
-      "Adjusted Close": 12.08
+      "Low": 16.42,
+      "Open": 16.64,
+      "Volume": 243406.99,
+      "High": 16.86,
+      "Close": 16.64,
+      "Adjusted Close": 11.79
     },
     {
       "Year": 1998,
-      "Low": 15.15,
-      "Open": 15.38,
-      "Volume": 250748.98,
-      "High": 15.61,
-      "Close": 15.37,
-      "Adjusted Close": 10.73
+      "Low": 14.8,
+      "Open": 15.04,
+      "Volume": 254684.99,
+      "High": 15.27,
+      "Close": 15.03,
+      "Adjusted Close": 10.4
     },
     {
       "Year": 1999,
-      "Low": 13.29,
-      "Open": 13.5,
-      "Volume": 284060.32,
-      "High": 13.71,
-      "Close": 13.5,
-      "Adjusted Close": 9.23
+      "Low": 12.97,
+      "Open": 13.18,
+      "Volume": 288458.82,
+      "High": 13.4,
+      "Close": 13.18,
+      "Adjusted Close": 8.91
     },
     {
       "Year": 2000,
-      "Low": 11.65,
-      "Open": 11.86,
-      "Volume": 322014.99,
-      "High": 12.07,
-      "Close": 11.86,
-      "Adjusted Close": 8.15
+      "Low": 11.32,
+      "Open": 11.54,
+      "Volume": 326961.6,
+      "High": 11.75,
+      "Close": 11.53,
+      "Adjusted Close": 7.82
     },
     {
       "Year": 2001,
-      "Low": 11.47,
-      "Open": 11.64,
-      "Volume": 349842.79,
-      "High": 11.82,
-      "Close": 11.65,
-      "Adjusted Close": 8.06
+      "Low": 11.25,
+      "Open": 11.43,
+      "Volume": 352608.86,
+      "High": 11.6,
+      "Close": 11.44,
+      "Adjusted Close": 7.85
     },
     {
       "Year": 2002,
-      "Low": 12.4,
-      "Open": 12.62,
-      "Volume": 541770.32,
-      "High": 12.82,
-      "Close": 12.62,
-      "Adjusted Close": 9.05
+      "Low": 12.18,
+      "Open": 12.4,
+      "Volume": 546228.6,
+      "High": 12.6,
+      "Close": 12.4,
+      "Adjusted Close": 8.82
     },
     {
       "Year": 2003,
-      "Low": 13.49,
-      "Open": 13.69,
-      "Volume": 582644.58,
-      "High": 13.89,
-      "Close": 13.71,
-      "Adjusted Close": 10.16
+      "Low": 13.31,
+      "Open": 13.51,
+      "Volume": 587246.62,
+      "High": 13.71,
+      "Close": 13.53,
+      "Adjusted Close": 9.97
     },
     {
       "Year": 2004,
-      "Low": 19.14,
-      "Open": 19.4,
-      "Volume": 656092.48,
-      "High": 19.67,
-      "Close": 19.41,
-      "Adjusted Close": 14.71
+      "Low": 18.92,
+      "Open": 19.18,
+      "Volume": 661503.87,
+      "High": 19.46,
+      "Close": 19.2,
+      "Adjusted Close": 14.48
     },
     {
       "Year": 2005,
-      "Low": 22.15,
-      "Open": 22.44,
-      "Volume": 795780.76,
-      "High": 22.75,
-      "Close": 22.45,
-      "Adjusted Close": 17.2
+      "Low": 21.89,
+      "Open": 22.19,
+      "Volume": 802944.19,
+      "High": 22.5,
+      "Close": 22.2,
+      "Adjusted Close": 16.93
     },
     {
       "Year": 2006,
-      "Low": 27.76,
-      "Open": 28.19,
-      "Volume": 1053671.95,
-      "High": 28.65,
-      "Close": 28.22,
-      "Adjusted Close": 22.07
+      "Low": 27.65,
+      "Open": 28.08,
+      "Volume": 1060783.56,
+      "High": 28.54,
+      "Close": 28.1,
+      "Adjusted Close": 21.93
     },
     {
       "Year": 2007,
-      "Low": 32.42,
-      "Open": 32.92,
-      "Volume": 1257523.59,
-      "High": 33.45,
-      "Close": 32.95,
-      "Adjusted Close": 25.57
+      "Low": 32.64,
+      "Open": 33.15,
+      "Volume": 1278282.7,
+      "High": 33.69,
+      "Close": 33.18,
+      "Adjusted Close": 25.69
     },
     {
       "Year": 2008,
-      "Low": 31.69,
-      "Open": 32.58,
-      "Volume": 1814488.92,
-      "High": 33.43,
-      "Close": 32.55,
-      "Adjusted Close": 25.74
+      "Low": 31.95,
+      "Open": 32.85,
+      "Volume": 1841690.03,
+      "High": 33.71,
+      "Close": 32.82,
+      "Adjusted Close": 25.92
     },
     {
       "Year": 2009,
-      "Low": 23.72,
-      "Open": 24.24,
-      "Volume": 1755155.41,
-      "High": 24.75,
-      "Close": 24.26,
-      "Adjusted Close": 19.82
+      "Low": 23.91,
+      "Open": 24.44,
+      "Volume": 1796218.7,
+      "High": 24.97,
+      "Close": 24.46,
+      "Adjusted Close": 19.95
     },
     {
       "Year": 2010,
-      "Low": 29.74,
-      "Open": 30.18,
-      "Volume": 1281655.7,
-      "High": 30.6,
-      "Close": 30.19,
-      "Adjusted Close": 24.71
+      "Low": 30.19,
+      "Open": 30.64,
+      "Volume": 1316861.35,
+      "High": 31.08,
+      "Close": 30.65,
+      "Adjusted Close": 25.05
     },
     {
       "Year": 2011,
-      "Low": 643.07,
-      "Open": 668.38,
-      "Volume": 1168357.31,
-      "High": 688.33,
-      "Close": 663.46,
-      "Adjusted Close": 657.51
+      "Low": 659.65,
+      "Open": 685.63,
+      "Volume": 1198820.7,
+      "High": 706.11,
+      "Close": 680.58,
+      "Adjusted Close": 674.5
     },
     {
       "Year": 2012,
-      "Low": 285.97,
-      "Open": 298.09,
-      "Volume": 915033.68,
-      "High": 307.72,
-      "Close": 295.65,
-      "Adjusted Close": 290.29
+      "Low": 292.88,
+      "Open": 305.3,
+      "Volume": 937762.8,
+      "High": 315.17,
+      "Close": 302.81,
+      "Adjusted Close": 297.34
     },
     {
       "Year": 2013,
-      "Low": 118.86,
-      "Open": 122.49,
-      "Volume": 816952.99,
-      "High": 125.56,
-      "Close": 121.89,
-      "Adjusted Close": 116.46
+      "Low": 121.41,
+      "Open": 125.13,
+      "Volume": 836161.57,
+      "High": 128.26,
+      "Close": 124.51,
+      "Adjusted Close": 118.98
     },
     {
       "Year": 2014,
-      "Low": 72.95,
-      "Open": 74.85,
-      "Volume": 793439.03,
-      "High": 76.48,
-      "Close": 74.4,
-      "Adjusted Close": 68.99
+      "Low": 74.73,
+      "Open": 76.69,
+      "Volume": 816108.59,
+      "High": 78.36,
+      "Close": 76.22,
+      "Adjusted Close": 70.69
     },
     {
       "Year": 2015,
-      "Low": 43.41,
-      "Open": 44.29,
-      "Volume": 972707.09,
-      "High": 45.05,
-      "Close": 44.19,
-      "Adjusted Close": 39.65
+      "Low": 44.3,
+      "Open": 45.2,
+      "Volume": 1001327.9,
+      "High": 45.99,
+      "Close": 45.1,
+      "Adjusted Close": 40.44
     },
     {
       "Year": 2016,
-      "Low": 36.25,
-      "Open": 36.69,
-      "Volume": 1239238.74,
-      "High": 37.12,
-      "Close": 36.69,
-      "Adjusted Close": 32.87
+      "Low": 36.9,
+      "Open": 37.36,
+      "Volume": 1275646.09,
+      "High": 37.8,
+      "Close": 37.36,
+      "Adjusted Close": 33.44
     },
     {
       "Year": 2017,
-      "Low": 42.67,
-      "Open": 43.02,
-      "Volume": 912713.8,
-      "High": 43.37,
-      "Close": 43.02,
-      "Adjusted Close": 38.96
+      "Low": 43.31,
+      "Open": 43.67,
+      "Volume": 939508.84,
+      "High": 44.02,
+      "Close": 43.67,
+      "Adjusted Close": 39.5
     },
     {
       "Year": 2018,
-      "Low": 45.03,
-      "Open": 45.49,
-      "Volume": 872626.59,
-      "High": 45.91,
-      "Close": 45.45,
-      "Adjusted Close": 41.68
+      "Low": 45.48,
+      "Open": 45.95,
+      "Volume": 897804.45,
+      "High": 46.38,
+      "Close": 45.91,
+      "Adjusted Close": 42.03
     },
     {
       "Year": 2019,
-      "Low": 43.54,
-      "Open": 43.92,
-      "Volume": 962206.68,
-      "High": 44.31,
-      "Close": 43.94,
-      "Adjusted Close": 41.3
+      "Low": 43.77,
+      "Open": 44.16,
+      "Volume": 988273.84,
+      "High": 44.56,
+      "Close": 44.18,
+      "Adjusted Close": 41.48
     },
     {
       "Year": 2020,
-      "Low": 44.98,
-      "Open": 45.58,
-      "Volume": 1206542.75,
-      "High": 46.17,
-      "Close": 45.57,
-      "Adjusted Close": 43.79
+      "Low": 45.31,
+      "Open": 45.93,
+      "Volume": 1239979.5,
+      "High": 46.54,
+      "Close": 45.92,
+      "Adjusted Close": 44.09
     },
     {
       "Year": 2021,
-      "Low": 58.92,
-      "Open": 59.56,
-      "Volume": 1128855.61,
-      "High": 60.17,
-      "Close": 59.54,
-      "Adjusted Close": 58.17
+      "Low": 60.5,
+      "Open": 61.16,
+      "Volume": 1159987.63,
+      "High": 61.79,
+      "Close": 61.14,
+      "Adjusted Close": 59.74
     },
     {
       "Year": 2022,
-      "Low": 53.18,
-      "Open": 53.93,
-      "Volume": 1210081.78,
-      "High": 54.66,
-      "Close": 53.92,
-      "Adjusted Close": 53.29
+      "Low": 54.35,
+      "Open": 55.11,
+      "Volume": 1236781.44,
+      "High": 55.86,
+      "Close": 55.1,
+      "Adjusted Close": 54.46
     }
   ],
   "Real Estate": [
@@ -4484,246 +4484,246 @@
     },
     {
       "Year": 1996,
-      "Low": 27.63,
-      "Open": 27.86,
-      "Volume": 79764.49,
-      "High": 28.09,
-      "Close": 27.89,
-      "Adjusted Close": 7.1
+      "Low": 26.52,
+      "Open": 26.73,
+      "Volume": 80415.85,
+      "High": 26.95,
+      "Close": 26.77,
+      "Adjusted Close": 5.8
     },
     {
       "Year": 1997,
-      "Low": 33.81,
-      "Open": 34.17,
-      "Volume": 111450.44,
-      "High": 34.53,
-      "Close": 34.2,
-      "Adjusted Close": 9.28
+      "Low": 33.01,
+      "Open": 33.32,
+      "Volume": 113463.74,
+      "High": 33.64,
+      "Close": 33.35,
+      "Adjusted Close": 7.98
     },
     {
       "Year": 1998,
-      "Low": 30.06,
-      "Open": 30.45,
-      "Volume": 128219.66,
-      "High": 30.81,
-      "Close": 30.45,
-      "Adjusted Close": 8.55
+      "Low": 30.25,
+      "Open": 30.64,
+      "Volume": 130278.8,
+      "High": 30.99,
+      "Close": 30.63,
+      "Adjusted Close": 8.38
     },
     {
       "Year": 1999,
-      "Low": 23.75,
-      "Open": 24.07,
-      "Volume": 157375.95,
-      "High": 24.36,
-      "Close": 24.06,
-      "Adjusted Close": 7.79
+      "Low": 23.98,
+      "Open": 24.3,
+      "Volume": 159786.8,
+      "High": 24.59,
+      "Close": 24.3,
+      "Adjusted Close": 7.77
     },
     {
       "Year": 2000,
-      "Low": 24.04,
-      "Open": 24.43,
-      "Volume": 178628.03,
-      "High": 24.79,
-      "Close": 24.4,
-      "Adjusted Close": 9.92
+      "Low": 24.39,
+      "Open": 24.79,
+      "Volume": 181358.88,
+      "High": 25.15,
+      "Close": 24.76,
+      "Adjusted Close": 10.06
     },
     {
       "Year": 2001,
-      "Low": 24.92,
-      "Open": 25.25,
-      "Volume": 226334.74,
-      "High": 25.54,
-      "Close": 25.24,
-      "Adjusted Close": 9.43
+      "Low": 25.29,
+      "Open": 25.62,
+      "Volume": 229749.03,
+      "High": 25.92,
+      "Close": 25.62,
+      "Adjusted Close": 9.57
     },
     {
       "Year": 2002,
-      "Low": 25.34,
-      "Open": 25.63,
-      "Volume": 286597.17,
-      "High": 25.88,
-      "Close": 25.62,
-      "Adjusted Close": 9.25
+      "Low": 25.72,
+      "Open": 26.02,
+      "Volume": 290889.31,
+      "High": 26.26,
+      "Close": 26.0,
+      "Adjusted Close": 9.39
     },
     {
       "Year": 2003,
-      "Low": 30.09,
-      "Open": 30.34,
-      "Volume": 303609.14,
-      "High": 30.59,
-      "Close": 30.37,
-      "Adjusted Close": 11.38
+      "Low": 30.53,
+      "Open": 30.79,
+      "Volume": 308091.25,
+      "High": 31.04,
+      "Close": 30.81,
+      "Adjusted Close": 11.54
     },
     {
       "Year": 2004,
-      "Low": 41.59,
-      "Open": 42.01,
-      "Volume": 346093.45,
-      "High": 42.42,
-      "Close": 42.04,
-      "Adjusted Close": 16.74
+      "Low": 42.18,
+      "Open": 42.6,
+      "Volume": 350981.02,
+      "High": 43.01,
+      "Close": 42.63,
+      "Adjusted Close": 16.98
     },
     {
       "Year": 2005,
-      "Low": 46.65,
-      "Open": 47.17,
-      "Volume": 365783.97,
-      "High": 47.64,
-      "Close": 47.16,
-      "Adjusted Close": 21.37
+      "Low": 47.26,
+      "Open": 47.78,
+      "Volume": 370557.44,
+      "High": 48.26,
+      "Close": 47.78,
+      "Adjusted Close": 21.65
     },
     {
       "Year": 2006,
-      "Low": 52.24,
-      "Open": 52.79,
-      "Volume": 428327.34,
-      "High": 53.34,
-      "Close": 52.85,
-      "Adjusted Close": 25.07
+      "Low": 52.91,
+      "Open": 53.46,
+      "Volume": 433832.86,
+      "High": 54.02,
+      "Close": 53.52,
+      "Adjusted Close": 25.39
     },
     {
       "Year": 2007,
-      "Low": 54.32,
-      "Open": 55.15,
-      "Volume": 689333.19,
-      "High": 55.85,
-      "Close": 55.09,
-      "Adjusted Close": 27.3
+      "Low": 55.3,
+      "Open": 56.14,
+      "Volume": 704206.11,
+      "High": 56.86,
+      "Close": 56.09,
+      "Adjusted Close": 27.82
     },
     {
       "Year": 2008,
-      "Low": 36.01,
-      "Open": 37.02,
-      "Volume": 1173315.54,
-      "High": 37.9,
-      "Close": 36.96,
-      "Adjusted Close": 19.25
+      "Low": 36.63,
+      "Open": 37.65,
+      "Volume": 1200200.47,
+      "High": 38.55,
+      "Close": 37.59,
+      "Adjusted Close": 19.61
     },
     {
       "Year": 2009,
-      "Low": 24.34,
-      "Open": 24.9,
-      "Volume": 1592743.71,
-      "High": 25.48,
-      "Close": 24.94,
-      "Adjusted Close": 14.18
+      "Low": 24.74,
+      "Open": 25.31,
+      "Volume": 1627279.4,
+      "High": 25.9,
+      "Close": 25.35,
+      "Adjusted Close": 14.42
     },
     {
       "Year": 2010,
-      "Low": 34.28,
-      "Open": 34.75,
-      "Volume": 892736.77,
-      "High": 35.2,
-      "Close": 34.77,
-      "Adjusted Close": 21.66
+      "Low": 34.75,
+      "Open": 35.22,
+      "Volume": 909577.3,
+      "High": 35.69,
+      "Close": 35.25,
+      "Adjusted Close": 21.98
     },
     {
       "Year": 2011,
-      "Low": 34.78,
-      "Open": 35.25,
-      "Volume": 880653.43,
-      "High": 35.69,
-      "Close": 35.25,
-      "Adjusted Close": 22.22
+      "Low": 35.21,
+      "Open": 35.69,
+      "Volume": 895987.52,
+      "High": 36.14,
+      "Close": 35.69,
+      "Adjusted Close": 22.52
     },
     {
       "Year": 2012,
-      "Low": 38.02,
-      "Open": 38.48,
-      "Volume": 743962.85,
-      "High": 38.93,
-      "Close": 38.53,
-      "Adjusted Close": 25.75
+      "Low": 38.48,
+      "Open": 38.95,
+      "Volume": 756092.96,
+      "High": 39.4,
+      "Close": 38.99,
+      "Adjusted Close": 26.08
     },
     {
       "Year": 2013,
-      "Low": 41.12,
-      "Open": 41.54,
-      "Volume": 720112.67,
-      "High": 41.92,
-      "Close": 41.53,
-      "Adjusted Close": 28.52
+      "Low": 41.57,
+      "Open": 41.99,
+      "Volume": 730633.91,
+      "High": 42.38,
+      "Close": 41.99,
+      "Adjusted Close": 28.85
     },
     {
       "Year": 2014,
-      "Low": 45.12,
-      "Open": 45.75,
-      "Volume": 627077.93,
-      "High": 46.36,
-      "Close": 45.73,
-      "Adjusted Close": 33.72
+      "Low": 45.59,
+      "Open": 46.22,
+      "Volume": 635553.73,
+      "High": 46.85,
+      "Close": 46.2,
+      "Adjusted Close": 34.09
     },
     {
       "Year": 2015,
-      "Low": 43.0,
-      "Open": 43.41,
-      "Volume": 660688.79,
-      "High": 43.8,
-      "Close": 43.41,
-      "Adjusted Close": 33.03
+      "Low": 43.41,
+      "Open": 43.83,
+      "Volume": 669361.23,
+      "High": 44.22,
+      "Close": 43.83,
+      "Adjusted Close": 33.36
     },
     {
       "Year": 2016,
-      "Low": 41.88,
-      "Open": 42.3,
-      "Volume": 732321.31,
-      "High": 42.73,
-      "Close": 42.33,
-      "Adjusted Close": 33.66
+      "Low": 42.25,
+      "Open": 42.68,
+      "Volume": 741844.35,
+      "High": 43.11,
+      "Close": 42.7,
+      "Adjusted Close": 33.98
     },
     {
       "Year": 2017,
-      "Low": 46.22,
-      "Open": 46.6,
-      "Volume": 690864.02,
-      "High": 46.96,
-      "Close": 46.6,
-      "Adjusted Close": 38.84
+      "Low": 46.64,
+      "Open": 47.02,
+      "Volume": 699872.65,
+      "High": 47.39,
+      "Close": 47.03,
+      "Adjusted Close": 39.21
     },
     {
       "Year": 2018,
-      "Low": 46.69,
-      "Open": 47.14,
-      "Volume": 764907.07,
-      "High": 47.55,
-      "Close": 47.11,
-      "Adjusted Close": 40.6
+      "Low": 47.12,
+      "Open": 47.58,
+      "Volume": 774821.36,
+      "High": 48.0,
+      "Close": 47.55,
+      "Adjusted Close": 41.0
     },
     {
       "Year": 2019,
-      "Low": 48.84,
-      "Open": 49.26,
-      "Volume": 745040.26,
-      "High": 49.65,
-      "Close": 49.27,
-      "Adjusted Close": 44.42
+      "Low": 49.27,
+      "Open": 49.69,
+      "Volume": 754540.83,
+      "High": 50.09,
+      "Close": 49.71,
+      "Adjusted Close": 44.83
     },
     {
       "Year": 2020,
-      "Low": 41.96,
-      "Open": 42.69,
-      "Volume": 1179233.39,
-      "High": 43.35,
-      "Close": 42.64,
-      "Adjusted Close": 39.9
+      "Low": 42.37,
+      "Open": 43.11,
+      "Volume": 1194338.2,
+      "High": 43.77,
+      "Close": 43.06,
+      "Adjusted Close": 40.3
     },
     {
       "Year": 2021,
-      "Low": 49.43,
-      "Open": 49.94,
-      "Volume": 835707.44,
-      "High": 50.45,
-      "Close": 49.96,
-      "Adjusted Close": 48.34
+      "Low": 49.89,
+      "Open": 50.41,
+      "Volume": 846218.12,
+      "High": 50.93,
+      "Close": 50.43,
+      "Adjusted Close": 48.81
     },
     {
       "Year": 2022,
-      "Low": 45.95,
-      "Open": 46.56,
-      "Volume": 988367.15,
-      "High": 47.09,
-      "Close": 46.51,
-      "Adjusted Close": 45.85
+      "Low": 46.39,
+      "Open": 47.0,
+      "Volume": 1000678.78,
+      "High": 47.54,
+      "Close": 46.95,
+      "Adjusted Close": 46.28
     }
   ],
   "Utilities": [
@@ -5035,174 +5035,174 @@
     },
     {
       "Year": 2004,
-      "Low": 20.99,
-      "Open": 21.16,
-      "Volume": 852309.64,
-      "High": 21.33,
-      "Close": 21.17,
-      "Adjusted Close": 10.83
+      "Low": 21.01,
+      "Open": 21.18,
+      "Volume": 853165.39,
+      "High": 21.35,
+      "Close": 21.19,
+      "Adjusted Close": 10.84
     },
     {
       "Year": 2005,
-      "Low": 29.76,
-      "Open": 30.14,
-      "Volume": 934356.76,
-      "High": 30.49,
-      "Close": 30.1,
-      "Adjusted Close": 18.81
+      "Low": 29.87,
+      "Open": 30.26,
+      "Volume": 938350.84,
+      "High": 30.6,
+      "Close": 30.22,
+      "Adjusted Close": 18.88
     },
     {
       "Year": 2006,
-      "Low": 26.98,
-      "Open": 27.26,
-      "Volume": 1086366.9,
-      "High": 27.53,
-      "Close": 27.29,
-      "Adjusted Close": 15.5
+      "Low": 27.41,
+      "Open": 27.68,
+      "Volume": 1108538.54,
+      "High": 27.96,
+      "Close": 27.71,
+      "Adjusted Close": 15.67
     },
     {
       "Year": 2007,
-      "Low": 31.77,
-      "Open": 32.16,
-      "Volume": 1337142.11,
-      "High": 32.54,
-      "Close": 32.16,
-      "Adjusted Close": 18.71
+      "Low": 32.23,
+      "Open": 32.61,
+      "Volume": 1362609.55,
+      "High": 32.99,
+      "Close": 32.62,
+      "Adjusted Close": 18.89
     },
     {
       "Year": 2008,
-      "Low": 29.92,
-      "Open": 30.42,
-      "Volume": 1451680.15,
-      "High": 30.88,
-      "Close": 30.41,
-      "Adjusted Close": 18.72
+      "Low": 30.29,
+      "Open": 30.79,
+      "Volume": 1477774.14,
+      "High": 31.26,
+      "Close": 30.78,
+      "Adjusted Close": 18.88
     },
     {
       "Year": 2009,
-      "Low": 24.28,
-      "Open": 24.62,
-      "Volume": 1388546.16,
-      "High": 24.94,
-      "Close": 24.66,
-      "Adjusted Close": 15.93
+      "Low": 24.55,
+      "Open": 24.89,
+      "Volume": 1409357.98,
+      "High": 25.21,
+      "Close": 24.94,
+      "Adjusted Close": 16.05
     },
     {
       "Year": 2010,
-      "Low": 30.15,
-      "Open": 30.55,
-      "Volume": 1271183.14,
-      "High": 30.85,
-      "Close": 30.5,
-      "Adjusted Close": 21.59
+      "Low": 30.52,
+      "Open": 30.92,
+      "Volume": 1286979.26,
+      "High": 31.23,
+      "Close": 30.87,
+      "Adjusted Close": 21.82
     },
     {
       "Year": 2011,
-      "Low": 28.71,
-      "Open": 29.03,
-      "Volume": 1210645.59,
-      "High": 29.29,
-      "Close": 29.0,
-      "Adjusted Close": 20.31
+      "Low": 29.11,
+      "Open": 29.42,
+      "Volume": 1227440.59,
+      "High": 29.69,
+      "Close": 29.4,
+      "Adjusted Close": 20.57
     },
     {
       "Year": 2012,
-      "Low": 26.47,
-      "Open": 26.69,
-      "Volume": 1062934.23,
-      "High": 26.91,
-      "Close": 26.69,
-      "Adjusted Close": 18.96
+      "Low": 26.83,
+      "Open": 27.05,
+      "Volume": 1078530.76,
+      "High": 27.27,
+      "Close": 27.05,
+      "Adjusted Close": 19.21
     },
     {
       "Year": 2013,
-      "Low": 29.53,
-      "Open": 29.83,
-      "Volume": 1030898.02,
-      "High": 30.11,
-      "Close": 29.83,
-      "Adjusted Close": 22.07
+      "Low": 29.99,
+      "Open": 30.29,
+      "Volume": 1047953.72,
+      "High": 30.58,
+      "Close": 30.29,
+      "Adjusted Close": 22.41
     },
     {
       "Year": 2014,
-      "Low": 30.7,
-      "Open": 31.01,
-      "Volume": 1014837.78,
-      "High": 31.31,
-      "Close": 31.0,
-      "Adjusted Close": 23.71
+      "Low": 31.34,
+      "Open": 31.66,
+      "Volume": 1042043.16,
+      "High": 31.97,
+      "Close": 31.64,
+      "Adjusted Close": 24.19
     },
     {
       "Year": 2015,
-      "Low": 28.7,
-      "Open": 28.96,
-      "Volume": 1056184.9,
-      "High": 29.21,
-      "Close": 28.95,
-      "Adjusted Close": 22.44
+      "Low": 29.3,
+      "Open": 29.56,
+      "Volume": 1084156.67,
+      "High": 29.82,
+      "Close": 29.56,
+      "Adjusted Close": 22.89
     },
     {
       "Year": 2016,
-      "Low": 30.22,
-      "Open": 30.47,
-      "Volume": 1016794.84,
-      "High": 30.71,
-      "Close": 30.49,
-      "Adjusted Close": 24.56
+      "Low": 30.81,
+      "Open": 31.07,
+      "Volume": 1043468.92,
+      "High": 31.32,
+      "Close": 31.09,
+      "Adjusted Close": 25.02
     },
     {
       "Year": 2017,
-      "Low": 33.51,
-      "Open": 33.73,
-      "Volume": 861809.31,
-      "High": 33.95,
-      "Close": 33.74,
-      "Adjusted Close": 27.89
+      "Low": 34.2,
+      "Open": 34.42,
+      "Volume": 884416.85,
+      "High": 34.65,
+      "Close": 34.44,
+      "Adjusted Close": 28.45
     },
     {
       "Year": 2018,
-      "Low": 33.77,
-      "Open": 34.06,
-      "Volume": 1078322.79,
-      "High": 34.34,
-      "Close": 34.05,
-      "Adjusted Close": 29.59
+      "Low": 34.5,
+      "Open": 34.79,
+      "Volume": 1106569.05,
+      "High": 35.08,
+      "Close": 34.79,
+      "Adjusted Close": 30.22
     },
     {
       "Year": 2019,
-      "Low": 38.75,
-      "Open": 39.02,
-      "Volume": 949386.09,
-      "High": 39.28,
-      "Close": 39.04,
-      "Adjusted Close": 35.08
+      "Low": 39.62,
+      "Open": 39.9,
+      "Volume": 974253.33,
+      "High": 40.17,
+      "Close": 39.92,
+      "Adjusted Close": 35.87
     },
     {
       "Year": 2020,
-      "Low": 37.71,
-      "Open": 38.21,
-      "Volume": 1080238.05,
-      "High": 38.68,
-      "Close": 38.2,
-      "Adjusted Close": 35.17
+      "Low": 38.56,
+      "Open": 39.07,
+      "Volume": 1108052.44,
+      "High": 39.56,
+      "Close": 39.07,
+      "Adjusted Close": 35.96
     },
     {
       "Year": 2021,
-      "Low": 40.66,
-      "Open": 41.02,
-      "Volume": 927423.8,
-      "High": 41.38,
-      "Close": 41.02,
-      "Adjusted Close": 38.67
+      "Low": 41.58,
+      "Open": 41.95,
+      "Volume": 951021.61,
+      "High": 42.32,
+      "Close": 41.96,
+      "Adjusted Close": 39.55
     },
     {
       "Year": 2022,
-      "Low": 41.58,
-      "Open": 42.04,
-      "Volume": 1050270.34,
-      "High": 42.49,
-      "Close": 42.02,
-      "Adjusted Close": 41.43
+      "Low": 42.51,
+      "Open": 42.98,
+      "Volume": 1077158.57,
+      "High": 43.45,
+      "Close": 42.97,
+      "Adjusted Close": 42.36
     }
   ]
 }
