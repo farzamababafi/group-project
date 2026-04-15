@@ -89,3 +89,31 @@ export { CRISIS_PERIOD_DATES };
 export function getCrisisDates(period: Exclude<CrisisPeriodKey, "custom">) {
   return CRISIS_PERIOD_DATES[period];
 }
+
+// ─── GET /api/per-year ────────────────────────────────────────────────────────
+
+/**
+ * Fetches per-sector yearly average data.
+ * Backend returns { data: { [sectorName: string]: StockTimePoint[] } }
+ */
+export async function getPerYear(): Promise<Record<string, StockTimePoint[]>> {
+  const response = await api.get<unknown>("/api/per-year");
+  const payload = response.data as any;
+  const raw: Record<string, any[]> = payload?.data ?? {};
+
+  // Normalise all values to the right types
+  return Object.fromEntries(
+    Object.entries(raw).map(([sector, rows]) => [
+      sector,
+      (rows ?? []).map((row: any) => ({
+        Date:             String(row.Year ?? row.Date ?? row.date ?? row.year ?? ""),
+        Open:             Number(row.Open  ?? row.open  ?? 0),
+        High:             Number(row.High  ?? row.high  ?? 0),
+        Low:              Number(row.Low   ?? row.low   ?? 0),
+        Close:            Number(row.Close ?? row.close ?? 0),
+        Volume:           Number(row.Volume ?? row.volume ?? 0),
+        "Adjusted Close": Number(row["Adjusted Close"] ?? row["adjusted_close"] ?? row.Close ?? 0),
+      })),
+    ])
+  );
+}

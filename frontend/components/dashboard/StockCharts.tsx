@@ -18,6 +18,7 @@ import type { StockTimePoint } from "@/lib/types";
 type Props = {
   data: StockTimePoint[];
   stockName?: string | null;
+  yearOnly?: boolean;
 };
 
 type MetricKey = keyof Pick<
@@ -198,7 +199,7 @@ const KpiCard = ({ label, value, sub }: { label: string; value: string; sub?: st
 );
 
 /* ─── Main ─── */
-export function StockCharts({ data, stockName }: Props) {
+export function StockCharts({ data, stockName, yearOnly = false }: Props) {
   const [active, setActive] = useState<MetricKey | null>(null);
 
   if (!data?.length) return null;
@@ -226,6 +227,18 @@ export function StockCharts({ data, stockName }: Props) {
     fill: "rgba(0,0,0,0.4)",
     fontFamily: "SF Mono, ui-monospace, monospace",
   };
+
+  const tickFormatter = yearOnly
+    ? (v: string) => /^\d{4}$/.test(String(v)) ? String(v) : String(new Date(v).getFullYear() || v)
+    : fmtTick;
+
+  const xAxisProps = yearOnly
+    ? { minTickGap: 20 }
+    : { angle: -30, textAnchor: "end" as const, minTickGap: 40 };
+
+  const chartMargin = yearOnly
+    ? { top: 8, right: 16, left: 0, bottom: 8 }
+    : { top: 8, right: 16, left: 0, bottom: 24 };
 
   return (
     <section style={{
@@ -324,9 +337,9 @@ export function StockCharts({ data, stockName }: Props) {
             </p>
             <div style={{ width: "100%", height: 340 }}>
               <ResponsiveContainer>
-                <LineChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 24 }}>
+                <LineChart data={data} margin={chartMargin}>
                   <CartesianGrid strokeDasharray="3 0" stroke="rgba(0,0,0,0.05)" vertical={false} />
-                  <XAxis dataKey="Date" tickFormatter={fmtTick} tick={axisStyle} axisLine={false} tickLine={false} minTickGap={40} angle={-30} textAnchor="end" />
+                  <XAxis dataKey="Date" tickFormatter={tickFormatter} tick={axisStyle} axisLine={false} tickLine={false} {...xAxisProps} />
                   <YAxis tickFormatter={v => `$${fmtCompact(v)}`} tick={axisStyle} axisLine={false} tickLine={false} width={44} domain={["auto","auto"]} />
                   <Tooltip content={<AllTooltip />} cursor={{ stroke: "rgba(0,0,0,0.12)", strokeWidth: 1, strokeDasharray: "4 3" }} />
                   {(["Open","High","Low","Close","Adjusted Close"] as MetricKey[]).map(k => (
@@ -370,15 +383,15 @@ export function StockCharts({ data, stockName }: Props) {
             <div style={{ width: "100%", height: 300 }}>
               <ResponsiveContainer>
                 {isVol ? (
-                  <LineChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 24 }}>
+                  <LineChart data={data} margin={chartMargin}>
                     <CartesianGrid strokeDasharray="3 0" stroke="rgba(0,0,0,0.05)" vertical={false} />
-                    <XAxis dataKey="Date" tickFormatter={fmtTick} tick={axisStyle} axisLine={false} tickLine={false} minTickGap={40} angle={-30} textAnchor="end" />
+                    <XAxis dataKey="Date" tickFormatter={tickFormatter} tick={axisStyle} axisLine={false} tickLine={false} {...xAxisProps} />
                     <YAxis tickFormatter={v => fmtVal(v, true)} tick={axisStyle} axisLine={false} tickLine={false} width={48} />
                     <Tooltip content={(p: any) => <SingleTooltip {...p} color={current.color} isVol />} cursor={{ stroke: "rgba(0,0,0,0.12)", strokeWidth: 1, strokeDasharray: "4 3" }} />
                     <Line type="monotone" dataKey="Volume" stroke={current.color} strokeWidth={1.75} dot={false} activeDot={{ r: 4, fill: current.color, stroke: "#fff", strokeWidth: 2 }} />
                   </LineChart>
                 ) : (
-                  <AreaChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 24 }}>
+                  <AreaChart data={data} margin={chartMargin}>
                     <defs>
                       <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0%" stopColor={current.color} stopOpacity={0.18} />
@@ -386,7 +399,7 @@ export function StockCharts({ data, stockName }: Props) {
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 0" stroke="rgba(0,0,0,0.05)" vertical={false} />
-                    <XAxis dataKey="Date" tickFormatter={fmtTick} tick={axisStyle} axisLine={false} tickLine={false} minTickGap={40} angle={-30} textAnchor="end" />
+                    <XAxis dataKey="Date" tickFormatter={tickFormatter} tick={axisStyle} axisLine={false} tickLine={false} {...xAxisProps} />
                     <YAxis tickFormatter={v => `$${fmtCompact(v)}`} tick={axisStyle} axisLine={false} tickLine={false} width={44} domain={["auto","auto"]} />
                     <Tooltip content={(p: any) => <SingleTooltip {...p} color={current.color} isVol={false} />} cursor={{ stroke: "rgba(0,0,0,0.12)", strokeWidth: 1, strokeDasharray: "4 3" }} />
                     <Area type="monotone" dataKey={active} stroke={current.color} strokeWidth={1.75} fill={`url(#${gradId})`} dot={false} activeDot={{ r: 5, fill: current.color, stroke: "#fff", strokeWidth: 2.5 }} />

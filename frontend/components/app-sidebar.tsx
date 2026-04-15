@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect, useRef } from "react"
+import { useRouter, usePathname } from "next/navigation"
 
 
 function HomeIcon({ size = 20 }) {
@@ -157,7 +158,9 @@ function NavButton({ label, icon, active, onClick, collapsed }: { label: string;
 
 
 export function AppSidebar(props: { style?: React.CSSProperties }) {
-  const [active, setActive] = useState("home")
+  const router = useRouter()
+  const pathname = usePathname()
+  const active = pathname === "/global" ? "global" : "home"
   const [collapsed, setCollapsed] = useState(false)
   const [openerHovered, setOpenerHovered] = useState(false)
 
@@ -319,12 +322,12 @@ export function AppSidebar(props: { style?: React.CSSProperties }) {
 
           <div className="sidebar-nav-item">
             <NavButton label="Home" icon="home" active={active === "home"}
-              onClick={() => setActive("home")} collapsed={false} />
+              onClick={() => router.push("/")} collapsed={false} />
           </div>
 
           <div className="sidebar-nav-item">
             <NavButton label="Global Market" icon="globe" active={active === "global"}
-              onClick={() => setActive("global")} collapsed={false} />
+              onClick={() => router.push("/global")} collapsed={false} />
           </div>
         </div>
 
