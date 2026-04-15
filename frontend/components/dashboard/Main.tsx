@@ -203,7 +203,7 @@ export default function Dashboard() {
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
-            Home
+            Stocks
           </h2>
         </div>
       </div>
