@@ -269,33 +269,35 @@ export function StockCharts({ data, stockName, yearOnly = false }: Props) {
             </h2>
           </div>
 
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginTop: 4 }}>
-            <div style={{ textAlign: "right" }}>
-              <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: "-0.05em", color: "rgba(0,0,0,0.88)", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>
-                {last ? `$${last.toFixed(2)}` : "—"}
-              </div>
-              <div style={{
-                marginTop: 5,
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 4,
-                fontSize: 12,
-                fontWeight: 600,
-                padding: "3px 8px",
-                borderRadius: 6,
-                background: up ? "rgba(52,199,89,0.15)" : "rgba(255,59,48,0.15)",
-                color: up ? "#1c7430" : "#c0392b",
-              }}>
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-                  {up
-                    ? <path d="M4 1L7 6H1L4 1Z" fill="currentColor"/>
-                    : <path d="M4 7L1 2H7L4 7Z" fill="currentColor"/>
-                  }
-                </svg>
-                {Math.abs(Number(pct))}%
+          {!yearOnly && (
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginTop: 4 }}>
+              <div style={{ textAlign: "right" }}>
+                <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: "-0.05em", color: "rgba(0,0,0,0.88)", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>
+                  {last ? `$${last.toFixed(2)}` : "—"}
+                </div>
+                <div style={{
+                  marginTop: 5,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 4,
+                  fontSize: 12,
+                  fontWeight: 600,
+                  padding: "3px 8px",
+                  borderRadius: 6,
+                  background: up ? "rgba(52,199,89,0.15)" : "rgba(255,59,48,0.15)",
+                  color: up ? "#1c7430" : "#c0392b",
+                }}>
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    {up
+                      ? <path d="M4 1L7 6H1L4 1Z" fill="currentColor"/>
+                      : <path d="M4 7L1 2H7L4 7Z" fill="currentColor"/>
+                    }
+                  </svg>
+                  {Math.abs(Number(pct))}%
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* KPI row */}

@@ -119,28 +119,11 @@ function NavButton({ label, icon, active, onClick, collapsed }: { label: string;
           }}>
             {label}
           </span>
-          <span style={{
-            fontFamily: "'Geist Mono', 'DM Mono', monospace",
-            fontSize: "10.5px", letterSpacing: "0.02em",
-            color: active ? "rgb(255,255,255)" : "#bbb",
-            transition: "color 0.2s ease", whiteSpace: "nowrap",
-          }}>
-            {isGlobe ? "Live · 42 markets" : "Overview · Dashboard"}
-          </span>
         </span>
       )}
 
       {!collapsed && (
         <span style={{ display: "flex", alignItems: "center", gap: "6px", flexShrink: 0 }}>
-          {isGlobe && (
-            <span style={{
-              width: "6px", height: "6px", borderRadius: "50%",
-              background: active ? "#4ade80" : "#ddd",
-              boxShadow: active ? "0 0 8px rgba(74,222,128,0.9)" : "none",
-              transition: "all 0.3s ease",
-              animation: active ? "blink 2s ease-in-out infinite" : "none",
-            }} />
-          )}
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
             style={{
@@ -160,7 +143,7 @@ function NavButton({ label, icon, active, onClick, collapsed }: { label: string;
 export function AppSidebar(props: { style?: React.CSSProperties }) {
   const router = useRouter()
   const pathname = usePathname()
-  const active = pathname === "/global" ? "global" : "home"
+  const active = pathname === "/sector" ? "global" : "home"
   const [collapsed, setCollapsed] = useState(false)
   const [openerHovered, setOpenerHovered] = useState(false)
 
@@ -283,7 +266,7 @@ export function AppSidebar(props: { style?: React.CSSProperties }) {
             fontFamily: "'DM Sans', sans-serif", fontSize: "14px", fontWeight: "700",
             letterSpacing: "-0.03em", color: "#0f0f0f", lineHeight: 1, whiteSpace: "nowrap",
           }}>
-            Nexus
+            Stock Analyzer
           </div>
 
           <div style={{ flex: 1 }} />
@@ -321,13 +304,13 @@ export function AppSidebar(props: { style?: React.CSSProperties }) {
           </div>
 
           <div className="sidebar-nav-item">
-            <NavButton label="Home" icon="home" active={active === "home"}
+            <NavButton label="Stocks" icon="home" active={active === "home"}
               onClick={() => router.push("/")} collapsed={false} />
           </div>
 
           <div className="sidebar-nav-item">
-            <NavButton label="Global Market" icon="globe" active={active === "global"}
-              onClick={() => router.push("/global")} collapsed={false} />
+            <NavButton label="Sectors" icon="globe" active={active === "global"}
+              onClick={() => router.push("/sector")} collapsed={false} />
           </div>
         </div>
 

@@ -22,7 +22,7 @@ const SECTOR_LABELS: Record<SectorKey, string> = {
   energy:                 "Energy",
 };
 
-export default function GlobalPage() {
+export default function SectorPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<CrisisPeriodKey | null>(null);
   const [, setCustomDates] = useState<{ start_date: string; end_date: string } | null>(null);
   const [selectedSector, setSelectedSector] = useState<SectorKey | null>(null);
@@ -61,7 +61,7 @@ export default function GlobalPage() {
             Dashboard
           </span>
           <h2 style={{ fontSize: "18px", fontWeight: 700, letterSpacing: "-0.03em", color: "rgba(0,0,0,0.82)", lineHeight: 1, fontFamily: "'DM Sans', sans-serif" }}>
-            Global
+            Sectors
           </h2>
         </div>
       </div>
