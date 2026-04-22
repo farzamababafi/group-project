@@ -1,12 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { CrisisButtonGroup } from "@/components/dashboard/CrisisSelector";
 import { SectorSelector, type SectorKey } from "@/components/global/SectorSelector";
 import { StockCharts } from "@/components/dashboard/StockCharts";
 import { getPerYear } from "@/lib/stockApi";
 import { AppleAlert } from "@/components/ui/AppleAlert";
-import type { CrisisPeriodKey, StockTimePoint } from "@/lib/types";
+import type { StockTimePoint } from "@/lib/types";
 
 const SECTOR_LABELS: Record<SectorKey, string> = {
   health_care:            "Health Care",
@@ -23,8 +22,6 @@ const SECTOR_LABELS: Record<SectorKey, string> = {
 };
 
 export default function SectorPage() {
-  const [selectedPeriod, setSelectedPeriod] = useState<CrisisPeriodKey | null>(null);
-  const [, setCustomDates] = useState<{ start_date: string; end_date: string } | null>(null);
   const [selectedSector, setSelectedSector] = useState<SectorKey | null>(null);
   const [apiData, setApiData] = useState<Record<string, StockTimePoint[]> | null>(null);
   const [fetchError, setFetchError] = useState(false);
@@ -75,15 +72,6 @@ export default function SectorPage() {
           />
         </div>
       )}
-
-      {/* ── Crisis period selector ── */}
-      <div className="w-full max-w-9xl flex flex-col items-center gap-4">
-        <CrisisButtonGroup
-          selectedPeriod={selectedPeriod}
-          onSelectPeriod={(p) => setSelectedPeriod(p)}
-          onCustomDates={setCustomDates}
-        />
-      </div>
 
       {/* ── Sector selector ── */}
       <div className="w-full max-w-9xl flex flex-col items-center gap-4">
